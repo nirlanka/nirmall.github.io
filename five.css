@@ -1,0 +1,45 @@
+body {
+    font-family: helvetica, /*"Helvetica-Condensed-Light-Li", "helveNueThin", helvetica,*/ "droid sans", arial, sans;
+    color: #333;
+    background-color: #eee;
+    
+    padding: 0; margin: 0;
+}
+
+h1 {
+    /*font-family: "helvetica black", "arial black";*/
+}
+
+h2 {
+    /*[] as web fonts??*/
+    font-family: helvetica, /*"Helvetica-Condensed-Light-Li", "helveNueThin", helvetica,*/ "droid sans", arial, sans;
+}
+#navbar-as-menu a {
+    color: #fff;
+}
+
+.me-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 140px;
+    background-image: url(me.jpg);
+    background-size: 200px auto;
+    background-repeat: no-repeat;
+}
+
+.padded-page {
+    padding: 40px;
+}
+
+.center-wrapper {
+    position: relative;
+}
+
+.center-container {
+    margin: 0 auto;
+    width:  600px;
+}
+
+.header-quote-wrapper {
+    text-shadow: #000 0 0 20px;
+}

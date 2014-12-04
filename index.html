@@ -1,28 +1,82 @@
-<!doctype html><html>
-<head><title>Nirmal Lankathilaka</title></head>
-<style>
-    body {
-        color: #333;
-        font-family: "helvetica neue", helvetica, "droid sans", arial;
-        
-        text-align: center;
-        
-        margin: 0;
-        padding: 0;
-    }
-</style>
-<body>
+<!doctype html>
+<html>
+    <head>
+        <title></title>
 
-    <h1>Nirmal Lankathilaka (NirmalL)</h1>
+        <link rel="stylesheet" href="two.css">
+        <link rel="stylesheet" href="five.css">
+    </head>
+<body>
     
-    <p><a href="http://codesink.tumblr.com">My blog</a> | <a href="https://facebook.com/nirsh">Facebook</a> | <a href="https://twitter.com/srdyel">Twitter</a></p>
+        <!-- [] iPhones have an automatic scroller. kills the navbar's design -->
+    <!-- [] menu must still be shown (as the page is made narrower) { [] needed? } -->
+    <!-- [] navbar, cover and footer must be infinitely-wide -->
     
-    <hr>
+    <div class="navbar">
+        
+        <div id="navbar-as-menu">
+            <div class="navbar-as-menu-wrapper">
+                <a href="https://facebook.com/nirsh.me">facebook</a>
+                        <a href="https://twitter.com/Srdyel">twitter</a>
+                        <a href="http://codesink.tumblr.com">blog</a>
+                <a href="singriesi/app.html">#singriesi app</a>
+            </div>
+        </div>
+        
+        <div class="navbar-inner">
+            
+            <span class="links no-decor hover-underlines">
+                <a href="https://facebook.com/nirsh.me">facebook</a>
+                        <a href="https://twitter.com/Srdyel">twitter</a>
+                        <a href="http://codesink.tumblr.com">blog</a>
+                <a href="singriesi/app.html">#singriesi app</a>
+            </span>
+            <span class="three-lines">
+                    <img src="3-lines.png" role="button" id="navbar-as-menu-btn" style="cursor:pointer;">
+            </span>
+            
+            <div class="inline-h1-wrapper">
+                <a href="#header" id="header-link">
+                    <h1 class="inline-h1"></h1>
+                </a>
+            </div>
+            
+        </div>
+        
+    </div>
     
-    <p>My apps</p>
-    <p>
-        <a href="/singriesi/app.html">#singiriesi</a>
-    </p>
+     <!-- [ok] resize '.page-height' on window resize -->
+    <div class="header page-height page-wide" id="header">
+        <div class="header-cover-img-container">
+            <div class="header-cover-img-div">
+                <div class="header-quote-wrapper page-height">
+                    <h1 class="header-quote">Nirmal Lankathilaka</h1>
+                    <h2 class="header-quote">
+                        Consulting detective. Life-hacker, engineering student, musician, artist and philosopher.
+                    </h2>
+                    <p class="header-quote header-links">
+                        <a href="https://facebook.com/nirsh.me">facebook</a> |
+                        <a href="https://twitter.com/Srdyel">twitter</a> |
+                        <a href="http://codesink.tumblr.com">blog</a>
+                    </p>
+                    <p class="header-quote header-links">
+                        <a href="singriesi/app.html">#singriesi app</a>
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
     
+<div class="wrapper-container">
+<div class="container">
+    
+    
+    
+</div>
+</div>
+
+    <script src="three.js"></script>
+    <style id="page-height-css"></style>
 </body>
 </html>
