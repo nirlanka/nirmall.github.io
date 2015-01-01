@@ -121,6 +121,10 @@ table td {
 
 .pad-w-20 { padding-left: 20%; padding-right: 20%; }
 
+.pad-left-200 { padding-left: 200px; }
+.pad-left-300 { padding-left: 300px; }
+.pad-left-400 { padding-left: 400px; }
+
 .small { font-size: 22px; line-height: 24px; }
 
 .align-center { text-align: center; }
@@ -131,6 +135,9 @@ table td {
 .align-bottom { vertical-align: bottom; }
 
 .border-top-grey { border-top: 4px solid #999; }
+
+.list-asterisks li {list-style-type: asterisks;}
+.list-none li {list-style-type: none;}
 
 /* BUTTONS */
 

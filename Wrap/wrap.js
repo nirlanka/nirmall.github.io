@@ -1,5 +1,5 @@
 var editing=false;
-//  editing=true;
+//    editing=true;
 
 var slideId=0,
     slideMax=-1,
