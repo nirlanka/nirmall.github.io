@@ -14,6 +14,7 @@ SideScroller.Preload.prototype = {
 
     //load game assets
     this.load.tilemap('level1', 'assets/tilemaps/level1.json', null, Phaser.Tilemap.TILED_JSON);
+      this.load.tilemap('level2', 'assets/tilemaps/level2.json', null, Phaser.Tilemap.TILED_JSON);
     this.load.image('gameTiles', 'assets/images/tiles_spritesheet.png');
 
     // bgStuff

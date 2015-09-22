@@ -7,7 +7,7 @@ SideScroller.Game.prototype = {
       this.game.time.advancedTiming = true;
     },
   create: function() {
-    this.map = this.game.add.tilemap('level1');
+    this.map = this.game.add.tilemap('level2');
 
     //the first parameter is the tileset name as specified in Tiled, the second is the key to the asset
     this.map.addTilesetImage('tiles_spritesheet', 'gameTiles');
@@ -200,14 +200,12 @@ SideScroller.Game.prototype = {
         this.txtStat.setText('Level 1 Complete')
         // this.player.loadTexture('playerDead');
         // TODO go to next level
-        window.location.href='two.html'
       }
       if(this.player2.x >= this.game.world.width) {
         // this.game.state.start('Game');
         this.txtStat.setText('Level 1 Complete')
         // this.player.loadTexture('player2Dead');
         // TODO go to next level
-        window.location.href='two.html'
       }
     }
 
