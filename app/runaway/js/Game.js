@@ -7,7 +7,7 @@ SideScroller.Game.prototype = {
       this.game.time.advancedTiming = true;
     },
   create: function() {
-    this.map = this.game.add.tilemap('level1');
+    this.map = this.game.add.tilemap('level2');
 
     //the first parameter is the tileset name as specified in Tiled, the second is the key to the asset
     this.map.addTilesetImage('tiles_spritesheet', 'gameTiles');
