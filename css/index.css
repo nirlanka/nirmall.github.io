@@ -1,6 +1,6 @@
 body {
   background-color: rgb(255, 255, 255);
-  font: 400 0.875em/1 Arial;
+  font: 400 1em/1.38 Arial;
   color: rgb(0, 0, 0);
 }
 
@@ -14,8 +14,7 @@ body {
   height: 45px;
   margin-top: 184px;
   background-color: rgba(0, 0, 0, 0.67);
-  font-size: 1.143em;
-  line-height: 1.38;
+  font-size: 1em;
   text-align: center;
   color: rgb(255, 255, 255);
 }
@@ -90,8 +89,7 @@ body {
   width: 11.5277777777%;
   min-height: 22px;
   margin: 18px 0 0 0.13889%;
-  font-size: 1.143em;
-  line-height: 1.38;
+  font-size: 1em;
   color: rgb(0, 0, 0);
 }
 
@@ -114,7 +112,7 @@ body {
   width: 229px;
   height: 229px;
   margin: 3px 0 0 2.1875%;
-  background: url('../images/unnamed.png') rgb(222, 222, 222);
+  background: url('../images/three.png') rgb(222, 222, 222);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -125,11 +123,11 @@ body {
   z-index: 29;
   width: 229px;
   height: 229px;
-  margin-left: 2.20052%;
-  background: url('../images/unnamed.png') rgb(222, 222, 222);
+  margin-left: 2.2005208333%;
+  background: url('../images/aces-site.png') rgb(222, 222, 222);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center top;
+  background-position: center bottom;
 }
 
 .text-1 {
@@ -137,7 +135,9 @@ body {
   width: 100%;
   min-height: 15px;
   margin-top: 11px;
-  font: italic 1.143em/1.38 Georgia;
+  font-family: Georgia;
+  font-style: italic;
+  font-size: 1em;
   color: rgb(0, 0, 0);
 }
 
@@ -150,7 +150,8 @@ body {
   border-top-left-radius: 9px;
   border-bottom-left-radius: 9px;
   background-color: rgb(156, 202, 255);
-  font-size: 1em;
+  font-size: 0.875em;
+  line-height: 1;
   color: rgb(0, 0, 0);
 }
 
@@ -164,7 +165,8 @@ body {
   border-top-left-radius: 9px;
   border-bottom-left-radius: 9px;
   background-color: rgb(130, 221, 133);
-  font-size: 1em;
+  font-size: 0.875em;
+  line-height: 1;
   color: rgb(0, 0, 0);
 }
 
@@ -178,7 +180,8 @@ body {
   border-top-left-radius: 9px;
   border-bottom-left-radius: 9px;
   background-color: rgb(255, 142, 213);
-  font-size: 1em;
+  font-size: 0.875em;
+  line-height: 1;
   color: rgb(0, 0, 0);
 }
 
@@ -192,7 +195,8 @@ body {
   border-top-left-radius: 9px;
   border-bottom-left-radius: 9px;
   background-color: rgb(252, 201, 88);
-  font-size: 1em;
+  font-size: 0.875em;
+  line-height: 1;
   color: rgb(0, 0, 0);
 }
 
@@ -206,7 +210,8 @@ body {
   border-top-left-radius: 9px;
   border-bottom-left-radius: 9px;
   background-color: rgb(255, 126, 126);
-  font-size: 1em;
+  font-size: 0.875em;
+  line-height: 1;
   color: rgb(0, 0, 0);
 }
 
@@ -220,7 +225,8 @@ body {
   border-top-left-radius: 9px;
   border-bottom-left-radius: 9px;
   background-color: rgb(44, 227, 166);
-  font-size: 1em;
+  font-size: 0.875em;
+  line-height: 1;
   color: rgb(0, 0, 0);
 }
 
@@ -228,8 +234,7 @@ body {
   width: 99.8611111111%;
   min-height: 25px;
   padding: 4px;
-  font-size: 1em;
-  line-height: 1.38;
+  font-size: 0.875em;
   text-align: center;
   text-transform: uppercase;
   color: rgb(0, 0, 0);
@@ -268,7 +273,7 @@ body {
   min-height: 10px;
   margin-left: 2.17996%;
   font-style: italic;
-  font-size: 1em;
+  font-size: 0.875em;
   font-weight: 700;
   line-height: 1.6;
   text-align: center;
@@ -281,7 +286,7 @@ body {
   width: 19.0392587173%;
   min-width: 60px;
   min-height: 10px;
-  font-size: 1em;
+  font-size: 0.875em;
   line-height: 1.6;
   text-align: center;
   color: rgb(0, 0, 0);
@@ -295,7 +300,7 @@ body {
   min-width: 60px;
   min-height: 10px;
   margin-left: 0.1268%;
-  font-size: 1em;
+  font-size: 0.875em;
   line-height: 1.6;
   text-align: center;
   color: rgb(0, 0, 0);
@@ -305,8 +310,9 @@ body {
   float: left;
   width: 100%;
   min-height: 89px;
-  font-size: 2.286em;
+  font-size: 2em;
   font-weight: 700;
+  line-height: 1;
   color: rgb(0, 0, 0);
 }
 
@@ -384,9 +390,17 @@ body {
   text-decoration: inherit;
   letter-spacing: inherit;
   word-spacing: inherit;
-  color: inherit;
   opacity: 1;
   word-break: normal;
   word-wrap: normal;
   white-space: normal;
+}
+
+.text-10 span,
+.text-11 span {
+  color: inherit;
+}
+
+.text-9 span {
+  color: rgb(233, 22, 22);
 }
