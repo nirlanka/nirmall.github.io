@@ -88,7 +88,7 @@ body {
   width: 229px;
   height: 229px;
   margin-top: 2px;
-  background: url('../images/unnamed.png') rgb(222, 222, 222);
+  background: url('../images/unnamed(2).png') rgb(222, 222, 222);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -101,7 +101,7 @@ body {
   width: 229px;
   height: 229px;
   margin: 4px 0 0 2.1875%;
-  background: url('../images/three.png') rgb(222, 222, 222);
+  background: url('../images/three(2).png') rgb(222, 222, 222);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -113,8 +113,8 @@ body {
   z-index: 29;
   width: 229px;
   height: 229px;
-  margin: 1px 0 0 2.19401%;
-  background: url('../images/aces-site.png') rgb(222, 222, 222);
+  margin: 1px 0 0 2.1940104166%;
+  background: url('../images/aces-site(2).png') rgb(222, 222, 222);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -128,10 +128,10 @@ body {
   width: 229px;
   height: 229px;
   margin-top: 19px;
-  background: url('../images/filtered.png') rgb(222, 222, 222);
+  background: url('../images/filtered(2).png') rgb(222, 222, 222);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: left bottom;
+  background-position: left top;
 }
 
 .element-6 {
@@ -141,7 +141,7 @@ body {
   width: 229px;
   height: 229px;
   margin: 19px 0 0 2.1875%;
-  background: url('../images/run-away.png') rgb(222, 222, 222);
+  background: url('../images/run-away(2).png') rgb(222, 222, 222);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right center;
@@ -154,7 +154,7 @@ body {
   width: 229px;
   height: 229px;
   margin: 19px 0 0 2.2013888888%;
-  background: url('../images/pres-sem2-1_01.png') rgb(222, 222, 222);
+  background: url('../images/pres-sem2-1_01(2).png') rgb(222, 222, 222);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
