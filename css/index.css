@@ -39,7 +39,7 @@ body {
 .container-3 {
   position: relative;
   float: left;
-  z-index: 11;
+  z-index: 12;
   width: 30.9444444444%;
   height: 22px;
   margin: 23px 0 0 11.8359375%;
@@ -84,7 +84,7 @@ body {
   display: block;
   position: relative;
   clear: both;
-  z-index: 24;
+  z-index: 25;
   width: 229px;
   height: 229px;
   margin-top: 2px;
@@ -97,7 +97,7 @@ body {
 .element-3 {
   display: block;
   position: relative;
-  z-index: 26;
+  z-index: 27;
   width: 229px;
   height: 229px;
   margin: 4px 0 0 2.1875%;
@@ -110,7 +110,7 @@ body {
 .element-4 {
   display: block;
   position: relative;
-  z-index: 29;
+  z-index: 30;
   width: 229px;
   height: 229px;
   margin: 1px 0 0 2.1940104166%;
@@ -124,7 +124,7 @@ body {
   display: block;
   position: relative;
   clear: both;
-  z-index: 33;
+  z-index: 34;
   width: 229px;
   height: 229px;
   margin-top: 19px;
@@ -137,7 +137,7 @@ body {
 .element-6 {
   display: block;
   position: relative;
-  z-index: 31;
+  z-index: 32;
   width: 229px;
   height: 229px;
   margin: 19px 0 0 2.1875%;
@@ -150,7 +150,7 @@ body {
 .element-7 {
   display: block;
   position: relative;
-  z-index: 35;
+  z-index: 36;
   width: 229px;
   height: 229px;
   margin: 19px 0 0 2.2013888888%;
@@ -297,14 +297,26 @@ body {
   float: left;
   width: 9.87446525%;
   height: 22px;
-  margin-left: 20.2679%;
-  background: url('../images/1479143500_03-twitter.png') rgba(255, 255, 255, 0);
+  margin-left: 0.897678659%;
+  background: url('../images/1479154560_LinkedIn_alt.png') rgba(255, 255, 255, 0);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
 }
 
 .container ._element-2 {
+  display: block;
+  float: left;
+  width: 9.87446525%;
+  height: 22px;
+  margin-left: 9.49576%;
+  background: url('../images/1479143500_03-twitter.png') rgba(255, 255, 255, 0);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.container ._element-3 {
   display: block;
   float: left;
   width: 9.87446525%;
@@ -316,19 +328,19 @@ body {
   background-position: center center;
 }
 
-.container ._element-3 {
+.container ._element-4 {
   display: block;
   float: left;
   width: 9.87446525%;
   height: 22px;
-  margin-left: 6.0943965214%;
+  margin-left: 6.0944%;
   background: url('../images/1479144675_06-facebook.png') rgba(255, 255, 255, 0);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
 }
 
-.container ._element-4 {
+.container ._element-5 {
   display: block;
   float: left;
   width: 9.87446525%;
@@ -340,13 +352,13 @@ body {
   background-position: center center;
 }
 
-.container ._element-5 {
+.container ._element-6 {
   display: block;
   float: left;
   width: 9.87446525%;
   height: 22px;
-  margin-left: 9.13809%;
-  background: url('../images/1479144997_github.png') rgba(255, 255, 255, 0);
+  margin-left: 9.1380882249%;
+  background: url('../images/1479154717_Github.png') rgba(255, 255, 255, 0);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
