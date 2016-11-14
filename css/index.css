@@ -42,12 +42,13 @@ body {
 }
 
 .container-2 {
+  visibility: hidden;
   position: relative;
   float: left;
   z-index: 5;
   width: 44.4999999999%;
   height: 22px;
-  margin: 23px 0 0 1.05469%;
+  margin: 23px 0 0 1.0546875%;
 }
 
 .container-3 {
@@ -76,7 +77,7 @@ body {
   float: left;
   width: 28.3333333333%;
   height: 281px;
-  margin: 29px 0 0 8.32682%;
+  margin: 29px 0 0 8.32465%;
 }
 
 .container-7 {
@@ -113,6 +114,18 @@ body {
   width: 229px;
   height: 229px;
   margin: 3px 0 0 2.1875%;
+  background: url('../images/unnamed.png') rgb(222, 222, 222);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.element-4 {
+  display: block;
+  z-index: 29;
+  width: 229px;
+  height: 229px;
+  margin-left: 2.20052%;
   background: url('../images/unnamed.png') rgb(222, 222, 222);
   background-repeat: no-repeat;
   background-size: cover;
