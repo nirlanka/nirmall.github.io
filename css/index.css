@@ -80,7 +80,14 @@ body {
   float: left;
   clear: both;
   width: 720px;
+}
+
+.container-8 .text-10 {
   margin-top: 79px;
+}
+
+.container-8-two {
+  margin-top: 19px;
 }
 
 .container-9 {
@@ -149,7 +156,8 @@ body {
   width: 229px;
   height: 229px;
   margin: 4px 0 0 2.1875%;
-  background: url('../images/three(2).png') rgb(222, 222, 222);
+  background: url('../images/smart-reload.png') rgb(222, 222, 222);
+  
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -162,7 +170,8 @@ body {
   width: 229px;
   height: 229px;
   margin: 1px 0 0 2.18967%;
-  background: url('../images/aces-site(2).png') rgb(222, 222, 222);
+  background: url('../images/bandiya-game.png') rgb(222, 222, 222);
+  
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
@@ -207,6 +216,52 @@ body {
   background-size: cover;
   background-position: center center;
 }
+
+/* vvv new posts */
+
+.element-4-two {
+  background: url('../images/three(2).png') rgb(222, 222, 222);
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+}
+
+.element-5-two {
+  background: url('../images/aces-site(2).png') rgb(222, 222, 222);
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+}
+
+/*.element-6-two {
+  background: url('../images/aces-site(2).png') rgb(222, 222, 222);
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+}*/
+
+/*.element-7-two {
+  background: url('../images/filtered(2).png') rgb(222, 222, 222);
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+}
+
+.element-8-two {
+  background: url('../images/run-away(2).png') rgb(222, 222, 222);
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+}
+
+.element-9-two {
+  background: url('../images/pres-sem2-1_01(2).png') rgb(222, 222, 222);
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+}
+*/
+/* ^^^ new posts */
 
 .text-1 {
   clear: both;
