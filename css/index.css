@@ -5,14 +5,11 @@ body {
 }
 
 .element {
-  position: relative;
   float: left;
 }
 
 .element .text {
   width: 100%;
-  height: 45px;
-  margin-top: 184px;
   background-color: rgba(0, 0, 0, 0.67);
   font-size: 1em;
   text-align: center;
@@ -23,21 +20,10 @@ body {
   float: left;
 }
 
-._element {
-  display: block;
-  float: left;
-  width: 9.87446525%;
-  height: 22px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-  background-color: rgba(255, 255, 255, 0);
-}
-
 .container-1 {
   width: 720px;
   height: 60px;
-  margin: 0 auto;
+  margin: -31px auto 0;
 }
 
 .container-2 {
@@ -47,7 +33,7 @@ body {
   z-index: 5;
   width: 44.4999999999%;
   height: 22px;
-  margin: 23px 0 0 1.0546875%;
+  margin: 23px 0 0 1.05469%;
 }
 
 .container-3 {
@@ -85,6 +71,7 @@ body {
 }
 
 .element-1 {
+  position: relative;
   z-index: 0;
   width: 11.5277777777%;
   min-height: 22px;
@@ -95,6 +82,7 @@ body {
 
 .element-2 {
   display: block;
+  position: relative;
   clear: both;
   z-index: 24;
   width: 229px;
@@ -108,10 +96,11 @@ body {
 
 .element-3 {
   display: block;
+  position: relative;
   z-index: 26;
   width: 229px;
   height: 229px;
-  margin: 3px 0 0 2.1875%;
+  margin: 4px 0 0 2.1875%;
   background: url('../images/three.png') rgb(222, 222, 222);
   background-repeat: no-repeat;
   background-size: cover;
@@ -120,14 +109,63 @@ body {
 
 .element-4 {
   display: block;
+  position: relative;
   z-index: 29;
   width: 229px;
   height: 229px;
-  margin-left: 2.2005208333%;
+  margin: 1px 0 0 2.19401%;
   background: url('../images/aces-site.png') rgb(222, 222, 222);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center bottom;
+}
+
+.element-5 {
+  display: block;
+  position: relative;
+  clear: both;
+  z-index: 33;
+  width: 229px;
+  height: 229px;
+  margin-top: 19px;
+  background: url('../images/filtered.png') rgb(222, 222, 222);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+}
+
+.element-6 {
+  display: block;
+  position: relative;
+  z-index: 31;
+  width: 229px;
+  height: 229px;
+  margin: 19px 0 0 2.1875%;
+  background: url('../images/run-away.png') rgb(222, 222, 222);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+}
+
+.element-7 {
+  display: block;
+  position: relative;
+  z-index: 35;
+  width: 229px;
+  height: 229px;
+  margin: 19px 0 0 2.2013888888%;
+  background: url('../images/pres-sem2-1_01.png') rgb(222, 222, 222);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.element-8 {
+  clear: both;
+  width: 100%;
+  height: 38px;
+  margin-top: 135px;
+  background-color: rgb(222, 222, 222);
 }
 
 .text-1 {
@@ -139,6 +177,20 @@ body {
   font-style: italic;
   font-size: 1em;
   color: rgb(0, 0, 0);
+}
+
+.text-10,
+.text-11,
+.text-12,
+.text-13,
+.text-9 {
+  height: 45px;
+  margin-top: 184px;
+}
+
+.text-14 {
+  height: 66px;
+  margin-top: 163px;
 }
 
 .text-2 {
@@ -241,28 +293,63 @@ body {
 }
 
 .container ._element-1 {
+  display: block;
+  float: left;
+  width: 9.87446525%;
+  height: 22px;
   margin-left: 20.2679%;
-  background-image: url('../images/1479143500_03-twitter.png');
+  background: url('../images/1479143500_03-twitter.png') rgba(255, 255, 255, 0);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
 
 .container ._element-2 {
+  display: block;
+  float: left;
+  width: 9.87446525%;
+  height: 22px;
   margin-left: 8.77341%;
-  background-image: url('../images/1479144523_53-medium.png');
+  background: url('../images/1479144523_53-medium.png') rgba(255, 255, 255, 0);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
 
 .container ._element-3 {
+  display: block;
+  float: left;
+  width: 9.87446525%;
+  height: 22px;
   margin-left: 6.0944%;
-  background-image: url('../images/1479144675_06-facebook.png');
+  background: url('../images/1479144675_06-facebook.png') rgba(255, 255, 255, 0);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
 
 .container ._element-4 {
+  display: block;
+  float: left;
+  width: 9.87446525%;
+  height: 22px;
   margin-left: 4.9723%;
-  background-image: url('../images/1479144914_38-instagram.png');
+  background: url('../images/1479144914_38-instagram.png') rgba(255, 255, 255, 0);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
 
 .container ._element-5 {
+  display: block;
+  float: left;
+  width: 9.87446525%;
+  height: 22px;
   margin-left: 9.13809%;
-  background-image: url('../images/1479144997_github.png');
+  background: url('../images/1479144997_github.png') rgba(255, 255, 255, 0);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
 
 .container ._text-1 {
@@ -397,7 +484,10 @@ body {
 }
 
 .text-10 span,
-.text-11 span {
+.text-11 span,
+.text-12 span,
+.text-13 span,
+.text-14 span {
   color: inherit;
 }
 
