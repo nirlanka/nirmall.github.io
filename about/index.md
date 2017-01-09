@@ -1,12 +1,12 @@
 ---
 layout: page
-title: About the Jekyll Theme
-excerpt: "So Simple is a responsive Jekyll theme for your words and images."
-modified: 2014-08-08T19:44:38.564948-04:00
+title: About the Evil Dinosaur, Nirmäl Lankä
+excerpt: "Nirmäl is a hacker, artist, philosopher, writer, musician and assasin for hire."
+modified: 2017-01-09
 image:
-  feature: so-simple-sample-image-4.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  feature: cover.jpg
+  credit: ReadMe.lk
+  creditlink: http://www.readme.lk/saw-aces-hackathon-2016/
 ---
 
 Looking for a simple, responsive, theme for your Jekyll powered blog? Well look no further. Here be **So Simple Theme**, the follow up to [**Minimal Mistakes**](http://mmistakes.github.io/minimal-mistakes) --- by designer slash illustrator [Michael Rose](http://mademistakes.com).
