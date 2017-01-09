@@ -5,7 +5,7 @@ locale: en_US
 description: My publicly open fortress of solitude with tech, life and fandoms
 logo: site-logo.png
 search: true
-url: http://localhost:4000
+url: http://nirmall.github.io
 
 # Jekyll configuration
 
