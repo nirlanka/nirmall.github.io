@@ -1,5 +1,15 @@
 # Authors
 
+nir:
+  name: Nirmäl Lankä
+  web: http://nirmall.github.io
+  email: nir3al@gmail.com
+  bio: "Hacker, artist, philosopher, writer, musician and assasin for hire."
+  avatar: bio-photo.jpg
+  twitter: srdyel
+  # google:
+  #   plus: BillyRick
+
 billy_rick:
   name: Billy Rick
   web: http://thewhip.com
