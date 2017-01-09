@@ -1,0 +1,59 @@
+# Site wide configuration
+
+title: Evil Dinosaur
+locale: en_US
+description: My publicly open fortress of solitude with tech, life and fandoms
+logo: site-logo.png
+search: true
+url: http://localhost:4000
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown:    kramdown
+highlighter: rouge
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..2
+  enable_coderay: false
+
+mathjax: true
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", ".less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+
+
+# Site owner
+owner:
+  name: Nirmäl Lankä
+  avatar: bio-photo.jpg
+  email: nir3al@gmail.com
+  disqus-shortname:
+  twitter: srdyel
+  facebook: nirmallankathilaka
+  github: nirmall
+  stackexchange: #http://stackoverflow.com/users/123456/username
+  linkedin: in/nirmall
+  instagram: srdyel
+  flickr: #username
+  tumblr: #username
+  pinterest: #username
+  weibo: #userid
+  google:
+    plus: #username
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
