@@ -13,7 +13,7 @@ I'm a hacker, writer, artist, philosophy and _many_ other things, too. I write v
 related to my different interests, but they are tagged to suit your preference in
 browsing.
 
-## The artist and fan ([#art](http://nirmal.elvinlabs.com/tags/#art), [#fan](http://nirmal.elvinlabs.com/tags/#fan)])
+## The artist and fan ([#art](http://nirmal.elvinlabs.com/tags/#art), [#fan](http://nirmal.elvinlabs.com/tags/#fan))
 
 I'm a painter, designer and (indie) comic artist. I also play the guitar, sing 
 and spend time in fandoms and stories.
@@ -25,7 +25,7 @@ this stuff!
 
 Loves XKCD.
 
-## The writer ([#lit](http://nirmal.elvinlabs.com/tags/#lit)])
+## The writer ([#lit](http://nirmal.elvinlabs.com/tags/#lit))
 
 I aspire to be a great writer and am working on _several_ stories at the time,
 some comics, short stories and novels.
