@@ -37,6 +37,8 @@ I like going through literature that inspire life and imagination. Greatest fan 
 I work with technologies ranging from desktop to mostly the web, mobile and sometimes embedded 
 systems. I'm interested in great visual and architectural design of software and web.
 
+I work at [Embla Software Innovation](http://embla.asia) as a software engineer.
+
 I'm a great believer and activist in software and information freedom. I'm enthusiastic
 about information security philosophy, technology and issues and love active discussion.
 
