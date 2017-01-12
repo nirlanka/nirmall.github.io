@@ -39,6 +39,9 @@ the code without relying on all the dependencies in our software system.
 
 Confused? Don't worry, I'll be trying to explain this philosophy through some very simple examples.
 
+You can see sample code repo, [unit-testing](https://github.com/NirmalL/unit-testing) for the files,
+but you don't need to. ;)
+
 ## Writing a trigonometry library
 
 No, no, don't worry about what little you remember about trigonometry or anything too mathematical.
