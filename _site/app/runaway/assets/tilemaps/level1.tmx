@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="70" height="6" tilewidth="70" tileheight="70" nextobjectid="21">
+ <tileset firstgid="1" name="tiles_spritesheet" tilewidth="70" tileheight="70" spacing="2" tilecount="143">
+  <image source="../images/tiles_spritesheet.png" width="790" height="934"/>
+ </tileset>
+ <tileset firstgid="144" name="tiles_spritesheet" tilewidth="70" tileheight="70" spacing="2" tilecount="156">
+  <image source="../images/platformerGraphicsDeluxe_Updated/Tiles/tiles_spritesheet.png" width="914" height="936"/>
+ </tileset>
+ <tileset firstgid="300" name="hud_coins" tilewidth="47" tileheight="47" tilecount="1">
+  <image source="../images/platformerGraphicsDeluxe_Updated/HUD/hud_coins.png" width="47" height="47"/>
+ </tileset>
+ <tileset firstgid="301" name="plant" tilewidth="70" tileheight="70" tilecount="1">
+  <image source="../images/platformerGraphicsDeluxe_Updated/Items/plant.png" width="70" height="70"/>
+ </tileset>
+ <tileset firstgid="302" name="rock" tilewidth="70" tileheight="70" tilecount="1">
+  <image source="../images/platformerGraphicsDeluxe_Updated/Items/rock.png" width="70" height="70"/>
+ </tileset>
+ <tileset firstgid="303" name="mushroomRed" tilewidth="70" tileheight="70" tilecount="1">
+  <image source="../images/platformerGraphicsDeluxe_Updated/Items/mushroomRed.png" width="70" height="70"/>
+ </tileset>
+ <tileset firstgid="304" name="cloud1" tilewidth="128" tileheight="71" tilecount="1">
+  <image source="../images/platformerGraphicsDeluxe_Updated/Items/cloud1.png" width="128" height="71"/>
+ </tileset>
+ <tileset firstgid="305" name="hill_smallAlt" tilewidth="48" tileheight="106" tilecount="1">
+  <image source="../images/platformerGraphicsDeluxe_Updated/Tiles/hill_smallAlt.png" width="48" height="106"/>
+ </tileset>
+ <tileset firstgid="306" name="cactus" tilewidth="70" tileheight="70" tilecount="1">
+  <image source="../images/platformerGraphicsDeluxe_Updated/Items/cactus.png" width="70" height="70"/>
+ </tileset>
+ <layer name="backgroundLayer" width="70" height="6">
+  <data encoding="csv">
+139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,
+139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,
+139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,
+139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,
+139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,
+139,139,68,68,68,68,68,68,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,41,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,0,0,0,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139,139
+</data>
+ </layer>
+ <layer name="blockedLayer" width="70" height="6">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,67,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,101,101,101,0,0,0,0,0,0,0,0,0,101,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,4,4,0,0,0,0,0,0,0,0,0,0,0,0,67,67,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,19,19,19,0,0,0,0,0,0,0,101,0,0,0,0,0,0,0,0,0,0,101,101,0,0,0,0,0,0,0,0,
+68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,3,3,3,3,3,3,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,68,3,3,3,68
+</data>
+ </layer>
+ <layer name="bgStuff" width="70" height="6">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,304,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,304,0,0,0,0,0,0,0,0,0,0,0,304,0,
+0,0,0,0,304,0,0,0,0,0,0,0,0,0,304,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,304,0,0,0,0,0,0,0,0,0,304,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,304,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,67,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,306,0,301,0,0,0,0,0,0,301,0,0,0,0,0,306,0,0,302,0,0,0,303,0,0,0,0,0,301,0,0,303,0,0,0,0,0,301,0,0,0,0,303,0,0,0,0,0,0,0,0,301,306,0,0,0,0,0,0,0,303,184,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup name="objectsLayer">
+  <object id="1" gid="143" x="486" y="160" width="70" height="70">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object id="2" gid="143" x="594" y="135" width="70" height="70">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object id="3" gid="143" x="703" y="160" width="70" height="70">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object id="4" gid="143" x="785" y="222" width="70" height="70">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object id="5" gid="143" x="1435" y="198" width="70" height="70">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object id="6" gid="143" x="1514" y="137" width="70" height="70">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object id="7" gid="143" x="1710" y="243" width="70" height="70">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object id="8" gid="143" x="1644" y="162" width="70" height="70">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object id="9" gid="143" x="1362" y="286" width="70" height="70">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object id="10" gid="143" x="2489" y="228" width="70" height="70">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object id="11" gid="143" x="2610" y="137" width="70" height="70">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object id="12" gid="143" x="2800" y="137" width="70" height="70">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object id="13" gid="143" x="2974" y="231" width="70" height="70">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object id="14" gid="143" x="3143" y="280" width="70" height="70">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object id="15" gid="143" x="2043" y="349" width="70" height="70">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object id="16" gid="143" x="399" y="225" width="70" height="70">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object id="17" gid="143" x="4504" y="327" width="70" height="70">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object id="18" gid="143" x="3744" y="183" width="70" height="70">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object id="19" gid="143" x="2122" y="350" width="70" height="70">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+  <object id="20" gid="143" x="2203" y="348" width="70" height="70">
+   <properties>
+    <property name="sprite" value="goldCoin"/>
+    <property name="type" value="coin"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

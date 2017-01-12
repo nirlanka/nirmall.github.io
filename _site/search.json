@@ -1,0 +1,49 @@
+[
+
+  
+    {
+      "title"			: "A Nose for Python: fun with test-driven development",
+      "link"			: "/blog/python-nose-testing/",
+      "excerpt"		: "Introduction to test-driven development philosophy and hands-on experience with Python 2.7 and Nose testing framework"
+    }
+  
+
+
+
+  
+
+  
+
+  
+
+  
+    ,{
+      "title"			: "About the Evil Dinosaur, Nirmäl Lankä",
+      "link"			: "/about/",
+      "excerpt"		: "Nirmäl is a hacker, artist, philosopher, writer, musician and assasin for hire."
+    }
+  
+
+  
+
+  
+
+  
+    ,{
+      "title"			: "Theme Setup",
+      "link"			: "/theme-setup/",
+      "excerpt"		: "Instructions on how to install and customize the Jekyll theme So Simple."
+    }
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+]

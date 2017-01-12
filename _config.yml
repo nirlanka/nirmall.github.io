@@ -3,9 +3,9 @@
 title: Evil Dinosaur
 locale: en_US
 description: My publicly open fortress of solitude with tech, life and fandoms
-logo: site-logo-batman.png
+logo: bio-photo.jpg
 search: true
-url: http://nirmall.github.io
+url: 
 
 # Jekyll configuration
 
@@ -39,7 +39,7 @@ owner:
   name: Nirmäl Lankä
   avatar: bio-photo.jpg
   email: nir3al@gmail.com
-  disqus-shortname:
+  disqus-shortname: evil-dinosaur
   twitter: srdyel
   facebook: nirmallankathilaka
   github: nirmall
