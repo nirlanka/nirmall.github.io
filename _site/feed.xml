@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-01-12T23:17:37+05:30</updated><id>/</id><title type="html">Evil Dinosaur</title><subtitle>My publicly open fortress of solitude with tech, life and fandoms</subtitle><entry><title type="html">A Nose for Python: fun with test-driven development</title><link href="/blog/python-nose-testing/" rel="alternate" type="text/html" title="A Nose for Python: fun with test-driven development" /><published>2017-01-10T00:00:00+05:30</published><updated>2017-01-10T00:00:00+05:30</updated><id>/blog/python-nose-testing</id><content type="html" xml:base="/blog/python-nose-testing/">In TDD (test-driven development), writing and maintaining tests---or unit-tests---are not thought-of 
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-01-12T23:52:30+05:30</updated><id>/</id><title type="html">Evil Dinosaur</title><subtitle>My publicly open fortress of solitude with tech, life and fandoms</subtitle><entry><title type="html">A Nose for Python: fun with test-driven development</title><link href="/blog/python-nose-testing/" rel="alternate" type="text/html" title="A Nose for Python: fun with test-driven development" /><published>2017-01-10T00:00:00+05:30</published><updated>2017-01-10T00:00:00+05:30</updated><id>/blog/python-nose-testing</id><content type="html" xml:base="/blog/python-nose-testing/">In TDD (test-driven development), writing and maintaining tests---or unit-tests---are not thought-of 
 as a burden that needs to be done to keep others happy. It's not even a QA-only task, if at all.
 
 In TDD, we write unit-test for our functionality, even before we start writing the functionality
@@ -22,6 +22,9 @@ manner, without depending on the bulk of all the layers of the software. In othe
 the code without relying on all the dependencies in our software system.
 
 Confused? Don't worry, I'll be trying to explain this philosophy through some very simple examples.
+
+You can see sample code repo, [unit-testing](https://github.com/NirmalL/unit-testing) for the files,
+but you don't need to. ;)
 
 ## Writing a trigonometry library
 
@@ -412,4 +415,4 @@ up-coming posts, I plan on discussing subjects including:
 - Code coverage principles
 
 I'm sure my understanding, interpretation and presentation of the subject matter is 
-incomplete and error-prone. I'm open for discussion and corrections :)</content><author><name>Nirmäl Lankä</name><email>nir3al@gmail.com</email></author><category term="python" /><category term="code" /><category term="tutorial" /><summary type="html">Introduction to test-driven development philosophy and hands-on experience with Python 2.7 and Nose testing framework</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="{&quot;feature&quot;=&gt;&quot;blog/python-featured.jpg&quot;, &quot;credit&quot;=&gt;&quot;blog.cbtnuggets.com&quot;, &quot;creditlink&quot;=&gt;&quot;https://blog.cbtnuggets.com/wp-content/uploads/2014/10/5reasons_Python_FEATURED.jpg&quot;}" /></entry></feed>
+incomplete and error-prone. I'm open for discussion and corrections :)</content><author><name>Nirmäl Lankä</name><email>nir3al@gmail.com</email></author><category term="python" /><category term="code" /><category term="tutorial" /><category term="tech" /><summary type="html">Introduction to test-driven development philosophy and hands-on experience with Python 2.7 and Nose testing framework</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="{&quot;feature&quot;=&gt;&quot;blog/python-featured.jpg&quot;, &quot;credit&quot;=&gt;&quot;blog.cbtnuggets.com&quot;, &quot;creditlink&quot;=&gt;&quot;https://blog.cbtnuggets.com/wp-content/uploads/2014/10/5reasons_Python_FEATURED.jpg&quot;}" /></entry></feed>
