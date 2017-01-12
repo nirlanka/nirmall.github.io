@@ -278,10 +278,10 @@ def check_sin_values_complex(x):
   assert_almost_equals(mysin, pysin, places=4)
 ```
 
-output
 ```bash
 $ nosetests ./test_one.py --verbose
 ```
+
 ```
 test_one.test_sin_values(-2,) ... ok
 test_one.test_sin_values(-0.1,) ... ok
