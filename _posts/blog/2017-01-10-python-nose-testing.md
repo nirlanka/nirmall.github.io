@@ -10,6 +10,7 @@ share: true
 modified: 2017-01-11
 image:
   feature: blog/python-featured.jpg
+  feature: blog/python-featured-thumb.jpg
   credit: blog.cbtnuggets.com
   creditlink: https://blog.cbtnuggets.com/wp-content/uploads/2014/10/5reasons_Python_FEATURED.jpg
 ---
