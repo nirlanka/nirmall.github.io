@@ -11,7 +11,7 @@ created: 2017-01-18
 modified: 2017-01-19
 image:
   feature: blog/powershell-prompt.png
-  #thumb: blog/python-featured-thumb.jpg
+  thumb: blog/powershell-prompt-thumb.jpg
 ---
 
 Like for bash or any other *ix shell, we can create profiles with shell configurations for PowerShell.
