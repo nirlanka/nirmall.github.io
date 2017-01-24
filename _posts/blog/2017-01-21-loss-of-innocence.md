@@ -34,7 +34,7 @@ Before finding ourselves in crazy and long ride (for which I apologise) into a l
 
 ## How a show about kids took all the adults by storm [:link:](#nostalgia)
 
-While I've seen a lot of kids generally liking it, I was curious as how it successfully made the mind-boggling huge number fans in the adult generations, especially those 28 and above of age. I believe the answer is quite generic:
+While I've seen a lot of kids generally liking it, I was curious as how it successfully made the mind-boggling huge number of fans in the adult generations, especially those 28 and above of age. I believe the answer is quite generic:
 
 What makes any of us love and look forward to anything? What makes any of us enjoy anything?
 
@@ -78,11 +78,11 @@ Apart from blaming the modern for all the bad in the world, what helps them cope
 
 I once questioned the fate of children submitted for monk-hood in Lanka on Facebook and was surprised to see the most surprising reactions from a lot of people I knew, especially ones I thought were modern, rational and nice.
 
-Quite recently, I complained about _Sidhu_, 
-
 For the record, I still believe some of them to be genuinely nice people, just taught to think in a particular way and look at the world only to accept tradition.
 
 In other words, I see this as a result of indoctrination, and indoctrination's quite different from brain-washing, with which it's frequently confused.
+
+(^^ The above case is not to be confused with my occasional wild outbursts on Twitter about how I hate telly dramas like _Sidhu_, the apparently arrogant children starring them and the adults writing them. I don't hesitate to use the most primitive and offensive vocabulary towards things I deeply dislike, regardless of whether the target is a man, woman or child, at least when I'm on Twitter. No, this one on Facebook was written in the most non-offensive way possible by a human.)
 
 ### Indoctrination of a country
 
