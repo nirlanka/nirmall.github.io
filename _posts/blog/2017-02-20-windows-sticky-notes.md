@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Sticky Notes app on Windows"
+title: "Sticky Notes tips for Windows"
 excerpt: "Getting the best out of Windows 10 Sticky Notes"
 categories: blog
 tags: [windows, config, tech, tips]
