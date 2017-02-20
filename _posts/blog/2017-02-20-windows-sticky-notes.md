@@ -38,7 +38,7 @@ To make text into subscript, use `ctrl =` and use the `shift` in addition to mak
 
 ### Lists
 
-`ctrl shift l` creates a list. Pressing that multiple times will change the format of the list:
+`ctrl shift l` creates a list. Pressing that same combination multiple times will change the format of the list. Try the number in front of each style:
 
 1. Bullet lists (● ● ●)
 2. Numbered list (1 2 3)
@@ -46,6 +46,8 @@ To make text into subscript, use `ctrl =` and use the `shift` in addition to mak
 4. Uppercase lettered list (A B C)
 5. Roman numeral list (i ii iii)
 6. Uppercase roman numeral list (I II III)
+
+Pressing the combination more times will reveal even more styles.
 
 ### General
 
