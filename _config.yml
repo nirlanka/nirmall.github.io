@@ -1,60 +1,41 @@
-# Site wide configuration
+### your site title here
 
-title: Evil Dinosaur
-locale: en_US
-description: My publicly open fortress of solitude with tech, life and fandoms
-# logo: site-logo-lotus-note.jpg
-search: true
-url: 
+title: Evil Dino
+baseurl: '' # name of the repository
+email: thatevildino@gmail.com
 
-# Jekyll configuration
 
-permalink:   /:categories/:title/
-markdown:    kramdown
+
 highlighter: rouge
+markdown: kramdown
+### exclude the instructions / write-up in the README.md
+
+
+# Tracker
+analytics: UA-96481074-1
+
+# Comments
+disqus-shortname: evil-dinosaur
+
+
+#optimization
+#compress.html
+compress_html:
+  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
+  
+
 sass:
-  sass_dir: _sass
-  style: compressed
-gems:
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
+ style: compressed
 
-kramdown:
-  input: GFM
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..2
-  enable_coderay: false
-
-mathjax: true
-
-include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", ".less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
+exclude:
+- README.md
 
 
-# Site owner
-owner:
-  name: Nirmäl Lankä
-  avatar: bio-photo.jpg
-  email: nir3al@gmail.com
-  disqus-shortname: evil-dinosaur
-  twitter: srdyel
-  facebook: nirmallankathilaka
-  github: nirmall
-  stackexchange: #http://stackoverflow.com/users/123456/username
-  linkedin: nirmall
-  instagram: srdyel
-  flickr: #username
-  tumblr: #username
-  pinterest: #username
-  weibo: #userid
-  google:
-    plus: #username
-    analytics:
-    verify:
-    ad-client:
-    ad-slot:
-  bing-verify:
+gems: [jekyll-seo-tag, jekyll-paginate]

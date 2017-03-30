@@ -1,12 +1,7 @@
 ---
-layout: page
-title: Blog of Nirmal
-excerpt: "Nirmal Lanka, a hacker, artist, philosopher and writer."
-search_omit: true
+layout: default
 ---
-
-<ul class="post-list">
-{% for post in site.posts limit:10 %}
-  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
+<h1 class="headline">{{site.title}}</h1>
+{% for post in site.posts %}
+<h3><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h3>
 {% endfor %}
-</ul>
