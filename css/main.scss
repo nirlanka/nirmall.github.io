@@ -46,3 +46,12 @@ $on-laptop:        1000px;
 @import
         "style"
 ;
+
+.post-index--separator {
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+
+.post-index--top-space {
+    height: 20px;
+}
