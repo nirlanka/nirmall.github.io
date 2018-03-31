@@ -2,6 +2,9 @@
 layout: default
 ---
 <h1 class="headline">{{site.title}}</h1>
+<div class="post-index--top-space"></div>
 {% for post in site.posts %}
 <h3><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h3>
+<p>{{post.excerpt}}</p>
+<div class="post-index--separator"></div>
 {% endfor %}

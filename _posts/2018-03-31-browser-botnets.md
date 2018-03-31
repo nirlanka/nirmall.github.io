@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Browser-based supercomputers: the evil and the good"
-excerpt: "Viruses and hackers have created a modern norm of paranoia in everyone who uses a modern electronic gadget, may it be a computer, a phone, a wrist-watch or the refrigerator at home. To add to the validity of that paranoia, from time to time, whole new areas of technical possibilities and trends open up with new dimensions of cyber threats."
+excerpt: "Hackers are focusing on more than just your personal details: they want your power!"
 categories: article
 tags: [security, republish, tech, web]
 author: nir
