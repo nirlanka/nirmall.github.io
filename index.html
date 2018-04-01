@@ -2,6 +2,21 @@
 layout: default
 ---
 <img src="{{site.baseurl}}/images/my-desktop-2x.png">
+
+<div class="social">
+	{% include social.html name="Medium" url="https://medium.com/@nirmall" %}
+	{% include social.html name="Behance" url="https://www.behance.net/nir3al683b" %}
+	<!-- {% include social.html name="Dribbble" url="https://dribbble.com/evildino" %} -->
+	{% include social.html name="Instagram" url="https://www.instagram.com/srdyel/" %}
+	<!-- {% include social.html name="LinkedIn" url="https://www.linkedin.com/in/nirmall/" %} -->
+	<!-- {% include social.html name="Facebook" url="https://www.facebook.com/srdyel" %} -->
+	<!-- {% include social.html name="Github" url="https://github.com/nirmalL" %} -->
+	<!-- {% include social.html name="GooglePlus" url="https://plus.google.com/u/0/118291246326094146907" %} -->
+	<!-- {% include social.html name="Messenger" url="https://www.messenger.com/t/srdyel" %} -->
+	<!-- {% include social.html name="stackoverflow" url="https://stackoverflow.com/users/1056055/nirmall" %} -->
+	<!-- {% include social.html name="Twitter" url="https://twitter.com/srdyel" %} -->
+</div>
+
 <h1 class="headline">{{site.title}}</h1>
 {% for post in site.posts %}
 <h3><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h3>
