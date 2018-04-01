@@ -4,9 +4,17 @@ layout: default
 <img src="{{site.baseurl}}/images/my-desktop-2x.png">
 
 <div class="social">
+	<!-- <span class="theme" onclick="theme()" style="background-image: url({{site.baseurl}}/images/theme.svg)"></span> -->
+	<!-- <span class="text">&middot;</span> -->
+
+	<a href="{{include.url}}" class="text">About</a>
+	<span class="text">&middot;</span>
+
 	{% include social.html name="Medium" url="https://medium.com/@nirmall" %}
+	<span class="text">&middot;</span>
 	{% include social.html name="Behance" url="https://www.behance.net/nir3al683b" %}
 	<!-- {% include social.html name="Dribbble" url="https://dribbble.com/evildino" %} -->
+	<span class="text">&middot;</span>
 	{% include social.html name="Instagram" url="https://www.instagram.com/srdyel/" %}
 	<!-- {% include social.html name="LinkedIn" url="https://www.linkedin.com/in/nirmall/" %} -->
 	<!-- {% include social.html name="Facebook" url="https://www.facebook.com/srdyel" %} -->
@@ -22,3 +30,11 @@ layout: default
 <h3><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h3>
 <p class="excerpt">{{post.excerpt}}</p>
 {% endfor %}
+
+<div class="social">
+	{% include social.html name="Medium" url="https://medium.com/@nirmall" %}
+	<span class="text">&middot;</span>
+	{% include social.html name="Behance" url="https://www.behance.net/nir3al683b" %}
+	<span class="text">&middot;</span>
+	{% include social.html name="Instagram" url="https://www.instagram.com/srdyel/" %}
+</div>
