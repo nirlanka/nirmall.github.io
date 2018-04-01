@@ -16,7 +16,7 @@ image:
 
 ![""](/images/blog/powershell-prompt.PNG)
 
-Like for bash or any other *ix shell, we can create profiles with shell configurations for PowerShell.
+Like for bash or any other \*ix shell, we can create profiles with shell configurations for PowerShell.
 
 ```sh
 new-item -itemtype file -path $profile -force

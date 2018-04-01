@@ -10,8 +10,6 @@ share: true
 modified: 2018-03-20
 ---
 
-# Browser-based supercomputers: the evil and the good
-
 ## Step 1. Create a free server
 
 {% include image.html url="/images/blog/2018-03-31/free-stuff.png" description="#freeServersForTheWin #GlitchFTW" %}

@@ -17,8 +17,6 @@ image:
 
 {% include image.html url="/images/blog/2018-03-31/dark-side-vs-light.jpeg" description="The dark side vs the light: the eternal struggle" %}
 
-# Browser-based supercomputers: the evil and the good
-
 Viruses and hackers have created a modern norm of paranoia in everyone who uses a modern electronic gadget, may it be a computer, a phone, a wrist-watch or the refrigerator at home. To add to the validity of that paranoia, from time to time, whole new areas of technical possibilities and trends open up with new dimensions of cyber threats.
 
 Every known cyber threat can be categorized by the intent behind it. The most frequent motives we encounter are identity theft, espionage and sabotage. Numerous methods of prevention have been explored and utilized to prevent such attacks.

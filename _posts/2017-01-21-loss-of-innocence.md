@@ -2,7 +2,6 @@
 layout: post
 title: "Loss of innocence"
 excerpt: "'Sidhu' is a popular drama loved by a huge number of adults and children alike, but it provoked a search for reality that took me through a number of issues"
-_excerpt: "In Buddhist countries like Lanka, Bhutan and Tibet, children are made into monks and put into a strict religious environment. But the strictness is the least of it..."
 categories: blog
 tags: [society, religion, lanka, innocence, life]
 author: nir
