@@ -9,12 +9,9 @@ comments: true
 share: true
 created: 2017-01-18
 modified: 2017-01-19
-image:
-  feature: blog/powershell-prompt.PNG
-  thumb: blog/powershell-prompt-thumb.PNG
+image: assets/images/blog/powershell-prompt.PNG
+featured: false
 ---
-
-![""](/images/blog/powershell-prompt.PNG)
 
 Like for bash or any other \*ix shell, we can create profiles with shell configurations for PowerShell.
 

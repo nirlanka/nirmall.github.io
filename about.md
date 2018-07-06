@@ -1,71 +1,84 @@
 ---
-title: About Nirmal
-layout: post
-permalink: /about/
-published: true
+layout: page
+title: Mediumish Template for Jekyll
+comments: true
 ---
 
-[!["I'm the one pointing towards the screen"]({{site.baseurl}}/images/cover.jpg)](http://www.readme.lk/saw-aces-hackathon-2016/)
+This website is built with Jekyll and Mediumish template for Jekyll. It is meant for demonstration purposes, no real content can be found. Mediumish template for Jekyll is compatible with Github pages, in fact even this demo is created with Github Pages and hosted with Github. This page in example shows a page layout.
 
-I'm a hacker, writer, artist, philosophy and _many_ other things, too. I write various content
-related to my different interests, but they are tagged to suit your preference in
-browsing.
+![jekyll template mediumish]({{site.baseurl}}/assets/images/mediumish-jekyll-template.png){: .shadow}
 
-## The artist and fan
+### Features
 
-I'm a painter, designer and (indie) comic artist. I also play the guitar, sing 
-and spend time in fandoms and stories.
+- Built for Jekyll
+- Compatible with Github pages
+- Featured Posts
+- Index Pagination
+- Post Share
+- Post Categories
+- Prev/Next Link
+- Category Archives (this is not yet compatible with github pages though)
+- Jumbotron Categories
+- Integrations:
+    - Disqus Comments
+    - Google Analaytics
+    - Mailchimp Integration
+- Design Features:
+    - Bootstrap v4.x
+    - Font Awesome
+    - Masonry
+- Layouts:
+    - Default
+    - Post
+    - Page
+    - Archive
+    
+### How to Use
 
-Big DC comics fan. Don't mind Marvel, but Deadpool is my role model (kinda).
+If you aren't familiar with Jekyll yet, you should know that it is a static site generator. It will transform your plain text into static websites and blogs. No more databases, slow loading websites, risk of being hacked...just your content. And not only that, with Jekyll you get free hosting with GitHub Pages! This page itself is free hosted on Github with the help of Jekyll and Mediumish template that you're currently previewing. If you are a beginner we recommend you start with [Jekyll's Docs](https://jekyllrb.com/docs/installation/){:target="_blank"}. Now if you know how to use Jekyll, let's move on to using Mediumish template in Jekyll:
 
-Great fan of Sherlock, Harry Potter, Doctor Who, Rick and Morty, etc. Let's talk about
-this stuff!
+#### Using Mediumish
 
-Loves XKCD.
+Download or Fork *Mediumish for Jekyll*. 
+- In your local project, open <code>_config.yml</code>. If your site is in root, for <code>baseurl</code>, make sure this is set to <code>baseurl: /</code>. Also, change your Google Analytics code, disqus username, authors, Mailchimp list etc.
+- Mediumish requires 2 plugins: 
+    - <code>$ gem install jekyll-paginate</code>
+    - <code>$ gem install jekyll-archives</code>.
+- Edit the menu and footer copyrights in <code>default.html</code>
+- Start by adding your .md files in <code>_posts</code>. Mediumish already has a few as an example. 
+- YAML front matter
+    - featured post - <code>featured:true</code>
+    - exclude featured post from "All stories" loop to avoid duplicated posts - <code>hidden:true</code>
+    - post image - <code>image: assets/images/mypic.jpg</code>
+    - page comments - <code>comments:true</code>
+    - meta description (optional) - <code>description: "this is my meta description"</code>
+    
+YAML Post Example:
+<pre>
+---
+layout: post
+title:  "We all wait for summer"
+author: john
+categories: [ Jekyll, tutorial ]
+image: assets/images/5.jpg
+featured: true
+---
+</pre>
 
-## The writer
+YAML Page Example
+<pre>
+---
+layout: page
+title: Mediumish Template for Jekyll
+comments: true
+---
+</pre>
 
-I aspire to be a great writer and am working on _several_ stories at the time,
-some comics, short stories and novels.
+#### Contribute
 
-I like going through literature that inspire life and imagination. Greatest fan of JK Rowling.
+- [Clone the repo](https://github.com/wowthemesnet/mediumish-theme-jekyll).
+- Create a branch off of master and give it a meaningful name (e.g. my-new-mediumish-feature).
+- Open a pull request on GitHub and describe the feature or fix.
 
-## The hacker
 
-I work with technologies ranging from desktop to mostly the web, mobile and sometimes embedded 
-systems. I'm interested in great visual and architectural design of software and web.
-
-I work at [Embla Software Innovation](http://embla.asia) as a software engineer.
-
-I'm a great believer and activist in software and information freedom. I'm enthusiastic
-about information security philosophy, technology and issues and love active discussion.
-
-I make contributions to various open-source 
-projects including Jekyll, Wikimedia, Elementary OS, Mono and LESS CSS. I'm on GitHub as [NirmalL](https://github.com/NirmalL).
-
-Ruby is my favorite language and love of my life.
-
-## The philospher
-
-I'm an active free thinker and atheist, vocal about separation of religion and state. 
-I'm active on social media about the abstract political issues of the world and like
-learning, researching and especially discussing with the like-minded.
-
-I like discussing artificial intelligence, the future of mankind, the nature 
-and participate in movements that aim to protect the nature.
-
-## Social
-
-* Facebook -- [https://www.facebook.com/nirmallankathilaka](https://www.instagram.com/srdyel/)
-* Twitter -- [https://twitter.com/srdyel](https://twitter.com/srdyel)
-* Medium -- [https://medium.com/@nirmall](https://medium.com/@nirmall)
-* Instagram -- [https://www.instagram.com/srdyel](https://www.instagram.com/srdyel)
-* Active as @Ravana in Discord [/r/DCcomics](https://discordapp.com/channels/246056996292395008/246056996292395008)
-
---- 
-
-This site is made using the Hagura theme on Jekyll and served over GitHub Pages.
-
-<a class="github-button" href="https://github.com/sharu725/hagura" data-style="mega" data-count-href="/sharu725/hagura/stargazers" data-count-api="/repos/sharu725/hagura#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star sharu725/hagura on GitHub">Hagura theme</a>
-<a class="github-button" href="https://github.com/jekyll/jekyll" data-style="mega" data-count-href="/jekyll/jekyll/stargazers" data-count-api="/repos/jekyll/jekyll#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star jekyll/jekyll on GitHub">Jekyll platform</a>
-<script async defer src="https://buttons.github.io/buttons.js"></script>
+<a href="https://www.buymeacoffee.com/sal" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>

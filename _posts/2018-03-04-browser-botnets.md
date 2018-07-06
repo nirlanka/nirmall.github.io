@@ -7,15 +7,11 @@ tags: [security, republish, tech, web]
 author: nir
 comments: true
 share: true
-modified: 2018-03-04
-image:
-  feature: blog/2018-03-04/dark-side-vs-light.jpeg
-  thumb: blog/2018-03-04/dark-side-vs-light.jpeg
-  credit: Unknown
-  creditlink: 
+created: 2018-03-04
+image: assets/images/blog/2018-03-31/dark-side-vs-light.jpeg
+featured: true
+hidden: true
 ---
-
-{% include image.html url="/images/blog/2018-03-31/dark-side-vs-light.jpeg" description="The dark side vs the light: the eternal struggle" %}
 
 Viruses and hackers have created a modern norm of paranoia in everyone who uses a modern electronic gadget, may it be a computer, a phone, a wrist-watch or the refrigerator at home. To add to the validity of that paranoia, from time to time, whole new areas of technical possibilities and trends open up with new dimensions of cyber threats.
 
@@ -33,7 +29,7 @@ This issue isn’t only prevalent to websites: any code that can execute on top 
 
 Distributed computing on consumer devices over the web isn’t new. SETI@Home, a program that allows users to contribute computing resources to process data for the search for extra-terrestrial life is a great example for it. There are many other projects utilize “volunteer computing” for noble causes, with users’ explicit consent.
 
-{% include image.html url="/images/blog/2018-03-31/seti-home-project.png" description="The SETI@Home project was a pioneer of distributed supercomputer technology" %}
+{% include image.html url="/assets/images/blog/2018-03-31/seti-home-project.png" description="The SETI@Home project was a pioneer of distributed supercomputer technology" %}
 
 Another example of distributed computing is cryptocurrency mining. Such processes can easily run over web browsers as parts of the website. They are sometimes initiated by the users themselves for a share of the loot; and some non-profit websites can employ this as a way of allowing the users to fund their infrastructure.
 
@@ -45,7 +41,7 @@ Fortunately, popular and famous web applications are not likely to exploit user 
 
 But that doesn’t affect websites that have nothing to lose. A lot of rather obscure pornographic websites are already exploiting their viewers with coin mining. Websites with pirated content will exploit this possibility, as some already have, one of the examples being PirateBay. The era of link-baiting and scamming could very well be replaced by similar exploitations.
 
-{% include image.html url="/images/blog/2018-03-31/piratebay.jpeg" description="PirateBay was caught secretly running a Coinhive miner" %}
+{% include image.html url="/assets/images/blog/2018-03-31/piratebay.jpeg" description="PirateBay was caught secretly running a Coinhive miner" %}
 
 However, there are a few key shortcomings these con sites have to face, with the most prominent issue being the time of execution. If a user is not likely to stay on a website for a sufficient time, the component of calculation expected to complete on that user will have to be redone somewhere else, requiring redundancy.
 

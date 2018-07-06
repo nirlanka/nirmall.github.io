@@ -7,15 +7,10 @@ tags: [python, code, tutorial, tech]
 author: nir
 comments: true
 share: true
+created: 2017-01-10
 modified: 2017-01-11
-image:
-  feature: blog/python-featured.jpg
-  thumb: blog/python-featured-thumb.jpg
-  credit: blog.cbtnuggets.com
-  creditlink: https://blog.cbtnuggets.com/wp-content/uploads/2014/10/5reasons_Python_FEATURED.jpg
+image: assets/images/blog/python-featured.jpg
 ---
-
-![""](/images/blog/python-featured.jpg)
 
 In TDD (test-driven development), writing and maintaining tests---or unit-tests---are not thought-of 
 as a burden that needs to be done to keep others happy. It's not even a QA-only task, if at all.

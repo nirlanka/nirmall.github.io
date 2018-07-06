@@ -7,12 +7,15 @@ tags: [chatbot, republish, tech]
 author: nir
 comments: true
 share: true
-modified: 2018-03-20
+created: 2018-03-20
+image: assets/images/blog/2018-03-31/bruce-almighty.gif
+featured: true
+hidden: true
 ---
 
 ## Step 1. Create a free server
 
-{% include image.html url="/images/blog/2018-03-31/free-stuff.png" description="#freeServersForTheWin #GlitchFTW" %}
+{% include image.html url="/assets/images/blog/2018-03-31/free-stuff.png" description="#freeServersForTheWin #GlitchFTW" %}
 
 First create a clone of the Evilbot server template:
 
@@ -23,7 +26,7 @@ A server will be created with Evilbot code as a new Glitch project.
 
 ## Step 2. Create a Facebook app
 
-{% include image.html url="/images/blog/2018-03-31/aliens.png" description="This photo is extremely completely really related to the subject matter. Not at all a filler meme." %}
+{% include image.html url="/assets/images/blog/2018-03-31/aliens.png" description="This photo is extremely completely really related to the subject matter. Not at all a filler meme." %}
 
 Go to https://developers.facebook.com.
 
@@ -37,7 +40,7 @@ Register as a developer on Facebook.
 
 ## Step 3. Connect Fb app to Glitch app
 
-{% include image.html url="/images/blog/2018-03-31/morpheus.jpeg" description="Another totally relevant meme" %}
+{% include image.html url="/assets/images/blog/2018-03-31/morpheus.jpeg" description="Another totally relevant meme" %}
 
 In the dashboard of the created app,
 
@@ -52,7 +55,7 @@ In the dashboard of the created app,
 
 ## Step 4. Add Test Users
 
-{% include image.html url="/images/blog/2018-03-31/thanks.png" description="Testing is vital to developing a bot that’s actually useful" %}
+{% include image.html url="/assets/images/blog/2018-03-31/thanks.png" description="Testing is vital to developing a bot that’s actually useful" %}
 
 In the Facebook app dashboard,
 
@@ -62,7 +65,7 @@ In the Facebook app dashboard,
 
 ## Step 5. Program the bot
 
-{% include image.html url="/images/blog/2018-03-31/bruce-almighty.gif" description="Testing is vital to developing a bot that’s actually useful" %}
+{% include image.html url="/assets/images/blog/2018-03-31/bruce-almighty.gif" description="Testing is vital to developing a bot that’s actually useful" %}
 
 In the Glitch project,
 
@@ -72,4 +75,4 @@ In the Glitch project,
 
 ## Step 6. Profit!!
 
-{% include image.html url="/images/blog/2018-03-31/success.png" description="Step 6: PROFIT $$$" %}
+{% include image.html url="/assets/images/blog/2018-03-31/success.png" description="Step 6: PROFIT $$$" %}

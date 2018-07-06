@@ -1,40 +1,61 @@
 ---
 layout: default
+title: Home
 ---
-<img src="{{site.baseurl}}/images/my-desktop-2x.png">
 
-<div class="social">
-	<!-- <span class="theme" onclick="theme()" style="background-image: url({{site.baseurl}}/images/theme.svg)"></span> -->
-	<!-- <span class="text">&middot;</span> -->
+{% if page.url == "/" %}
 
-	<a href="{{include.url}}/about" class="text">About</a>
-	<span class="text">&middot;</span>
+<!-- Featured
+================================================== -->
+<section class="featured-posts">
+    <div class="section-title">
+        <h2><span>Featured</span></h2>
+    </div>
+    <div class="row">
+        
+    {% for post in site.posts %}
 
-	{% include social.html name="Medium" url="https://medium.com/@nirmall" %}
-	<span class="text">&middot;</span>
-	{% include social.html name="Behance" url="https://www.behance.net/nir3al683b" %}
-	<!-- {% include social.html name="Dribbble" url="https://dribbble.com/evildino" %} -->
-	<span class="text">&middot;</span>
-	{% include social.html name="Instagram" url="https://www.instagram.com/srdyel/" %}
-	<!-- {% include social.html name="LinkedIn" url="https://www.linkedin.com/in/nirmall/" %} -->
-	<!-- {% include social.html name="Facebook" url="https://www.facebook.com/srdyel" %} -->
-	<!-- {% include social.html name="Github" url="https://github.com/nirmalL" %} -->
-	<!-- {% include social.html name="GooglePlus" url="https://plus.google.com/u/0/118291246326094146907" %} -->
-	<!-- {% include social.html name="Messenger" url="https://www.messenger.com/t/srdyel" %} -->
-	<!-- {% include social.html name="stackoverflow" url="https://stackoverflow.com/users/1056055/nirmall" %} -->
-	<!-- {% include social.html name="Twitter" url="https://twitter.com/srdyel" %} -->
+        {% if post.featured == true %}
+
+            {% include featuredbox.html %}
+
+        {% endif %}
+
+    {% endfor %}
+        
+    </div>
+</section>
+
+{% endif %}
+
+<!-- Posts Index
+================================================== -->
+<section class="recent-posts">
+    
+    <div class="section-title">
+        
+        <h2><span>All Stories</span></h2>
+        
+    </div>
+    
+    <div class="row listrecent">
+
+        {% for post in paginator.posts %}
+
+               {% include postbox.html %}          
+
+        {% endfor %}
+        
+    </div>
+    
+</section>
+
+<!-- Pagination
+================================================== -->
+<div class="bottompagination">
+<div class="pointerup"><i class="fa fa-caret-up"></i></div>
+<span class="navigation" role="navigation">
+    {% include pagination.html %}
+</span>
 </div>
 
-<h1 class="headline">{{site.title}}</h1>
-{% for post in site.posts %}
-<h3><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h3>
-<p class="excerpt">{{post.excerpt}}</p>
-{% endfor %}
-
-<div class="social">
-	{% include social.html name="Medium" url="https://medium.com/@nirmall" %}
-	<span class="text">&middot;</span>
-	{% include social.html name="Behance" url="https://www.behance.net/nir3al683b" %}
-	<span class="text">&middot;</span>
-	{% include social.html name="Instagram" url="https://www.instagram.com/srdyel/" %}
-</div>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="72px" height="34px" viewBox="0 0 72 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_glasses-color</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1.01725459,14.2874488 C0.455440394,10.3547494 3.22502058,7.16666667 7.19738902,7.16666667 L25.052611,7.16666667 C29.0276192,7.16666667 31.7943499,10.3562172 31.2327454,14.2874488 L30.439962,19.8369324 C29.460598,26.6924803 23.0530942,32.25 16.125,32.25 L16.125,32.25 C9.19842876,32.25 2.78807553,26.6831954 1.81003796,19.8369324 L1.01725459,14.2874488 Z" id="path-1"></path>
+        <filter x="-23.1%" y="-27.9%" width="146.1%" height="155.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="14" dy="0" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.16 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <path d="M40.4339213,14.2874488 C39.8721071,10.3547494 42.6416873,7.16666667 46.6140557,7.16666667 L64.4692776,7.16666667 C68.4442858,7.16666667 71.2110166,10.3562172 70.6494121,14.2874488 L69.8566287,19.8369324 C68.8772647,26.6924803 62.4697609,32.25 55.5416667,32.25 L55.5416667,32.25 C48.6150954,32.25 42.2047422,26.6831954 41.2267046,19.8369324 L40.4339213,14.2874488 Z" id="path-3"></path>
+        <filter x="-23.1%" y="-27.9%" width="146.1%" height="155.8%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="14" dy="0" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.16 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Export" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dribbble_Export" transform="translate(-623.000000, -195.000000)">
+            <g id="ic_glasses" transform="translate(616.000000, 171.000000)">
+                <rect id="Bounds" fill-opacity="0.1" fill="#FF0000" opacity="0" x="0" y="0" width="86" height="86"></rect>
+                <g id="Icon" transform="translate(7.166667, 25.083333)">
+                    <g id="Glass-red">
+                        <use fill="#FF7575" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <path stroke="#0B3450" stroke-width="3.60000014" d="M2.79916375,14.0328904 L3.59194712,19.582374 C4.44377633,25.5451784 10.0975414,30.4499999 16.125,30.4499999 C22.1568379,30.4499999 27.8053013,25.5516348 28.6580529,19.582374 L29.4508362,14.0328904 C29.8575701,11.1857532 27.9319419,8.96666674 25.052611,8.96666674 L7.19738902,8.96666674 C4.31908012,8.96666674 2.39244888,11.1858862 2.79916375,14.0328904 Z"></path>
+                    </g>
+                    <g id="Glass-green">
+                        <use fill="#5CF4FF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        <path stroke="#0B3450" stroke-width="3.60000014" d="M42.2158304,14.0328904 L43.0086138,19.582374 C43.860443,25.5451784 49.514208,30.4499999 55.5416667,30.4499999 C61.5735046,30.4499999 67.221968,25.5516348 68.0747195,19.582374 L68.8675029,14.0328904 C69.2742368,11.1857532 67.3486086,8.96666674 64.4692776,8.96666674 L46.6140557,8.96666674 C43.7357468,8.96666674 41.8091155,11.1858862 42.2158304,14.0328904 Z"></path>
+                    </g>
+                    <path d="M29.1250814,13.2642824 C32.851888,10.3977322 37.4926083,9.50189891 42.5736629,13.2642823" id="Bridge" stroke="#0B3450" stroke-width="3.60000014"></path>
+                    <path d="M3.83834856,20.8156594 C3.83834856,20.8156594 -0.454788439,-1.39485265 2.99631772,1.94716898" id="Left-wing" stroke="#0B3450" stroke-width="3.60000014" stroke-linecap="round"></path>
+                    <path d="M70.0168413,20.8156594 C70.0168413,20.8156594 65.7237043,-1.39485265 69.1748105,1.94716898" id="Right-wing" stroke="#0B3450" stroke-width="3.60000014" stroke-linecap="round" transform="translate(68.924671, 11.210122) scale(-1, 1) translate(-68.924671, -11.210122) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

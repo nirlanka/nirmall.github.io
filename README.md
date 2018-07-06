@@ -1,50 +1,84 @@
-# Webjeda Hagura Theme
+# Jekyll Template - Mediumish by WowThemes.net
 
-[**Demo**](http://webjeda.com/hagura)
+[Live Demo](https://wowthemesnet.github.io/mediumish-theme-jekyll/) &nbsp; | &nbsp; [Download](https://github.com/wowthemesnet/mediumish-theme-jekyll/archive/master.zip)
 
-Hagura is a theme made for blogs with long text paragraphs. Made to be easy on eyes as well with a switchable theme.
+![mediumish](assets/images/mediumish-jekyll-template.png)
 
-Suitable fonts are selected for better readability. Since the theme is created for smartphone reading, the theme is very light and it loads instantly even on a slow data connection.
+### Features
 
-The theme comes with pre-installed analytics, disqus and html compressor. But make sure you change key parameters in the _config.yml file.
+- Built for Jekyll
+- Compatible with Github pages
+- Featured Posts
+- Index Pagination
+- Post Share
+- Post Categories
+- Prev/Next Link
+- Category Archives (this is not yet compatible with github pages though)
+- Jumbotron Categories
+- Integrations:
+    - Disqus Comments
+    - Google Analaytics
+    - Mailchimp Integration
+- Design Features:
+    - Bootstrap v4.x
+    - Font Awesome
+    - Masonry
+- Layouts:
+    - Default
+    - Post
+    - Page
+    - Archive
+    
+### Using Mediumish
 
+- Open <code>_config.yml</code>. If your site is in root, for <code>baseurl</code>, make sure this is set to <code>baseurl: /</code>. Also, change your Google Analytics code, disqus username, authors, Mailchimp list etc.
+- Mediumish requires 2 plugins: 
+    - <code>$ gem install jekyll-paginate</code>
+    - <code>$ gem install jekyll-archives</code>.
+- Edit the menu and footer copyrights in <code>default.html</code>
+- Start by adding your .md files in <code>_posts</code>. Mediumish already has a few as an example. 
+- YAML front matter
+    - featured post - <code>featured:true</code>
+    - exclude featured post from "All stories" loop to avoid duplicated posts - <code>hidden:true</code>
+    - post image - <code>image: assets/images/mypic.jpg</code>
+    - page comments - <code>comments:true</code>
+    - meta description (optional) - <code>description: "this is my meta description"</code>
+    
+YAML Post Example:
+<pre>
+---
+layout: post
+title:  "We all wait for summer"
+author: john
+categories: [ Jekyll, tutorial ]
+image: assets/images/5.jpg
+featured: true
+---
+</pre>
 
-# Installation: 
-Fork the ``master`` branch and delete ``gh-pages`` branch in it. This is important because ``gh-pages`` branch is used here only to host the blog. You should be using the master branch as the source and create a fresh ``gh-pages`` branch.
+YAML Page Example
+<pre>
+---
+layout: page
+title: Mediumish Template for Jekyll
+comments: true
+---
+</pre>
 
-Watch my video on instlallation
-<iframe width="100%" height="360" src="https://www.youtube.com/embed/T2nx6tj-ZH4?rel=0" frameborder="0" allowfullscreen></iframe>
+### Copyright
 
-## How to delete old **gh-pages** branch?
-After forking the repository, click on **branches**.
+Copyright (C) 2018 WowThemes.net.
 
-![delete gh-pages branch](http://blog.webjeda.com/images/delete-github-branch.png)
+**Mediumish for Jekyll** is designed and developed by [Sal](https://www.wowthemes.net) and it is *free* under MIT license. 
 
-Delete ``gh-pages`` branch.
-![delete gh-pages branch](http://blog.webjeda.com/images/delete-github-branch-2.png)
+<a href="https://www.buymeacoffee.com/sal" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
-You have to create a new ``gh-pages`` branch using the master branch. Go back to the forked repository and create ``gh-pages`` branch.
+### Contribute
 
-![create gh-pages branch](http://blog.webjeda.com/images/create-gh-pages-branch.JPG)
+- [Clone the repo](https://github.com/wowthemesnet/mediumish-theme-jekyll).
+- Create a branch off of master and give it a meaningful name (e.g. my-new-mediumish-feature).
+- Open a pull request on GitHub and describe the feature or fix.
 
-Now, go to settings and check the **Github Pages** section. You should see a URL where the blog is hosted.
+-----------------
 
-This process will host the theme as a **Project Page**. You can also download the files for local development. 
-
-Default theme will look like this
-
-![webjeda gatok jekyll theme](http://webjeda.com/hagura/images/hagura-1.png)
-
-
-This theme is responsive.
-
-![webjeda gatok responsive jekyll theme](http://webjeda.com/hagura/images/hagura-responsive.png)
-
-
-
-# Development
-Make changes to the **master** branch and create a pull request. Do not use **gh-pages** branch as it is used to host the theme.
-
-
-# License
-Read LICENSE file
+[Live Demo](https://wowthemesnet.github.io/mediumish-theme-jekyll/) &nbsp; | &nbsp; [Download](https://github.com/wowthemesnet/mediumish-theme-jekyll/archive/master.zip)

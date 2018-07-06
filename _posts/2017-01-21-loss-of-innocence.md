@@ -8,16 +8,8 @@ author: nir
 comments: true
 share: true
 modified: 2017-01-21
-image:
-  feature: blog/kid-monk-happy.jpg
-  thumb: blog/kid-monk-curious-thumb.jpg
-  credit: Stolen through Google Images
-  creditlink: https://s-media-cache-ak0.pinimg.com/originals/f6/56/ab/f656abb80f66057f5827876d39fead8c.jpg
-notes_for_later: >
-    //Lanka was not isolated from the rest of the world, or successfully resistive to all its influence over the 20 centuries Buddhism dominated it. Along the way, Buddhism adopted a lot of external concepts from ...
+image: assets/images/blog/kid-monk-happy.jpg
 ---
-
-![""](/images/blog/kid-monk-happy.jpg)
 
 There's a very popular drama on the Lankan telly these days, titled "Sidhu" and featuring a child made into a monk as the lead. The cute-sounding (meh) clever banter of the child characters, romanticisation of traditional Lankan morals and the nostalgic elements of a simple and a village unaffected by the burden of the modern society would seem to have made an it instant hit.
 
