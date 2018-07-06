@@ -287,6 +287,9 @@ License: https://www.wowthemes.net/freebies-license/
 }
  .share {
      text-align:center;
+     background-color: white;
+    padding: 6px;
+    border-radius: 4px;
 }
  .share p {
      margin-bottom:10px;
@@ -612,8 +615,9 @@ License: https://www.wowthemes.net/freebies-license/
          padding:0;
          height:350px;
          border-radius:0;
-         background-image: url(../images/jumbotron.jpg);
+         background-image: url(../images/pexels--cool-wallpaper-dawn-dusk-66997.jpg);
          background-size:cover;
+         background-position: bottom;
     }
      .jumbotron.fortags .col-md-4 {
          background:rgba(0,0,0,0.75);
