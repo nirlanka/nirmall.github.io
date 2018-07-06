@@ -9,7 +9,7 @@ comments: true
 share: true
 created: 2017-01-10
 modified: 2017-01-11
-image: //assets/images/blog/python-featured.jpg
+image: /assets/images/blog/python-featured.jpg
 ---
 
 In TDD (test-driven development), writing and maintaining tests---or unit-tests---are not thought-of 

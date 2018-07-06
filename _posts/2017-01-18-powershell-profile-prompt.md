@@ -9,7 +9,7 @@ comments: true
 share: true
 created: 2017-01-18
 modified: 2017-01-19
-image: //assets/images/blog/powershell-prompt.PNG
+image: /assets/images/blog/powershell-prompt.PNG
 featured: false
 ---
 
