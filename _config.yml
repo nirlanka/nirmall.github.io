@@ -34,6 +34,7 @@ authors:
 plugins: 
   - jekyll-paginate
   - jekyll-archives
+  - jemoji
     
 # Archives
 jekyll-archives:
