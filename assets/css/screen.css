@@ -677,3 +677,6 @@ License: https://www.wowthemes.net/freebies-license/
  .card .img-fluid {
     width:100%;
 }
+.--tags--container {
+      line-height: 32px;
+}
