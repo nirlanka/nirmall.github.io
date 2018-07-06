@@ -8,7 +8,7 @@ author: nir
 comments: true
 share: true
 created: 2018-03-04
-image: assets/images/blog/2018-03-31/dark-side-vs-light.jpeg
+image: //assets/images/blog/2018-03-31/dark-side-vs-light.jpeg
 featured: true
 hidden: true
 ---

@@ -8,7 +8,7 @@ author: nir
 comments: true
 share: true
 modified: 2017-01-21
-image: assets/images/blog/kid-monk-happy.jpg
+image: //assets/images/blog/kid-monk-happy.jpg
 ---
 
 There's a very popular drama on the Lankan telly these days, titled "Sidhu" and featuring a child made into a monk as the lead. The cute-sounding (meh) clever banter of the child characters, romanticisation of traditional Lankan morals and the nostalgic elements of a simple and a village unaffected by the burden of the modern society would seem to have made an it instant hit.
@@ -37,7 +37,7 @@ Everyone likes to romanticise about their past, about what we remember as a bett
 
 And that's exactly what the show did. To all the adults, it was a walk in the memory-lane of their childhood, or what they were taught to like as children: 
 
-![A screenshot from 'Kopi Kade', an old Lanka telly drama]({{url}}/images/blog/tv-kopi-kade.jpg)
+![A screenshot from 'Kopi Kade', an old Lanka telly drama](//assets/images/blog/tv-kopi-kade.jpg)
 
 :arrow_upper_right: (A screenshot from 'Kopi Kade', an old popular Lanka telly drama)
 
@@ -63,7 +63,7 @@ Apart from blaming the modern for all the bad in the world, what helps them cope
 
 ## Ignorance is a bliss; willful acceptance is the next best thing [:link:](#ignorance)
 
-![An unsmiling 'novice' monk and his excited sisters]({{url}}/images/blog/kid-monk-nervous.jpg)
+![An unsmiling 'novice' monk and his excited sisters](//assets/images/blog/kid-monk-nervous.jpg)
 
 :arrow_upper_right: (Photo credits go to Nihal Chandra Kumara, found at "[Child Ordinations and the Rights of Children](http://www.infolanka.com/org/srilanka/cult/13.htm)")
 
@@ -108,7 +108,7 @@ Of course this is not inherent to Buddhism, just frequent in it. Similarly, almo
 
 So many chose the blue pill.
 
-![Osama Bin Laden and the monk S. Mahinda's poem]({{url}}/images/blog/bin-laden-s-mahinda.jpg)
+![Osama Bin Laden and the monk S. Mahinda's poem](//assets/images/blog/bin-laden-s-mahinda.jpg)
 
 :arrow_upper_right: (Sadly I don't know who to credit this picture with)
 
