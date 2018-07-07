@@ -9,6 +9,7 @@ comments: true
 share: true
 modified: 2017-01-21
 image: /assets/images/blog/kid-monk-happy.jpg
+image_ext: .jpg
 ---
 
 There's a very popular drama on the Lankan telly these days, titled "Sidhu" and featuring a child made into a monk as the lead. The cute-sounding (meh) clever banter of the child characters, romanticisation of traditional Lankan morals and the nostalgic elements of a simple and a village unaffected by the burden of the modern society would seem to have made an it instant hit.

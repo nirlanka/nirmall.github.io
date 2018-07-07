@@ -7,8 +7,17 @@
                 <div class="h-100">
                     <div class="wrapthumbnail">
                         <a href="{{ post.url | absolute_url }}">
-                            <span class="thumbnail d-block" style="background-image:url({% if post.image contains "://" %}{{ post.image }}{% else %}{{ post.image }}{% endif %});">
+                            {% if post.image contains ".gif" %}
+                                <span class="thumbnail d-block" style="background-image:url({% if post.image contains "://" %}{{post.image}}{% else %}{{post.image}}{% endif %});">
+                                </span>
+                            {% elsif post.image contains ".GIF" %}
+                                <span class="thumbnail d-block" style="background-image:url({% if post.image contains "://" %}{{post.image}}{% else %}{{post.image}}{% endif %});">
+                                </span>
+                            {% else %}
+                                {% thumbnail {{post.image}} thumb< %}
+                                <span class="thumbnail d-block" style="background-image:url({% if post.image contains "://" %}{{post.image}}{% else %}{{post.image}}--thumb{{post.image_ext}}{% endif %});">
                             </span>
+                            {% endif %}
                         </a>
                     </div>
                 </div>

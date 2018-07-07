@@ -9,6 +9,7 @@ comments: true
 share: true
 created: 2018-03-04
 image: /assets/images/blog/2018-03-31/dark-side-vs-light.jpeg
+image_ext: .jpeg
 featured: true
 hidden: true
 ---

@@ -9,9 +9,12 @@ comments: true
 share: true
 created: 2018-07-07
 image: /assets/images/blog/2018-07/react-native-expo-cover.png
+image_ext: .png
 featured: true
 hidden: true
 ---
+
+<!-- thumbnail /assets/images/blog/2018-07/react-native-expo-cover.png thumb< -->
 
 This is the start of a series of tutorials on cross-platform mobile development with React Native and Expo. [See the series outline](#outline) at the end of the post.
 
