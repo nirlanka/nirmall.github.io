@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+>
+	<channel>
+		<title>Evil Dino - Articles</title>
+		<description>Hacking, politics and art</description>
+		<sy:updatePeriod>daily</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+		<link>https://evildino.com</link>
+		<atom:link href="https://evildino.com/feed.articles.xml" rel="self" type="application/rss+xml" />
+		<lastBuildDate>Sat, 07 Jul 2018 00:00:00 +0530</lastBuildDate>
+		
+			
+			<item>
+				<title>Introduction to Mobile Development Over Multiple Platforms With React Native And Expo</title>
+				
+					<description>Introduction to cross-platform mobile app development with React Native (series)</description>
+				
+				<pubDate>Sat, 07 Jul 2018 00:00:00 +0530</pubDate>
+				<link>https://evildino.com/series/2018/07/07/react-native-expo.html</link>
+				<guid isPermaLink="true">https://evildino.com/series/2018/07/07/react-native-expo.html</guid>
+			</item>
+			
+		
+			
+			<item>
+				<title>Create your own evil robot overlord on Messenger with 6 simple steps</title>
+				
+					<description>Build Messenger chatbots easily, with my little 'framework'.</description>
+				
+				<pubDate>Tue, 20 Mar 2018 00:00:00 +0530</pubDate>
+				<link>https://evildino.com/article/2018/03/20/messenger-bot.html</link>
+				<guid isPermaLink="true">https://evildino.com/article/2018/03/20/messenger-bot.html</guid>
+			</item>
+			
+		
+			
+			<item>
+				<title>Browser-based supercomputers: the evil and the good</title>
+				
+					<description>Hackers are focusing on more than just your personal details: they want your power!</description>
+				
+				<pubDate>Sun, 04 Mar 2018 00:00:00 +0530</pubDate>
+				<link>https://evildino.com/article/2018/03/04/browser-botnets.html</link>
+				<guid isPermaLink="true">https://evildino.com/article/2018/03/04/browser-botnets.html</guid>
+			</item>
+			
+		
+			
+			<item>
+				<title>Cross-site Scripting Attacks: Misunderstood and Dangerous</title>
+				
+					<description>Cross-site scripting is an umbrella phrase covering a broad range of attacks that ultimately execute malicious JavaScript in the context of a website.</description>
+				
+				<pubDate>Wed, 15 Feb 2017 00:00:00 +0530</pubDate>
+				<link>https://evildino.com/article/2017/02/15/xss-intro.html</link>
+				<guid isPermaLink="true">https://evildino.com/article/2017/02/15/xss-intro.html</guid>
+			</item>
+			
+		
+			
+			<item>
+				<title>Loss of innocence</title>
+				
+					<description>'Sidhu' is a popular drama loved by a huge number of adults and children alike, but it provoked a search for reality that took me through a number of issues</description>
+				
+				<pubDate>Sat, 21 Jan 2017 00:00:00 +0530</pubDate>
+				<link>https://evildino.com/article/2017/01/21/loss-of-innocence.html</link>
+				<guid isPermaLink="true">https://evildino.com/article/2017/01/21/loss-of-innocence.html</guid>
+			</item>
+			
+		
+			
+			<item>
+				<title>Cooler PowerShell prompt</title>
+				
+					<description>Changing Powershell's prompt by adding a profile... with bonus: aliases!</description>
+				
+				<pubDate>Wed, 18 Jan 2017 00:00:00 +0530</pubDate>
+				<link>https://evildino.com/article/2017/01/18/powershell-profile-prompt.html</link>
+				<guid isPermaLink="true">https://evildino.com/article/2017/01/18/powershell-profile-prompt.html</guid>
+			</item>
+			
+		
+			
+			<item>
+				<title>A Nose for Python: fun with test-driven development</title>
+				
+					<description>Introduction to test-driven development philosophy and hands-on experience with Python 2.7 and Nose testing framework</description>
+				
+				<pubDate>Tue, 10 Jan 2017 00:00:00 +0530</pubDate>
+				<link>https://evildino.com/article/2017/01/10/python-nose-testing.html</link>
+				<guid isPermaLink="true">https://evildino.com/article/2017/01/10/python-nose-testing.html</guid>
+			</item>
+			
+		
+	</channel>
+</rss>

@@ -196,3 +196,22 @@
     color: #008080; }
   .highlight .il {
     color: #009999; }
+
+.photo-description {
+  text-align: center; }
+
+.--img-fluid--bg {
+  filter: blur(12px);
+  background-size: cover;
+  position: absolute;
+  z-index: -1; }
+
+.--tag {
+  display: inline-block; }
+  .--tag .--tag-count {
+    background-color: #ffffff;
+    color: #333333;
+    border-radius: 100%;
+    padding: 1px 6px;
+    margin: 0px -6px 0px 2px;
+    font-weight: 700; }
