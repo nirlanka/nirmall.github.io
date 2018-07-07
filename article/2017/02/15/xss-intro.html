@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+<link rel="icon" href="/assets/images/logo.png">
+    
+<title>
+
+    Cross-site Scripting Attacks: Misunderstood and Dangerous | Evil Dino
+
+</title>
+    
+ 
+    
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
+<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+    
+<link href="/assets/css/screen.css" rel="stylesheet">
+    
+<link href="/assets/css/main.css" rel="stylesheet">
+    
+</head>
+
+
+    
+
+<body class="layout-post">
+
+    
+<!-- Begin Menu Navigation
+================================================== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+    
+    <div class="container pr-0">    
+    
+    <!-- Begin Logo -->
+    <a class="navbar-brand" href="/">
+    <img src="/assets/images/logo.png" alt="Evil Dino">
+    </a>
+    <!-- End Logo -->
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    
+    <div class="collapse navbar-collapse" id="navbarMediumish">
+       
+        <!-- Begin Menu -->
+        
+            <ul class="navbar-nav ml-auto">
+                
+                <!-- 
+                <li class="nav-item">
+                
+                <a class="nav-link" href="/index.html">Blog</a>
+                </li> -->
+                
+                
+                <li class="nav-item">
+                
+                <a class="nav-link" href="/about">About</a>
+                </li>
+                
+                <!-- <li class="nav-item">
+                <a class="nav-link" href="https://github.com/wowthemesnet/mediumish-theme-jekyll/archive/master.zip"><i class="fas fa-download"></i> Jekyll Version</a>
+                </li> -->
+                
+                <!-- <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-wordpress/"><i class="fab fa-wordpress-simple"></i> WP Version</a>
+                </li> -->
+                
+                <!-- <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-ghost/"><i class="fab fa-snapchat-ghost"></i> Ghost Version</a>
+                </li> -->
+
+                <!-- <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://www.facebook.com/wowthemesnet/"><i class="fab fa-facebook-f"></i></a>
+                </li> -->
+                
+                <li class="nav-item">
+                <a target="_blank"  class="nav-link" href="https://twitter.com/srdyel"><i class="fab fa-twitter"></i></a>
+                </li>
+                
+            </ul>		
+  
+        <!-- End Menu -->
+
+    </div>
+        
+    </div>
+</nav>
+<!-- End Navigation
+================================================== -->
+    
+<div class="site-content">   
+<div class="container">
+    
+<!-- Site Title
+================================================== -->
+<div class="mainheading row">
+    <div class="col-xs-12 col-md-6">
+        <h1 class="sitetitle">Evil Dino</h1>
+        <p class="lead">
+             Hacking, politics and art
+        </p>
+    </div>
+    <div class="col-md-6">
+        <img src="/assets/images/my-desktop-1x.png">
+    </div>
+</div>
+    
+    
+<!-- Content
+================================================== --> 
+<div class="main-content">
+    <!-- Begin Article
+================================================== -->
+<div class="container">
+	<div class="row">
+
+		<!-- Post Share -->
+		<div class="col-md-2 pl-0">            
+           <div class="share">
+    <p>
+        Share
+    </p>
+    <ul>
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://twitter.com/intent/tweet?text=Cross-site Scripting Attacks: Misunderstood and Dangerous&url=/article/2017/02/15/xss-intro.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <i class="fab fa-twitter"></i>
+        </a>
+        </li>
+        
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://facebook.com/sharer.php?u=/article/2017/02/15/xss-intro.html" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+        <i class="fab fa-facebook-f"></i>
+        </a>
+        </li>
+        
+        <!-- <li class="ml-1 mr-1">
+        <a target="_blank" href="https://plus.google.com/share?url=/article/2017/02/15/xss-intro.html" onclick="window.open(this.href, 'facebook-google', 'width=550,height=435');return false;">
+        <i class="fab fa-google"></i>
+        </a>
+        </li> -->
+        
+    </ul>
+    <div class="sep">
+    </div>				
+    <ul>
+        <li> 
+        <a  class="small smoothscroll" href="#disqus_thread"></a>
+        </li>
+    </ul>
+</div>  
+		</div>
+		
+
+		<!-- Post -->        
+        
+        
+		<div class="col-md-9 flex-first flex-md-unordered">
+			<div class="mainheading">
+
+                <!-- Author Box -->
+                				
+				<div class="row post-top-meta">
+					<div class="col-md-2 col-xs-12 --author-thumb--container">
+						<!-- <img class="author-thumb" src="https://www.gravatar.com/avatar/0abad243be4a7a44b062c57643c89e19?s=250&d=mm&r=x" alt="Lanka"> -->
+                        <div class="--author-thumb" style="background-image: url(https://www.gravatar.com/avatar/0abad243be4a7a44b062c57643c89e19?s=250&d=mm&r=x);">&nbsp;</div>
+					</div>
+					<div class="col-md-10 col-xs-12">
+						<a target="_blank" class="link-dark" href="https://evildino.com">Lanka</a><a target="_blank" href="https://twitter.com/srdyel" class="btn follow">Follow</a>
+						<span class="author-description">Hacker, engineer, artist, writer, musician. Hates BitCoin.</span>						
+					</div>
+				</div>				
+                
+                
+                <!-- Post Title -->
+				<h1 class="posttitle">Cross-site Scripting Attacks: Misunderstood and Dangerous</h1> 
+                
+			</div>
+
+			<!-- Post Featured Image -->
+			<img class="featured-image img-fluid" src="/assets/images/blog/xss-doge.jpg" alt="Cross-site Scripting Attacks: Misunderstood and Dangerous">
+			<!-- End Featured Image -->
+
+			<!-- Post Content -->
+			<div class="article-post">
+				<h2 id="how-misunderstood-is-it">How misunderstood is it?</h2>
+
+<p>In a large number of situations, cross-site scripting is compared to SQL-injection due to similarities in their practice of injecting malicious code into legitimate and trusted code. However, this is misguiding and demeaning to both attack categories. They are two quite independent beasts that work in very different contexts and arise from different motivations.</p>
+
+<p>Unlike SQL-injection, cross-site scripting doesn’t inject malicious instructions into database-access processes at the hands of a malicious user, but rather work by manipulating an innocent end-user into executing code that will be seen by the server as legitimate user activities.</p>
+
+<p>While the prevention of SQL-injection can be (arguably) easily achieved to a satisfying degree as consequence of techniques like intermediate query frameworks  and ORM  (especially in the .NET world), cross-site scripting (or XSS in street-talk) is not usually considered a threat due to the lack of understanding of its severity and state of reliable resolutions.</p>
+
+<p>Even the name “cross-site scripting” itself leads people into assuming a limited range of attack vectors. While this name made sense with the scenarios in which it was discovered, it has long surpassed the security of same-origin policy, with the examples of stored XSS and second-order XSS.</p>
+
+<h2 id="introduction-to-cross-site-scripting">Introduction to Cross-site scripting</h2>
+
+<p>In simple terms, cross-site scripting is an umbrella phrase covering a broad range of attacks that ultimately execute malicious JavaScript in the context of a website.</p>
+
+<ul>
+  <li>Persistent XSS (or stored XSS) stores strings containing the malicious code inside the web application’s database to be later inadvertently executed (on viewing) by a victim. These can be posts or comments in a forum, a user-to-user message or a HTML-customized page of a social profile.</li>
+  <li>Reflected XSS (or non-persistent XSS) embeds such malicious strings inside a request sent by the user (under manipulation) to the application, for example, as an AJAX GET request.</li>
+</ul>
+
+<p>In addition to that, a DOM-based XSS attack is a situation where the whole attack takes place inside browser, without depending on the back-end to take any part. Such attacks rely on the existing legitimate JavaScript of a page (even frameworks like AngularJS) to help execute the malicious instructions and generally originate from a URL.</p>
+
+<h2 id="attack-expectations">Attack expectations</h2>
+
+<p>With XSS, the harvest of user credentials —or more commonly user sessions leading to exactly that— becomes trivial. Hijacking the victim’s cookies containing the session ID can be as simple as calling document.cookie and sending it as a simple GET request to the attacker’s server.</p>
+
+<h3 id="phishing">Phishing</h3>
+
+<p>Attacks where unsuspecting users are manipulated into clicking seemingly innocent links inside social networking sites (including but not limited to Facebook), simply viewing a certain social forum post or falling for a dynamically created page that is disguised as a privacy or security reminder are quite common.</p>
+
+<p>Such phishing attacks have the potential to be extremely difficult to separate from legitimate content and are not identifiable through simple vigilance as in the case of traditional phishing attacks where a user is persuaded into visiting a fake login screen in an attacker-controlled domain.</p>
+
+<h3 id="keylogging">Keylogging</h3>
+
+<p>Secretively registering a keyboard event-listener through <code class="highlighter-rouge">addEventListener(..)</code> is just a matter of coming up with a clever pattern for breaking through the encoding or sandboxing  of any client-side framework. The astounding and fearful nature of being able to track all keystrokes of a user in any web application requires no further explanation.</p>
+
+<h2 id="the-potential-scope-of-an-attack">The potential scope of an attack</h2>
+
+<p>As in many vulnerabilities, the exploitation of a well-planned XSS would usually be simply a stepping stone in a much larger scheme. Since firewalls, encryption or user diligence is completely irrelevant to XSS, and since the hijacking of a session of a customer or administrator of a web application is a game-over scenario for the security of the system, such a vulnerability can be much more devastating than most other attacks.</p>
+
+<h2 id="prevention">Prevention</h2>
+
+<p>Simplest and most common forms of attempts to prevent cross-site scripting is encoding and validation. Encoding is used for escaping the user input and helping the browser interprets such strings only as data and not code. Validation is used for filtering user input in cases it’s required to be executed, by helping the browser strip or block malicious instructions.</p>
+
+<p>Such careful handling of user input must to be done differently depending on the context, in other words where in a page user input is inserted. This can be performed either at the reception of input or prior to the insertion of that input into a webpage.</p>
+
+<p>Sanitisation or handling of input can be done on the side of the user-agent (browser) or on the side of the back-end, depending on the circumstance. The same input may be required to be inserted or processed at different places and under different contexts.</p>
+
+<p>Such security measures need to be taken without limiting the user-experience and functionality.</p>
+
+<h3 id="validation">Validation</h3>
+
+<p>Blacklisting and whitelisting are two methods used for validating, i.e. sanitizing or rejecting input. Both have competing advantages as well as drawbacks. But generally, blacklisting, which is a method of preventing known patterns is deemed inferior to whitelisting, which only allows extremely selective input patterns.</p>
+
+<p>Still, secure input handling alone may not be a long-term solution in many cases, as oversight in a single place can render security in all other places worthless.</p>
+
+<h3 id="content-security-policy">Content Security Policy</h3>
+
+<p>As a firm and reliable solution for such situations, CSP introduces policies for the browser to prevent ground for such vulnerabilities.
+While parameters of CSP are well customizable , three main categories can be identified:</p>
+
+<ul>
+  <li><strong>No untrusted sources</strong> – Content can be loaded only from a set of clearly-defined external sources.</li>
+  <li><strong>No inline resources</strong> – No inline JavaScript and CSS will be executable.</li>
+  <li><strong>No eval</strong> – The <code class="highlighter-rouge">eval()</code> function in the JavaScript API will be blocked.</li>
+</ul>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Admitting the possibility of a problem is key to finding a resolution for it. With familiarity and foresight, most unfortunate circumstances can be expected and avoided. Otherwise every speck of effort in securing a product can be washed-away due to simple oversight.</p>
+
+			</div>
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="2017-02-15">2017-02-15</time></span>           
+                
+                </small>
+            </p>
+            
+			<!-- Post Categories -->
+			<div class="after-post-tags">
+				<ul class="tags">
+                    
+                    
+                    <li>
+                     <a href="/tag/republish/">republish</a>
+                    </li>
+                    
+                    <li>
+                     <a href="/tag/security/">security</a>
+                    </li>
+                    
+                    <li>
+                     <a href="/tag/tech/">tech</a>
+                    </li>
+                    
+				</ul>
+			</div>
+			<!-- End Categories -->
+            
+            <!-- Prev/Next -->
+            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+            
+            <a class="prev d-block col-md-6" href="/article/2017/01/21/loss-of-innocence.html"> &laquo; Loss of innocence</a>
+            
+            
+            <a class="next d-block col-md-6 text-lg-right" href="/article/2018/03/04/browser-botnets.html">Browser-based supercomputers: the evil and the good &raquo; </a>
+            
+            <div class="clearfix"></div>
+            </div>
+            <!-- End Categories -->
+
+		</div>
+		<!-- End Post -->
+
+	</div>
+</div>
+<!-- End Article
+================================================== -->
+
+  
+
+<!-- Begin Comments
+================================================== -->
+<div class="container">
+    <div id="comments" class="row justify-content-center mb-5">
+        <div class="col-md-8">              
+            <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'evil-dinosaur'; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+                
+        </div>
+    </div>
+</div>
+<!--End Comments
+================================================== -->
+</div>
+
+<!-- Bottom Alert Bar
+================================================== -->
+<!-- <div class="alertbar">
+	<div class="container text-center">
+		<span><img src="/assets/images/logo.png" alt="Evil Dino"> &nbsp; Never miss a <b>story</b> from us, subscribe to our newsletter</span>
+        <form action="https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
+            <div class="mc-field-group">
+            <input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on" required>
+            <input type="submit" value="Subscribe" name="subscribe" class="heart">
+            </div>
+        </form>
+	</div>
+</div>     -->
+    
+</div><!-- /.container>
+    
+<!-- Categories Jumbotron
+================================================== -->
+<div class="jumbotron fortags">
+	<div class="row">
+		<div class="col-md-4 align-self-center text-center">
+			<h2 class="d-md-block d-none">Explore →</h2>
+		</div>
+		<div class="col-md-8 align-self-center text-center --tags--container">
+            
+          
+             
+              <a href="/tag/python">Python (1)</a>
+             
+              <a href="/tag/code">Code (2)</a>
+             
+              <a href="/tag/tutorial">Tutorial (1)</a>
+             
+              <a href="/tag/tech">Tech (5)</a>
+             
+              <a href="/tag/windows">Windows (1)</a>
+             
+              <a href="/tag/shell">Shell (1)</a>
+             
+              <a href="/tag/config">Config (1)</a>
+             
+              <a href="/tag/society">Society (1)</a>
+             
+              <a href="/tag/religion">Religion (1)</a>
+             
+              <a href="/tag/lanka">Lanka (1)</a>
+             
+              <a href="/tag/innocence">Innocence (1)</a>
+             
+              <a href="/tag/life">Life (1)</a>
+             
+              <a href="/tag/security">Security (2)</a>
+             
+              <a href="/tag/republish">Republish (3)</a>
+             
+              <a href="/tag/web">Web (1)</a>
+             
+              <a href="/tag/chatbot">Chatbot (1)</a>
+            
+          
+        
+
+		</div>
+	</div>
+</div>
+ 
+
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                 Copyright © 2018 Nirmal Lankathilaka 
+            </div>
+            <!-- <div class="col-md-6 col-sm-6 text-center text-lg-right">    
+                <a target="_blank" href="https://www.wowthemes.net">Mediumish Theme</a> by WowThemes.net
+            </div> -->
+        </div>
+    </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+   
+</div> <!-- /.site-content>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+    
+<script src="/assets/js/jquery.min.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    
+<script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+<script src="/assets/js/mediumish.js"></script>
+    
+<script id="dsq-count-scr" src="//evil-dinosaur.disqus.com/count.js"></script>
+</body>
+</html>

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+<link rel="icon" href="/assets/images/logo.png">
+    
+<title>
+
+    Cooler PowerShell prompt | Evil Dino
+
+</title>
+    
+ 
+    
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
+<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+    
+<link href="/assets/css/screen.css" rel="stylesheet">
+    
+<link href="/assets/css/main.css" rel="stylesheet">
+    
+</head>
+
+
+    
+
+<body class="layout-post">
+
+    
+<!-- Begin Menu Navigation
+================================================== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+    
+    <div class="container pr-0">    
+    
+    <!-- Begin Logo -->
+    <a class="navbar-brand" href="/">
+    <img src="/assets/images/logo.png" alt="Evil Dino">
+    </a>
+    <!-- End Logo -->
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    
+    <div class="collapse navbar-collapse" id="navbarMediumish">
+       
+        <!-- Begin Menu -->
+        
+            <ul class="navbar-nav ml-auto">
+                
+                <!-- 
+                <li class="nav-item">
+                
+                <a class="nav-link" href="/index.html">Blog</a>
+                </li> -->
+                
+                
+                <li class="nav-item">
+                
+                <a class="nav-link" href="/about">About</a>
+                </li>
+                
+                <!-- <li class="nav-item">
+                <a class="nav-link" href="https://github.com/wowthemesnet/mediumish-theme-jekyll/archive/master.zip"><i class="fas fa-download"></i> Jekyll Version</a>
+                </li> -->
+                
+                <!-- <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-wordpress/"><i class="fab fa-wordpress-simple"></i> WP Version</a>
+                </li> -->
+                
+                <!-- <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-ghost/"><i class="fab fa-snapchat-ghost"></i> Ghost Version</a>
+                </li> -->
+
+                <!-- <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://www.facebook.com/wowthemesnet/"><i class="fab fa-facebook-f"></i></a>
+                </li> -->
+                
+                <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://twitter.com/srdyel"><i class="fab fa-twitter"></i></a>
+                </li>
+                
+            </ul>		
+  
+        <!-- End Menu -->
+
+    </div>
+        
+    </div>
+</nav>
+<!-- End Navigation
+================================================== -->
+    
+<div class="site-content">   
+<div class="container">
+    
+<!-- Site Title
+================================================== -->
+<div class="mainheading row">
+    <div class="col-xs-12 col-md-6">
+        <h1 class="sitetitle">Evil Dino</h1>
+        <p class="lead">
+             Hacking, politics and art
+        </p>
+    </div>
+    <div class="col-md-6">
+        <img src="/assets/images/my-desktop-1x.png">
+    </div>
+</div>
+    
+    
+<!-- Content
+================================================== --> 
+<div class="main-content">
+    <!-- Begin Article
+================================================== -->
+<div class="container">
+	<div class="row">
+
+		<!-- Post Share -->
+		<div class="col-md-2 pl-0">            
+           <div class="share">
+    <p>
+        Share
+    </p>
+    <ul>
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://twitter.com/intent/tweet?text=Cooler%20PowerShell%20prompt&amp;url=/article/2017/01/18/powershell-profile-prompt.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <i class="fab fa-twitter"></i>
+        </a>
+        </li>
+        
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://facebook.com/sharer.php?u=/article/2017/01/18/powershell-profile-prompt.html" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+        <i class="fab fa-facebook-f"></i>
+        </a>
+        </li>
+        
+        <!-- <li class="ml-1 mr-1">
+        <a target="_blank" href="https://plus.google.com/share?url=/article/2017/01/18/powershell-profile-prompt.html" onclick="window.open(this.href, 'facebook-google', 'width=550,height=435');return false;">
+        <i class="fab fa-google"></i>
+        </a>
+        </li> -->
+        
+    </ul>
+    <div class="sep">
+    </div>				
+    <ul>
+        <li> 
+        <a class="small smoothscroll" href="#disqus_thread"></a>
+        </li>
+    </ul>
+</div>  
+		</div>
+		
+
+		<!-- Post -->        
+        
+        
+		<div class="col-md-9 flex-first flex-md-unordered">
+			<div class="mainheading">
+
+                <!-- Author Box -->
+                				
+				<div class="row post-top-meta">
+					<div class="col-md-2 col-xs-12 --author-thumb--container">
+						<!-- <img class="author-thumb" src="https://www.gravatar.com/avatar/0abad243be4a7a44b062c57643c89e19?s=250&d=mm&r=x" alt="Lanka"> -->
+                        <div class="--author-thumb" style="background-image: url(https://www.gravatar.com/avatar/0abad243be4a7a44b062c57643c89e19?s=250&amp;d=mm&amp;r=x);"> </div>
+					</div>
+					<div class="col-md-10 col-xs-12">
+						<a target="_blank" class="link-dark" href="https://evildino.com">Lanka</a><a target="_blank" href="https://twitter.com/srdyel" class="btn follow">Follow</a>
+						<span class="author-description">Hacker, engineer, artist, writer, musician. Hates BitCoin.</span>						
+					</div>
+				</div>				
+                
+                
+                <!-- Post Title -->
+				<h1 class="posttitle">Cooler PowerShell prompt</h1> 
+                
+			</div>
+
+			<!-- Post Featured Image -->
+			<img class="featured-image img-fluid" src="/assets/images/blog/powershell-prompt.PNG" alt="Cooler PowerShell prompt">
+			<!-- End Featured Image -->
+
+			<!-- Post Content -->
+			<div class="article-post">
+				<p>Like for bash or any other *ix shell, we can create profiles with shell configurations for PowerShell.</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>new-item <span class="nt">-itemtype</span> file <span class="nt">-path</span> <span class="nv">$profile</span> <span class="nt">-force</span>
+notepad <span class="nv">$PROFILE</span>
+</code></pre></div></div>
+
+<p>Obviously, this opens the newly created profile item (at <code class="highlighter-rouge">$profile</code>) in Notepad. Just type and save! :simple_smile:</p>
+
+<h2 id="cool-prompt">Cool prompt</h2>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">function </span>Prompt
+<span class="o">{</span>
+    <span class="nv">$id</span> <span class="o">=</span> 1
+    <span class="nv">$historyItem</span> <span class="o">=</span> Get-History <span class="nt">-Count</span> 1
+    <span class="k">if</span><span class="o">(</span><span class="nv">$historyItem</span><span class="o">)</span>
+    <span class="o">{</span>
+       <span class="nv">$id</span> <span class="o">=</span> <span class="nv">$historyItem</span>.Id + 1
+    <span class="o">}</span>
+
+    Write-Host <span class="nt">-ForegroundColor</span> Green <span class="nt">-NoNewLine</span> <span class="s2">"</span><span class="nv">$id</span><span class="s2"> "</span>
+    Write-Host <span class="nt">-ForegroundColor</span> Gray <span class="nt">-NoNewLine</span> <span class="s2">"</span><span class="k">$(</span>Get-Location<span class="k">)</span><span class="s2"> "</span>
+    <span class="nv">$host</span>.UI.RawUI.WindowTitle <span class="o">=</span> <span class="s2">"PS </span><span class="k">$(</span>Get-Location<span class="k">)</span><span class="s2">"</span>
+
+    <span class="s2">"</span><span class="nv">$ </span><span class="s2">"</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>This creates a number-tagged prompt for re-using old commands with a simple dollar sign instead of the greater-than symbol that always confuses me… with a tiny bit of color.</p>
+
+<p>I believe the code is quite self-explanatory, but if you find it to be confusing, let me know in the comments.</p>
+
+<p>You’ll probably find my example prompt to be kinda boring, but you can see the possibilities and change stuff in the ways you find the coolest and more usefull.</p>
+
+<h2 id="bonus-aliases-and-other-stuff-smile">Bonus: aliases and other stuff! <img class="emoji" title=":smile:" alt=":smile:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">
+</h2>
+
+<p>We can set the default starting directory:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>set-location e:<span class="se">\d</span>ev
+</code></pre></div></div>
+
+<p>Add an alias:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>new-item <span class="nb">alias</span>:np <span class="nt">-value</span> C:WindowsSystem32notepad.exe
+</code></pre></div></div>
+
+<p>Remove all stuff from the shell:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Clear-Host
+</code></pre></div></div>
+
+<p>Change the shell colors:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$shell</span>.BackgroundColor <span class="o">=</span> “Gray”
+<span class="nv">$shell</span>.ForegroundColor <span class="o">=</span> “Black”
+</code></pre></div></div>
+
+<p>Set window size, buffer size:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$Shell</span> <span class="o">=</span> <span class="nv">$Host</span>.UI.RawUI
+<span class="nv">$size</span> <span class="o">=</span> <span class="nv">$Shell</span>.WindowSize
+<span class="nv">$size</span>.width<span class="o">=</span>70
+<span class="nv">$size</span>.height<span class="o">=</span>25
+<span class="nv">$Shell</span>.WindowSize <span class="o">=</span> <span class="nv">$size</span>
+<span class="nv">$size</span> <span class="o">=</span> <span class="nv">$Shell</span>.BufferSize
+<span class="nv">$size</span>.width<span class="o">=</span>70
+<span class="nv">$size</span>.height<span class="o">=</span>5000
+<span class="nv">$Shell</span>.BufferSize <span class="o">=</span> <span class="nv">$size</span>
+</code></pre></div></div>
+
+<hr>
+
+<p>Why not share your awesome and useful profiles with us in the comments?! <img class="emoji" title=":wink:" alt=":wink:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f609.png" height="20" width="20"></p>
+
+			</div>
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="2017-01-18">2017-01-18</time></span>           
+                
+                (Updated: <time datetime="2017-01-19" itemprop="dateModified">2017-01-19</time>)
+                
+                </small>
+            </p>
+            
+			<!-- Post Categories -->
+			<div class="after-post-tags">
+				<ul class="tags">
+                    
+                    
+                    <li>
+                     <a href="/tag/code/">code</a>
+                    </li>
+                    
+                    <li>
+                     <a href="/tag/config/">config</a>
+                    </li>
+                    
+                    <li>
+                     <a href="/tag/shell/">shell</a>
+                    </li>
+                    
+                    <li>
+                     <a href="/tag/tech/">tech</a>
+                    </li>
+                    
+                    <li>
+                     <a href="/tag/windows/">windows</a>
+                    </li>
+                    
+				</ul>
+			</div>
+			<!-- End Categories -->
+            
+            <!-- Prev/Next -->
+            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+            
+            <a class="prev d-block col-md-6" href="/article/2017/01/10/python-nose-testing.html"> « A Nose for Python: fun with test-driven development</a>
+            
+            
+            <a class="next d-block col-md-6 text-lg-right" href="/article/2017/01/21/loss-of-innocence.html">Loss of innocence » </a>
+            
+            <div class="clearfix"></div>
+            </div>
+            <!-- End Categories -->
+
+		</div>
+		<!-- End Post -->
+
+	</div>
+</div>
+<!-- End Article
+================================================== -->
+
+  
+
+<!-- Begin Comments
+================================================== -->
+<div class="container">
+    <div id="comments" class="row justify-content-center mb-5">
+        <div class="col-md-8">              
+            <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'evil-dinosaur'; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+                
+        </div>
+    </div>
+</div>
+<!--End Comments
+================================================== -->
+</div>
+
+<!-- Bottom Alert Bar
+================================================== -->
+<!-- <div class="alertbar">
+	<div class="container text-center">
+		<span><img src="/assets/images/logo.png" alt="Evil Dino"> &nbsp; Never miss a <b>story</b> from us, subscribe to our newsletter</span>
+        <form action="https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
+            <div class="mc-field-group">
+            <input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on" required>
+            <input type="submit" value="Subscribe" name="subscribe" class="heart">
+            </div>
+        </form>
+	</div>
+</div>     -->
+    
+</div>
+<!-- /.container>
+    
+<!-- Categories Jumbotron
+================================================== -->
+<div class="jumbotron fortags">
+	<div class="row">
+		<div class="col-md-4 align-self-center text-center">
+			<h2 class="d-md-block d-none">Explore →</h2>
+		</div>
+		<div class="col-md-8 align-self-center text-center --tags--container">
+            
+          
+             
+              <a href="/tag/python">Python (1)</a>
+             
+              <a href="/tag/code">Code (2)</a>
+             
+              <a href="/tag/tutorial">Tutorial (1)</a>
+             
+              <a href="/tag/tech">Tech (5)</a>
+             
+              <a href="/tag/windows">Windows (1)</a>
+             
+              <a href="/tag/shell">Shell (1)</a>
+             
+              <a href="/tag/config">Config (1)</a>
+             
+              <a href="/tag/society">Society (1)</a>
+             
+              <a href="/tag/religion">Religion (1)</a>
+             
+              <a href="/tag/lanka">Lanka (1)</a>
+             
+              <a href="/tag/innocence">Innocence (1)</a>
+             
+              <a href="/tag/life">Life (1)</a>
+             
+              <a href="/tag/security">Security (2)</a>
+             
+              <a href="/tag/republish">Republish (3)</a>
+             
+              <a href="/tag/web">Web (1)</a>
+             
+              <a href="/tag/chatbot">Chatbot (1)</a>
+            
+          
+        
+
+		</div>
+	</div>
+</div>
+ 
+
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                 Copyright © 2018 Nirmal Lankathilaka 
+            </div>
+            <!-- <div class="col-md-6 col-sm-6 text-center text-lg-right">    
+                <a target="_blank" href="https://www.wowthemes.net">Mediumish Theme</a> by WowThemes.net
+            </div> -->
+        </div>
+    </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+   
+</div> <!-- /.site-content>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+    
+<script src="/assets/js/jquery.min.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    
+<script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+<script src="/assets/js/mediumish.js"></script>
+    
+<script id="dsq-count-scr" src="//evil-dinosaur.disqus.com/count.js"></script>
+</body>
+</html>

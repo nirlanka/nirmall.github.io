@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+<link rel="icon" href="/assets/images/logo.png">
+    
+<title>
+
+    A Nose for Python: fun with test-driven development | Evil Dino
+
+</title>
+    
+ 
+    
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
+<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+    
+<link href="/assets/css/screen.css" rel="stylesheet">
+    
+<link href="/assets/css/main.css" rel="stylesheet">
+    
+</head>
+
+
+    
+
+<body class="layout-post">
+
+    
+<!-- Begin Menu Navigation
+================================================== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+    
+    <div class="container pr-0">    
+    
+    <!-- Begin Logo -->
+    <a class="navbar-brand" href="/">
+    <img src="/assets/images/logo.png" alt="Evil Dino">
+    </a>
+    <!-- End Logo -->
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    
+    <div class="collapse navbar-collapse" id="navbarMediumish">
+       
+        <!-- Begin Menu -->
+        
+            <ul class="navbar-nav ml-auto">
+                
+                <!-- 
+                <li class="nav-item">
+                
+                <a class="nav-link" href="/index.html">Blog</a>
+                </li> -->
+                
+                
+                <li class="nav-item">
+                
+                <a class="nav-link" href="/about">About</a>
+                </li>
+                
+                <!-- <li class="nav-item">
+                <a class="nav-link" href="https://github.com/wowthemesnet/mediumish-theme-jekyll/archive/master.zip"><i class="fas fa-download"></i> Jekyll Version</a>
+                </li> -->
+                
+                <!-- <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-wordpress/"><i class="fab fa-wordpress-simple"></i> WP Version</a>
+                </li> -->
+                
+                <!-- <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://www.wowthemes.net/themes/mediumish-ghost/"><i class="fab fa-snapchat-ghost"></i> Ghost Version</a>
+                </li> -->
+
+                <!-- <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://www.facebook.com/wowthemesnet/"><i class="fab fa-facebook-f"></i></a>
+                </li> -->
+                
+                <li class="nav-item">
+                <a target="_blank"  class="nav-link" href="https://twitter.com/srdyel"><i class="fab fa-twitter"></i></a>
+                </li>
+                
+            </ul>		
+  
+        <!-- End Menu -->
+
+    </div>
+        
+    </div>
+</nav>
+<!-- End Navigation
+================================================== -->
+    
+<div class="site-content">   
+<div class="container">
+    
+<!-- Site Title
+================================================== -->
+<div class="mainheading row">
+    <div class="col-xs-12 col-md-6">
+        <h1 class="sitetitle">Evil Dino</h1>
+        <p class="lead">
+             Hacking, politics and art
+        </p>
+    </div>
+    <div class="col-md-6">
+        <img src="/assets/images/my-desktop-1x.png">
+    </div>
+</div>
+    
+    
+<!-- Content
+================================================== --> 
+<div class="main-content">
+    <!-- Begin Article
+================================================== -->
+<div class="container">
+	<div class="row">
+
+		<!-- Post Share -->
+		<div class="col-md-2 pl-0">            
+           <div class="share">
+    <p>
+        Share
+    </p>
+    <ul>
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://twitter.com/intent/tweet?text=A Nose for Python: fun with test-driven development&url=/article/2017/01/10/python-nose-testing.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <i class="fab fa-twitter"></i>
+        </a>
+        </li>
+        
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://facebook.com/sharer.php?u=/article/2017/01/10/python-nose-testing.html" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+        <i class="fab fa-facebook-f"></i>
+        </a>
+        </li>
+        
+        <!-- <li class="ml-1 mr-1">
+        <a target="_blank" href="https://plus.google.com/share?url=/article/2017/01/10/python-nose-testing.html" onclick="window.open(this.href, 'facebook-google', 'width=550,height=435');return false;">
+        <i class="fab fa-google"></i>
+        </a>
+        </li> -->
+        
+    </ul>
+    <div class="sep">
+    </div>				
+    <ul>
+        <li> 
+        <a  class="small smoothscroll" href="#disqus_thread"></a>
+        </li>
+    </ul>
+</div>  
+		</div>
+		
+
+		<!-- Post -->        
+        
+        
+		<div class="col-md-9 flex-first flex-md-unordered">
+			<div class="mainheading">
+
+                <!-- Author Box -->
+                				
+				<div class="row post-top-meta">
+					<div class="col-md-2 col-xs-12 --author-thumb--container">
+						<!-- <img class="author-thumb" src="https://www.gravatar.com/avatar/0abad243be4a7a44b062c57643c89e19?s=250&d=mm&r=x" alt="Lanka"> -->
+                        <div class="--author-thumb" style="background-image: url(https://www.gravatar.com/avatar/0abad243be4a7a44b062c57643c89e19?s=250&d=mm&r=x);">&nbsp;</div>
+					</div>
+					<div class="col-md-10 col-xs-12">
+						<a target="_blank" class="link-dark" href="https://evildino.com">Lanka</a><a target="_blank" href="https://twitter.com/srdyel" class="btn follow">Follow</a>
+						<span class="author-description">Hacker, engineer, artist, writer, musician. Hates BitCoin.</span>						
+					</div>
+				</div>				
+                
+                
+                <!-- Post Title -->
+				<h1 class="posttitle">A Nose for Python: fun with test-driven development</h1> 
+                
+			</div>
+
+			<!-- Post Featured Image -->
+			<img class="featured-image img-fluid" src="/assets/images/blog/python-featured.jpg" alt="A Nose for Python: fun with test-driven development">
+			<!-- End Featured Image -->
+
+			<!-- Post Content -->
+			<div class="article-post">
+				<p>In TDD (test-driven development), writing and maintaining tests—or unit-tests—are not thought-of 
+as a burden that needs to be done to keep others happy. It’s not even a QA-only task, if at all.</p>
+
+<p>In TDD, we write unit-test for our functionality, even before we start writing the functionality
+itself. We make use of unit-tests to identify the ranges of input and the expected behavior of our 
+(yet to be implemented) code.</p>
+
+<p>That is in addition to what we would normally expect from a test: to make sure stuff works.</p>
+
+<p>For each seemingly-mundane or even minimal code change, we can’t—and don’t want to—invest too
+much time manually testing the functionality. That’s where generic automated tests come in. We write
+automated tests of user-input and log the behavior of our software from a user-perspective, 
+<em>user-perspective</em> being the keyword.</p>
+
+<p>But maintaining such user-end automated tests, while quite helpful and arguably necessary, is 
+nothing less of a hassle; not to mention the difficulty and time and processing wastage in following 
+the user-end workflows again and again on every change to the code, processing feedback and debugging
+stuff usually just before the release.</p>
+
+<p>TDD is amazingly useful in such situations—i.e. always—to test the functionality in an abstract
+manner, without depending on the bulk of all the layers of the software. In other words, we test
+the code without relying on all the dependencies in our software system.</p>
+
+<p>Confused? Don’t worry, I’ll be trying to explain this philosophy through some very simple examples.</p>
+
+<p>You can see sample code repo, <a href="https://github.com/NirmalL/unit-testing">unit-testing</a> for the files,
+but you don’t need to. ;)</p>
+
+<h2 id="writing-a-trigonometry-library">Writing a trigonometry library</h2>
+
+<p>No, no, don’t worry about what little you remember about trigonometry or anything too mathematical.
+I assure you that knowledge is quite irrelevant here.</p>
+
+<p>Assume we want to create a Python library of trigonometric functions. Take a look at the function
+signatures of some of them:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># one.py</span>
+
+<span class="k">def</span> <span class="nf">sin</span><span class="p">(</span><span class="n">rad</span><span class="p">):</span>
+  <span class="k">pass</span>
+
+<span class="k">def</span> <span class="nf">cos</span><span class="p">(</span><span class="n">rad</span><span class="p">):</span>
+  <span class="k">pass</span>
+
+<span class="k">def</span> <span class="nf">tan</span><span class="p">(</span><span class="n">rad</span><span class="p">):</span>
+  <span class="k">pass</span>
+</code></pre></div></div>
+
+<p>You’ll notice we haven’t written any code for these functions. We’re going to identify the possible
+input cases and write our code to fulfill those cases.</p>
+
+<p>Here’s the test code skeleton we’re gonna use:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># test_one.py</span>
+
+<span class="kn">from</span> <span class="nn">one</span> <span class="kn">import</span> <span class="n">sin</span><span class="p">,</span> <span class="n">cos</span><span class="p">,</span> <span class="n">tan</span>
+<span class="kn">import</span> <span class="nn">math</span><span class="p">,</span> <span class="n">cmath</span>
+
+<span class="kn">from</span> <span class="nn">nose.tools</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">def</span> <span class="nf">setupf</span><span class="p">():</span>
+  <span class="s">"Set up the instance for testing"</span>
+  <span class="k">pass</span>
+
+<span class="k">def</span> <span class="nf">teardownf</span><span class="p">():</span>
+  <span class="s">"Tear down the instance"</span>
+  <span class="k">pass</span>
+
+<span class="nd">@with_setup</span><span class="p">(</span><span class="n">setupf</span><span class="p">,</span> <span class="n">teardownf</span><span class="p">)</span> <span class="c"># decorator</span>
+<span class="k">def</span> <span class="nf">test_sin_float</span><span class="p">():</span>
+  <span class="s">"Test for valid a float argument"</span>
+  <span class="k">assert</span> <span class="bp">False</span>
+</code></pre></div></div>
+
+<p>We have imported our very own <code class="highlighter-rouge">one.py</code> module’s trignometric functions <code class="highlighter-rouge">sin</code>, <code class="highlighter-rouge">cos</code> and <code class="highlighter-rouge">tan</code>. 
+We have also imported Python’s standard <code class="highlighter-rouge">math</code> library in order to use its versions of our trig 
+functions for testing the output values of our code.</p>
+
+<p>You’ll notice the almost empty <code class="highlighter-rouge">setupf</code>, <code class="highlighter-rouge">teardownf</code> and the decorator <code class="highlighter-rouge">@with_setup</code> which 
+refers to them. <code class="highlighter-rouge">@with_setup</code> initiates any library and data setup mechanisms that are required
+for each test. Where <code class="highlighter-rouge">setupf</code> would setup such configurations, data and service mocks and 
+initiations, <code class="highlighter-rouge">teardown</code> would clean the setup after the use.</p>
+
+<p>I’ve included them for completeness of the boilerplate code, but we’re not really going to need them 
+for our library… at least not in this stage.</p>
+
+<p>The test function also doesn’t do any actual testing yet, and we’ve set them to just ‘fail’ with
+<code class="highlighter-rouge">assert False</code>.</p>
+
+<p><code class="highlighter-rouge">assert</code> is the most generic of the mechanisms Nose (and Python) provide us with for concluding
+a test case. Think of an assertion as a check whether the statement next to it is true or not.
+If the code is wrong, the statement that’s asserted will be <code class="highlighter-rouge">False</code>. Look at the same function
+with an actual assetion:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@with_setup</span><span class="p">(</span><span class="n">setupf</span><span class="p">,</span> <span class="n">teardownf</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_sin_float</span><span class="p">():</span>
+  <span class="s">"Test for a valid float argument"</span>
+  <span class="k">assert</span> <span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="o">.</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="n">sin</span><span class="p">(</span><span class="o">.</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Don’t worry about running the tests. We’ll come to that soon.</p>
+
+<p>In the above code, we have compared the output of our <code class="highlighter-rouge">sin</code> function with Python’s <code class="highlighter-rouge">math</code> library’s
+competitor’s output. The <code class="highlighter-rouge">assert</code> will hold true if both output the exact same value, compared with
+<code class="highlighter-rouge">==</code>.</p>
+
+<p>But we can’t expect them to be <em>exactly</em> the same output value; either our or Python’s function is
+bound to be less accurate than the other in some way, only reliably similar to a certain number
+of decimal places.</p>
+
+<p>What we need to test is that these two outputs are sufficiently close to each other. In such 
+unclear-precision comparisons we can use Nose’s <code class="highlighter-rouge">assert_almost_equal</code> function, which is 
+self-explanatorily used below:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@with_setup</span><span class="p">(</span><span class="n">setupf</span><span class="p">,</span> <span class="n">teardownf</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_sin_float</span><span class="p">():</span>
+  <span class="s">"Test for a valid float argument"</span>
+  <span class="n">assert_almost_equals</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="o">.</span><span class="mi">1</span><span class="p">),</span> <span class="n">sin</span><span class="p">(</span><span class="o">.</span><span class="mi">1</span><span class="p">),</span> <span class="n">places</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>But we still haven’t implemented the <code class="highlighter-rouge">sin</code> function. So what will happen when we run the tests?
+Let’s find out.</p>
+
+<h2 id="installing-a-nose-and-testing-stuff-with-it">Installing a Nose and testing stuff with it</h2>
+
+<p>You can use pip to quickly do a hassle-free installation of Nose on any major platform that has
+pip and Python (2.7).</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>pip install nose
+</code></pre></div></div>
+
+<p>Now we can run the tests with either,</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>nosetests <span class="nt">--verbose</span>
+</code></pre></div></div>
+
+<p>or</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>nosetests ./test_one.py <span class="nt">--verbose</span>
+</code></pre></div></div>
+
+<p>As you will see, the tests will fail and after the test fail/pass report, it’ll print the 
+stacktrace for each failure. We can now implement our functions so as to pass the test.</p>
+
+<h2 id="implementing-sin">Implementing <code class="highlighter-rouge">sin</code></h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">e</span> <span class="o">=</span> <span class="mf">2.71828182846</span>
+
+<span class="k">def</span> <span class="nf">sin</span><span class="p">(</span><span class="n">rad</span><span class="p">):</span>
+  <span class="k">return</span> <span class="p">(</span><span class="n">e</span><span class="o">**</span><span class="p">(</span><span class="n">rad</span><span class="o">*</span><span class="mi">1</span><span class="n">j</span><span class="p">))</span><span class="o">.</span><span class="n">imag</span>
+</code></pre></div></div>
+
+<p>Written above is a basic way of calculating the sin value of a given radian value <code class="highlighter-rouge">rad</code>.
+The equation in cleaner mathematics is,</p>
+
+<p>\[ sin(x) = imag(e^{x \times j}) \]</p>
+
+<p>Here, \( j \) is the imaginary unit, and \( imag \) represents the imaginary part of 
+a complex number.</p>
+
+<p>Now the tests should pass.</p>
+
+<h2 id="more-test-cases">More test cases</h2>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@with_setup</span><span class="p">(</span><span class="n">setupf</span><span class="p">,</span> <span class="n">teardownf</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_sin_float</span><span class="p">():</span>
+  <span class="s">"Test for a valid float argument"</span>
+  <span class="n">assert_almost_equals</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="o">.</span><span class="mi">1</span><span class="p">),</span> <span class="n">sin</span><span class="p">(</span><span class="o">.</span><span class="mi">1</span><span class="p">),</span> <span class="n">places</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="nd">@with_setup</span><span class="p">(</span><span class="n">setupf</span><span class="p">,</span> <span class="n">teardownf</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_sin_int</span><span class="p">():</span>
+  <span class="s">"Test for a valid float argument"</span>
+  <span class="n">assert_almost_equals</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">sin</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">places</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="nd">@with_setup</span><span class="p">(</span><span class="n">setupf</span><span class="p">,</span> <span class="n">teardownf</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_sin_float_negative</span><span class="p">():</span>
+  <span class="s">"Test for a valid negative float argument"</span>
+  <span class="n">assert_almost_equals</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="o">-.</span><span class="mi">1</span><span class="p">),</span> <span class="n">sin</span><span class="p">(</span><span class="o">-.</span><span class="mi">1</span><span class="p">),</span> <span class="n">places</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="nd">@with_setup</span><span class="p">(</span><span class="n">setupf</span><span class="p">,</span> <span class="n">teardownf</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_sin_float_negative</span><span class="p">():</span>
+  <span class="s">"Test for a valid negative int argument"</span>
+  <span class="n">assert_almost_equals</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">),</span> <span class="n">sin</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">),</span> <span class="n">places</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="nd">@with_setup</span><span class="p">(</span><span class="n">setupf</span><span class="p">,</span> <span class="n">teardownf</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_sin_zero</span><span class="p">():</span>
+  <span class="s">"Test for a valid negative float argument"</span>
+  <span class="n">assert_almost_equals</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">sin</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">places</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>The above test cases use almost exactly the same code only with different arguments. 
+This would make any self-respecting programmer want to either gouge their eyes out
+or reuse the repeated code more efficiently. 
+(<em>Yay, abstraction!</em>)</p>
+
+<p>In addition, <code class="highlighter-rouge">@with_setup</code> will set up and tear down the test instance for each and every
+test case. Knowing our code doesn’t hold grudges, I mean since it doesn’t carry the 
+effect of previous executions, we can safely limit running them to a single time.</p>
+
+<h2 id="test-generators-to-the-rescue"><em>Test generators</em> to the rescue!</h2>
+
+<p>Wouldn’t it be wonderful to have a way of steamlining a list of test cases into a single
+abstract tester function?</p>
+
+<p>Test generators does exactly that!</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">test_sin_values</span><span class="p">():</span>
+  <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-.</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">.</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]:</span>
+    <span class="k">yield</span> <span class="n">check_sin_values</span><span class="p">,</span> <span class="n">x</span>
+
+<span class="nd">@with_setup</span><span class="p">(</span><span class="n">setupf</span><span class="p">,</span> <span class="n">teardownf</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">check_sin_values</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+  <span class="s">"Test for a valid float argument"</span>
+  <span class="n">assert_almost_equals</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">places</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>We can generate a list of test data and test them one-by-one with the <code class="highlighter-rouge">check_</code> method.</p>
+
+<p>Again, we can set to run the setting-up and tear-down process only once,
+if there are no consequenses or effects of repeated calling on the function.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@with_setup</span><span class="p">(</span><span class="n">setupf</span><span class="p">,</span> <span class="n">teardownf</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_sin_values</span><span class="p">():</span>
+  <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-.</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">.</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]:</span>
+    <span class="k">yield</span> <span class="n">check_sin_values</span><span class="p">,</span> <span class="n">x</span>
+
+<span class="k">def</span> <span class="nf">check_sin_values</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+  <span class="s">"Test for a valid float argument"</span>
+  <span class="n">assert_almost_equals</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">places</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>We can add more test cases:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@with_setup</span><span class="p">(</span><span class="n">setupf</span><span class="p">,</span> <span class="n">teardownf</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_sin_values</span><span class="p">():</span>
+  <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-.</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">.</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]:</span>
+    <span class="k">yield</span> <span class="n">check_sin_values</span><span class="p">,</span> <span class="n">x</span>
+  <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="n">j</span><span class="p">,</span> <span class="o">-.</span><span class="mi">1</span><span class="o">*</span><span class="mi">1</span><span class="n">j</span><span class="p">,</span> <span class="mi">0</span><span class="n">j</span><span class="p">,</span> <span class="o">.</span><span class="mi">1</span><span class="o">*</span><span class="mi">1</span><span class="n">j</span><span class="p">,</span> <span class="mi">2</span><span class="n">j</span><span class="p">]:</span>
+    <span class="k">yield</span> <span class="n">check_sin_values</span><span class="p">,</span> <span class="n">x</span>
+  <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="o">-.</span><span class="mi">1</span><span class="p">,</span> <span class="o">-.</span><span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="o">.</span><span class="mi">1</span><span class="p">,</span> <span class="o">.</span><span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)]:</span>
+    <span class="k">yield</span> <span class="n">check_sin_values_complex</span><span class="p">,</span> <span class="n">x</span>
+
+<span class="c"># def check_sin_values ...</span>
+
+<span class="k">def</span> <span class="nf">check_sin_values_complex</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+  <span class="s">"Test for a valid complex float argument"</span>
+  <span class="n">p</span><span class="p">,</span> <span class="n">q</span> <span class="o">=</span> <span class="n">x</span>
+  <span class="n">mysin</span> <span class="o">=</span> <span class="n">sin</span><span class="p">(</span><span class="n">p</span><span class="o">+</span><span class="nb">complex</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">q</span><span class="p">))</span>
+  <span class="n">pysin</span> <span class="o">=</span> <span class="n">cmath</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">p</span><span class="o">+</span><span class="nb">complex</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">q</span><span class="p">))</span>
+  <span class="n">assert_almost_equals</span><span class="p">(</span><span class="n">mysin</span><span class="p">,</span> <span class="n">pysin</span><span class="p">,</span> <span class="n">places</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>nosetests ./test_one.py <span class="nt">--verbose</span>
+</code></pre></div></div>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>test_one.test_sin_values(-2,) ... ok
+test_one.test_sin_values(-0.1,) ... ok
+test_one.test_sin_values(0,) ... ok
+test_one.test_sin_values(0.1,) ... ok
+test_one.test_sin_values(2,) ... ok
+test_one.test_sin_values(-2j,) ... ERROR
+test_one.test_sin_values((-0-0.1j),) ... ERROR
+test_one.test_sin_values(0j,) ... ERROR
+test_one.test_sin_values(0.1j,) ... ERROR
+test_one.test_sin_values(2j,) ... ERROR
+test_one.test_sin_values((-2, -2),) ... ERROR
+test_one.test_sin_values((-0.1, -0.1),) ... ERROR
+test_one.test_sin_values((0, 0),) ... ok
+test_one.test_sin_values((0.1, 0.1),) ... ERROR
+test_one.test_sin_values((2, 2),) ... ERROR
+
+============================================
+ERROR: test_one.test_sin_values(-2j,)
+--------------------------------------------
+Traceback (most recent call last):
+  File "c:\python27\lib\site-packages\nose\case.py", line 197, in runTest
+    self.test(*self.arg)
+  File "C:\users\nirmal\desktop\unit-testing\test_one.py", line 28, in check_sin_values
+    assert_almost_equals(math.sin(x), sin(x), places=4)
+TypeError: can't convert complex to float
+
+============================================
+
+...
+
+--------------------------------------------
+Ran 15 tests in 0.010s
+
+FAILED (failures=9)
+</code></pre></div></div>
+
+<p>We can see that the complex numbered arguments make for completely inaccurate 
+results in our <code class="highlighter-rouge">sin</code> function. We’ll need to fix or rethink our code to handle 
+such values… or we could throw an exception.</p>
+
+<p>To keep away from complex mathematics that’s out of scope of today’s subject, 
+i’ll choose to do the latter.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">sin</span><span class="p">(</span><span class="n">rad</span><span class="p">):</span>
+  <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">rad</span><span class="p">,</span> <span class="nb">complex</span><span class="p">):</span>
+    <span class="k">raise</span> <span class="nb">ValueError</span><span class="p">(</span><span class="s">'sin(x) requires real arguments.'</span><span class="p">)</span> 
+  <span class="k">return</span> <span class="p">(</span><span class="n">e</span><span class="o">**</span><span class="p">(</span><span class="n">rad</span><span class="o">*</span><span class="mi">1</span><span class="n">j</span><span class="p">))</span><span class="o">.</span><span class="n">imag</span>
+</code></pre></div></div>
+
+<p>Then we’ll assert the raising of the exception, since that’s our (now) defined behavior.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">check_sin_values_complex</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+  <span class="s">"Test for a valid complex float argument"</span>
+  <span class="n">p</span><span class="p">,</span> <span class="n">q</span> <span class="o">=</span> <span class="n">x</span>
+  <span class="n">assert_raises</span><span class="p">(</span><span class="nb">ValueError</span><span class="p">,</span> <span class="n">sin</span><span class="p">,</span> <span class="n">p</span><span class="o">+</span><span class="nb">complex</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">q</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>This should get all the complex-number test cases to succeed.</p>
+
+<p>But, the output doesn’t show our carefully crafted test descriptions, does it?</p>
+
+<p>On the other hand, we have done some redundant tests. For example, we don’t need to check
+for all negative values, floats and integers separately for testing complex input.</p>
+
+<p>Let’s be more concise in defining test cases. We can identify the actual test cases are:</p>
+
+<ol>
+  <li>Real integers</li>
+  <li>Real floats</li>
+  <li>Zero</li>
+  <li>Negative real (just testing floats should suffice)</li>
+  <li>Complex-typed numbers (just floats)</li>
+  <li>Pure imaginary numbers (just float)</li>
+  <li>Complex-typed negative numbers (just float)</li>
+</ol>
+
+<p>Let’s test for them with separate <code class="highlighter-rouge">test_</code> functions so that we can also
+see our test descriptions along with the pass/fail result.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">@with_setup</span><span class="p">(</span><span class="n">setupf</span><span class="p">,</span> <span class="n">teardownf</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_sin_values_int</span><span class="p">():</span>
+  <span class="s">"Test for a real intger argument"</span>
+  <span class="n">assert_almost_equals</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">4</span><span class="p">),</span> <span class="n">sin</span><span class="p">(</span><span class="mi">4</span><span class="p">),</span> <span class="n">places</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="nd">@with_setup</span><span class="p">(</span><span class="n">setupf</span><span class="p">,</span> <span class="n">teardownf</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_sin_values_float</span><span class="p">():</span>
+  <span class="s">"Test for a real float argument"</span>
+  <span class="n">assert_almost_equals</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="o">.</span><span class="mi">4</span><span class="p">),</span> <span class="n">sin</span><span class="p">(</span><span class="o">.</span><span class="mi">4</span><span class="p">),</span> <span class="n">places</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="nd">@with_setup</span><span class="p">(</span><span class="n">setupf</span><span class="p">,</span> <span class="n">teardownf</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_sin_values_zero</span><span class="p">():</span>
+  <span class="s">"Test for a zero-valued argument"</span>
+  <span class="n">assert_almost_equals</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">sin</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="n">places</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="nd">@with_setup</span><span class="p">(</span><span class="n">setupf</span><span class="p">,</span> <span class="n">teardownf</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_sin_values_negative</span><span class="p">():</span>
+  <span class="s">"Test for a negative-valued argument"</span>
+  <span class="n">assert_almost_equals</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="o">-.</span><span class="mi">4</span><span class="p">),</span> <span class="n">sin</span><span class="p">(</span><span class="o">-.</span><span class="mi">4</span><span class="p">),</span> <span class="n">places</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+  <span class="n">assert_almost_equals</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">),</span> <span class="n">sin</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">),</span> <span class="n">places</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="nd">@with_setup</span><span class="p">(</span><span class="n">setupf</span><span class="p">,</span> <span class="n">teardownf</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_sin_values_imaginary_int</span><span class="p">():</span>
+  <span class="s">"Test for an imaginary integer argument"</span>
+  <span class="n">assert_raises</span><span class="p">(</span><span class="nb">ValueError</span><span class="p">,</span> <span class="n">sin</span><span class="p">,</span> <span class="mi">4</span><span class="n">j</span><span class="p">)</span>
+
+<span class="nd">@with_setup</span><span class="p">(</span><span class="n">setupf</span><span class="p">,</span> <span class="n">teardownf</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_sin_values_imaginary</span><span class="p">():</span>
+  <span class="s">"Test for an imaginary float argument"</span>
+  <span class="n">assert_raises</span><span class="p">(</span><span class="nb">ValueError</span><span class="p">,</span> <span class="n">sin</span><span class="p">,</span> <span class="o">.</span><span class="mi">4</span><span class="o">*</span><span class="mi">1</span><span class="n">j</span><span class="p">)</span>
+
+<span class="nd">@with_setup</span><span class="p">(</span><span class="n">setupf</span><span class="p">,</span> <span class="n">teardownf</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_sin_values_complex</span><span class="p">():</span>
+  <span class="s">"Test for a complex argument"</span>
+  <span class="n">assert_raises</span><span class="p">(</span><span class="nb">ValueError</span><span class="p">,</span> <span class="n">sin</span><span class="p">,</span> <span class="o">.</span><span class="mi">3</span><span class="o">+.</span><span class="mi">4</span><span class="o">*</span><span class="mi">1</span><span class="n">j</span><span class="p">)</span>
+  <span class="n">assert_raises</span><span class="p">(</span><span class="nb">ValueError</span><span class="p">,</span> <span class="n">sin</span><span class="p">,</span> <span class="mi">3</span><span class="o">+</span><span class="mi">4</span><span class="o">*</span><span class="mi">1</span><span class="n">j</span><span class="p">)</span>
+
+<span class="nd">@with_setup</span><span class="p">(</span><span class="n">setupf</span><span class="p">,</span> <span class="n">teardownf</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_sin_values_complex_negative</span><span class="p">():</span>
+  <span class="s">"Test for a complex argument"</span>
+  <span class="n">assert_raises</span><span class="p">(</span><span class="nb">ValueError</span><span class="p">,</span> <span class="n">sin</span><span class="p">,</span> <span class="o">-.</span><span class="mi">3</span><span class="o">-.</span><span class="mi">4</span><span class="o">*</span><span class="mi">1</span><span class="n">j</span><span class="p">)</span>
+  <span class="n">assert_raises</span><span class="p">(</span><span class="nb">ValueError</span><span class="p">,</span> <span class="n">sin</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="o">-</span><span class="mi">4</span><span class="o">*</span><span class="mi">1</span><span class="n">j</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="notes">Notes</h2>
+
+<p>We have done more than one assertion for some cases, to cover 
+possibilities of that case. This way, if a specific sub-case fails, 
+it’s not hard to isolate it, yet we’re not over-creating too-many unmanageable test-cases.</p>
+
+<p>Selecting, ordering and sub-case testing for test cases is a subjective matter. 
+It depends on the fine balancing between completeness and redundant bloat of test cases. 
+We need to utilise our knowledge of the testee functionality to make good decisions.</p>
+
+<p>Also, unit tests are not usually ultra-complete in their coverage of all possible cases 
+because of human errors, imagination and variation of interest. If we still encounter 
+bugs that escape the unit tests, we must add them to the list of tests for future use.</p>
+
+<h2 id="whats-next">What’s next?</h2>
+
+<p>This is just an introduction to the basic philosophy and use of unit testing. In the
+up-coming posts, I plan on discussing subjects including:</p>
+
+<ul>
+  <li>Class method testing</li>
+  <li>Mocking of data and services</li>
+  <li>Code coverage principles</li>
+</ul>
+
+<p>I’m sure my understanding, interpretation and presentation of the subject matter is 
+incomplete and error-prone. I’m open for discussion and corrections :)</p>
+
+			</div>
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="2017-01-10">2017-01-10</time></span>           
+                
+                (Updated: <time datetime="2017-01-11" itemprop="dateModified">2017-01-11</time>)
+                
+                </small>
+            </p>
+            
+			<!-- Post Categories -->
+			<div class="after-post-tags">
+				<ul class="tags">
+                    
+                    
+                    <li>
+                     <a href="/tag/code/">code</a>
+                    </li>
+                    
+                    <li>
+                     <a href="/tag/python/">python</a>
+                    </li>
+                    
+                    <li>
+                     <a href="/tag/tech/">tech</a>
+                    </li>
+                    
+                    <li>
+                     <a href="/tag/tutorial/">tutorial</a>
+                    </li>
+                    
+				</ul>
+			</div>
+			<!-- End Categories -->
+            
+            <!-- Prev/Next -->
+            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+            
+            
+            <a class="next d-block col-md-6 text-lg-right" href="/article/2017/01/18/powershell-profile-prompt.html">Cooler PowerShell prompt &raquo; </a>
+            
+            <div class="clearfix"></div>
+            </div>
+            <!-- End Categories -->
+
+		</div>
+		<!-- End Post -->
+
+	</div>
+</div>
+<!-- End Article
+================================================== -->
+
+  
+
+<!-- Begin Comments
+================================================== -->
+<div class="container">
+    <div id="comments" class="row justify-content-center mb-5">
+        <div class="col-md-8">              
+            <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'evil-dinosaur'; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+                
+        </div>
+    </div>
+</div>
+<!--End Comments
+================================================== -->
+</div>
+
+<!-- Bottom Alert Bar
+================================================== -->
+<!-- <div class="alertbar">
+	<div class="container text-center">
+		<span><img src="/assets/images/logo.png" alt="Evil Dino"> &nbsp; Never miss a <b>story</b> from us, subscribe to our newsletter</span>
+        <form action="https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b" method="post" name="mc-embedded-subscribe-form" class="wj-contact-form validate" target="_blank" novalidate>
+            <div class="mc-field-group">
+            <input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL" autocomplete="on" required>
+            <input type="submit" value="Subscribe" name="subscribe" class="heart">
+            </div>
+        </form>
+	</div>
+</div>     -->
+    
+</div><!-- /.container>
+    
+<!-- Categories Jumbotron
+================================================== -->
+<div class="jumbotron fortags">
+	<div class="row">
+		<div class="col-md-4 align-self-center text-center">
+			<h2 class="d-md-block d-none">Explore →</h2>
+		</div>
+		<div class="col-md-8 align-self-center text-center --tags--container">
+            
+          
+             
+              <a href="/tag/python">Python (1)</a>
+             
+              <a href="/tag/code">Code (2)</a>
+             
+              <a href="/tag/tutorial">Tutorial (1)</a>
+             
+              <a href="/tag/tech">Tech (5)</a>
+             
+              <a href="/tag/windows">Windows (1)</a>
+             
+              <a href="/tag/shell">Shell (1)</a>
+             
+              <a href="/tag/config">Config (1)</a>
+             
+              <a href="/tag/society">Society (1)</a>
+             
+              <a href="/tag/religion">Religion (1)</a>
+             
+              <a href="/tag/lanka">Lanka (1)</a>
+             
+              <a href="/tag/innocence">Innocence (1)</a>
+             
+              <a href="/tag/life">Life (1)</a>
+             
+              <a href="/tag/security">Security (2)</a>
+             
+              <a href="/tag/republish">Republish (3)</a>
+             
+              <a href="/tag/web">Web (1)</a>
+             
+              <a href="/tag/chatbot">Chatbot (1)</a>
+            
+          
+        
+
+		</div>
+	</div>
+</div>
+ 
+
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                 Copyright © 2018 Nirmal Lankathilaka 
+            </div>
+            <!-- <div class="col-md-6 col-sm-6 text-center text-lg-right">    
+                <a target="_blank" href="https://www.wowthemes.net">Mediumish Theme</a> by WowThemes.net
+            </div> -->
+        </div>
+    </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+   
+</div> <!-- /.site-content>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+    
+<script src="/assets/js/jquery.min.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    
+<script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+<script src="/assets/js/mediumish.js"></script>
+    
+<script id="dsq-count-scr" src="//evil-dinosaur.disqus.com/count.js"></script>
+</body>
+</html>
