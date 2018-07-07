@@ -53,6 +53,8 @@ paginate_path: /page:num/
     
 # Other
 markdown: kramdown
+kramdown:
+  input: GFM
 highlighter: rouge
 
 # Enable future dates in posts

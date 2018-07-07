@@ -66,19 +66,19 @@ This mechanism supports most app requirements, but does have certain limitations
 
 ## Outline of this series {% include anchor.html id="outline" %}
 
-1. Create and run simple Expo app
-..On emulators and physical phones
-1. Creating and using standard UI components
-1. Navigation and screens
-..Tab navigation, communicating state, creating screens
-1. Handling camera
-..For face-recognition with Microsoft Cognitive Services
-1. Using Google Maps
-..With multiple routes, labels, markers, shapes, etc.
-1. Structuring complex Expo apps
-1. Building for Android
-1. Building for iOS
-1. Publishing to Android App Store
-1. Publishing to iOS App Store
+1. 	**Create and run simple Expo app**
+	* On emulators and physical phones
+1. 	**Creating and using standard UI components**
+1. 	**Navigation and screens**
+	* Tab navigation, communicating state, creating screens
+1. 	**Handling camera**
+	* For face-recognition with Microsoft Cognitive Services
+1. 	**Using Google Maps**
+	* With multiple routes, labels, markers, shapes, etc.
+1. 	**Structuring complex Expo apps**
+1. 	**Building for Android**
+1. 	**Building for iOS**
+1. 	**Publishing to Android App Store**
+1. 	**Publishing to iOS App Store**
 
 The order is open for change, depending on your suggestions. There will be multiple articles covering this series.
