@@ -165,11 +165,11 @@
           {% assign tags_list = site.tags %}  
           {% if tags_list.first[0] == null %}
             {% for tag in tags_list %} 
-              <div class="--tag"><a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag | capitalize }} {{ site.tags[tag].size }}</a></div>
+              <div class="--tag"><a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag | capitalize }} <span class="--tag-count">{{ site.tags[tag].size }}</span></a></div>
             {% endfor %}
           {% else %}
             {% for tag in tags_list %} 
-              <div class="--tag"><a href="{{ site.baseurl }}/tag/{{ tag[0] }}">{{ tag[0] | capitalize }} ({{ tag[1].size }})</a></div>
+              <div class="--tag"><a href="{{ site.baseurl }}/tag/{{ tag[0] }}">{{ tag[0] | capitalize }} <span class="--tag-count">{{ tag[1].size }}</span></a></div>
             {% endfor %}
           {% endif %}
         {% assign tags_list = nil %}
