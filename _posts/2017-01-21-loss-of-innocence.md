@@ -2,7 +2,7 @@
 layout: post
 title: "Loss of innocence"
 excerpt: "'Sidhu' is a popular drama loved by a huge number of adults and children alike, but it provoked a search for reality that took me through a number of issues"
-categories: blog
+categories: article
 tags: [society, religion, lanka, innocence, life]
 author: nir
 comments: true

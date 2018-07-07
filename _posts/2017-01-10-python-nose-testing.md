@@ -2,7 +2,7 @@
 layout: post
 title: "A Nose for Python: fun with test-driven development"
 excerpt: "Introduction to test-driven development philosophy and hands-on experience with Python 2.7 and Nose testing framework"
-categories: blog
+categories: article
 tags: [python, code, tutorial, tech]
 author: nir
 comments: true

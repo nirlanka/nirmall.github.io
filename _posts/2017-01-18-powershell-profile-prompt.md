@@ -2,7 +2,7 @@
 layout: post
 title: "Cooler PowerShell prompt"
 excerpt: "Changing Powershell's prompt by adding a profile... with bonus: aliases!"
-categories: blog
+categories: article
 tags: [windows, shell, code, config, tech]
 author: nir
 comments: true
