@@ -10,7 +10,14 @@ google_analytics: 'UA-96481074-1'
 disqus: 'evil-dinosaur'
 mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 twitter: https://twitter.com/srdyel
+facebook: https://facebook.com/srdyel
 owner: "Nirmal Lankathilaka"
+
+# Atom feed config
+url: "https://evildino.com"
+feed_items: 10
+feed_update_period: daily
+feed_update_frequency: 1
 
 # Authors
 authors:
@@ -21,6 +28,7 @@ authors:
     email: nir@evildino.com
     web: https://evildino.com
     twitter: https://twitter.com/srdyel
+    facebook: https://facebook.com/srdyel
     description: "Hacker, engineer, artist, writer, musician. Hates BitCoin."
   
 # Plugins
@@ -46,3 +54,6 @@ paginate_path: /page:num/
 # Other
 markdown: kramdown
 highlighter: rouge
+
+# Enable future dates in posts
+future: true

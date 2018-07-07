@@ -1,0 +1,48 @@
+---
+layout: post
+title: "Introduction to Mobile Development Over Multiple Platforms With React Native And Expo"
+excerpt: "Introduction to cross-platform mobile app development with React Native (series)"
+categories: article
+tags: [javascript, mobile, react-native, code, tutorial, tech]
+author: nir
+comments: true
+share: true
+created: 2018-07-07
+image: /assets/images/blog/2018-07/react-native-expo-cover.png
+featured: true
+hidden: true
+---
+
+## Introduction to cross-platform mobile development
+
+For developing mobile applications for both Android and iOS, the languages recommended by the OS vendors are Kotlyn/Java and Swift. If these technologies were used, developers will need to maintain two separate code-bases for each platform. They'd also have to implement the same functionality on both code-bases separately, twice. This is contrasted with web development, where a single thread of development is usually sufficient for any platform.
+
+In addition, similar concepts have subtle but important differences on each platform. This includes differences in UI concepts like screens/activities and buttons, lower-level system APIs like Geo-location and camera.
+
+To solve the issue of productivity and lack of abstraction of concepts, several mechanisms were introduced at different points. The first of such efforts was **Cordova** (by Apache) and **Ionic**. They make use of a simple and minimal "container" app developed in either Java/Kotlyn or Swift that runs a local HTML/Javascript website abstracts system APIs through a new common API.
+
+This new philosophy in Cordova/Ionic can be called _write-once-build-everywhere_, as the same codebase is built over different build-chains and tools to create different build targets, i.e. binaries. 
+
+> The philosophy behind Ionic is called **write-once-build-everywhere**
+
+Later, **React Native** was introduced (by Facebook) as a possible alternative to Cordova/Ionic. Instead of a WebView component to run a local website, it employed an abstracting concept in the original React to bypass HTML/Javascript and create native UI components on-the-fly.
+
+React Native was able to solved issues in developing on Cordova/Ionic such as,
+- Performance and memory-efficiency (web-technology abstractions and native WebView UI component limitations)
+- Having to re-implement every UI control on HTML/Javascript
+- Inability to use existing or new native code
+
+Creating complex UIs and workflows that are easily faster and more memory-efficient was a huge reason for it to become popular. React's own mechanisms of efficiently rendering UI changes with a virtual DOM is another reason for React Native UIs being fast. While app logic and rendering logic is written in Javascript, it barely makes a performance difference to native code.
+
+React Native also made it much easier and straight-forward to implement new interfacing with native APIs for the end developers. In addition, React Native also became a framework for combining existing separate platform-specific codebases into a single codebase.
+
+> React Native helps combine existing codebases for different platforms into a single codebase
+
+<small>
+**Flutter** is another cross-platform development technology introduced (by Google), which is not considered in this article. We'll discuss it at a later time.
+</small>
+
+## _Write-once-**run**-everywhere_ with React Native
+
+Both Cordova/Ionic and React Native are different to the _write-once-run-everywhere_ concept in Oracle Java. In Java, the same _bytecode_ files created in a single build can run on any platform. This is made possible by the Java Virtual Machine that acts as a middle layer between platform and app. With Cordova/Ionic or React Native, usually, the developer has to build twice for both Android and iOS, separately.
+

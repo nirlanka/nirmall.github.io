@@ -9,8 +9,6 @@ comments: true
 share: true
 created: 2018-03-20
 image: /assets/images/blog/2018-03-31/bruce-almighty.gif
-featured: true
-hidden: true
 ---
 
 ## Step 1. Create a free server
