@@ -46,5 +46,3 @@ paginate_path: /page:num/
 # Other
 markdown: kramdown
 highlighter: rouge
-
-permalink: /404.html
