@@ -13,7 +13,11 @@ featured: true
 hidden: true
 ---
 
-## Introduction to cross-platform mobile development
+This is the start of a series of tutorials on cross-platform mobile development with React Native and Expo. [See the series outline](#outline) at the end of the post.
+
+---
+
+## Introduction to cross-platform mobile development {% include anchor.html id="intro" %}
 
 For developing mobile applications for both Android and iOS, the languages recommended by the OS vendors are Kotlyn/Java and Swift. If these technologies were used, developers will need to maintain two separate code-bases for each platform. They'd also have to implement the same functionality on both code-bases separately, twice. This is contrasted with web development, where a single thread of development is usually sufficient for any platform.
 
@@ -42,13 +46,11 @@ React Native also made it much easier and straight-forward to implement new inte
 
 > React Native helps combine existing codebases for different platforms into a single codebase
 
-{% include image.html url="/assets/images/blog/2018-07/react-native-users.png" description="❝ Thousands of apps are using React Native, from established Fortune 500 companies to hot new startups ❞" %}
+{% include image.html url="/assets/images/blog/2018-07/react-native-users.png" description="❝Thousands of apps are using React Native, from established Fortune 500 companies to hot new startups❞" %}
 
-<small>
-**Flutter** is another cross-platform development technology introduced (by Google), which is not considered in this article. We'll discuss it at a later time.
-</small>
+_**Flutter** is another cross-platform development technology recently introduced (by Google), which is not considered in this article. We'll discuss it at a later time._
 
-## _Write-once-**run**-everywhere_ with React Native
+## _Write-once-**run**-everywhere_ with React Native {% include anchor.html id="expo" %}
 
 Both Cordova/Ionic and React Native are different to the _write-once-run-everywhere_ concept in Oracle Java. In Java, the same _bytecode_ files created in a single build can run on any platform. This is made possible by the Java Virtual Machine that acts as a middle layer between platform and app. With Cordova/Ionic or React Native, usually, the developer has to build twice for both Android and iOS, separately.
 
@@ -60,4 +62,23 @@ Still, building separately for both platforms on every new change and testing co
 
 This mechanism supports most app requirements, but does have certain limitations. However this ease in development and testing made it a popular part in cross-platform mobile app development workflows.
 
-## Outline of this series
+---
+
+## Outline of this series {% include anchor.html id="outline" %}
+
+1. Create and run simple Expo app
+..On emulators and physical phones
+1. Creating and using standard UI components
+1. Navigation and screens
+..Tab navigation, communicating state, creating screens
+1. Handling camera
+..For face-recognition with Microsoft Cognitive Services
+1. Using Google Maps
+..With multiple routes, labels, markers, shapes, etc.
+1. Structuring complex Expo apps
+1. Building for Android
+1. Building for iOS
+1. Publishing to Android App Store
+1. Publishing to iOS App Store
+
+The order is open for change, depending on your suggestions. There will be multiple articles covering this series.
