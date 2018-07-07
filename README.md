@@ -1,4 +1,5 @@
 ## Install and build
+
 - Install Jekyll
 - Install plugins mentioned in _config.yml
 - Run with `jekyll serve --livereload`
@@ -28,3 +29,7 @@ brew cleanup -s
 # install
 brew install graphicsmagick
 ```
+
+> Always build twice when deploying (thumbnails may not be attached yet)
+
+> Always name images without spaces

@@ -1,0 +1,13 @@
+{% if post.image contains ".gif" %}
+	{% if post.image contains "://" %}
+		{{ post.image }}{% else %}{{post.image}}
+	{% endif %}
+{% elsif post.image contains ".GIF" %}
+	{% if post.image contains "://" %}
+		{{ post.image }}{% else %}{{post.image}}
+	{% endif %}
+{% else %}
+	{% if post.image contains "://" %}
+		{{post.image}}{% else %}{{post.image}}--thumb{{post.image_ext}}
+	{% endif %}
+{% endif %}
