@@ -2,7 +2,7 @@
 layout: post
 title: "Introduction to Mobile Development Over Multiple Platforms With React Native And Expo"
 excerpt: "Introduction to cross-platform mobile app development with React Native (series)"
-categories: article
+categories: series
 tags: [javascript, mobile, react-native, code, tutorial, tech]
 author: nir
 comments: true
@@ -19,7 +19,11 @@ For developing mobile applications for both Android and iOS, the languages recom
 
 In addition, similar concepts have subtle but important differences on each platform. This includes differences in UI concepts like screens/activities and buttons, lower-level system APIs like Geo-location and camera.
 
+The developers also had to learn, debug and test two technologies, which made it impossible to focus on and become experts on a single base technology with a good learning and efficiency curve.
+
 To solve the issue of productivity and lack of abstraction of concepts, several mechanisms were introduced at different points. The first of such efforts was **Cordova** (by Apache) and **Ionic**. They make use of a simple and minimal "container" app developed in either Java/Kotlyn or Swift that runs a local HTML/Javascript website abstracts system APIs through a new common API.
+
+{% include image.html url="/assets/images/blog/2018-07/ionic-customers.png" description="A large number of popular and domain-specific apps are built with Ionic" %}
 
 This new philosophy in Cordova/Ionic can be called _write-once-build-everywhere_, as the same codebase is built over different build-chains and tools to create different build targets, i.e. binaries. 
 
@@ -38,6 +42,8 @@ React Native also made it much easier and straight-forward to implement new inte
 
 > React Native helps combine existing codebases for different platforms into a single codebase
 
+{% include image.html url="/assets/images/blog/2018-07/react-native-users.png" description="❝ Thousands of apps are using React Native, from established Fortune 500 companies to hot new startups ❞" %}
+
 <small>
 **Flutter** is another cross-platform development technology introduced (by Google), which is not considered in this article. We'll discuss it at a later time.
 </small>
@@ -46,3 +52,12 @@ React Native also made it much easier and straight-forward to implement new inte
 
 Both Cordova/Ionic and React Native are different to the _write-once-run-everywhere_ concept in Oracle Java. In Java, the same _bytecode_ files created in a single build can run on any platform. This is made possible by the Java Virtual Machine that acts as a middle layer between platform and app. With Cordova/Ionic or React Native, usually, the developer has to build twice for both Android and iOS, separately.
 
+Ionic very recently came up with a solution by providing an online service that builds the app for both Android and iOS for separately-given certificates and configurations. While React Native didn't focus on this, a separate organization called **Expo** created such a service for free.
+
+Still, building separately for both platforms on every new change and testing continues to be a hassle. The solution for this from Ionic is the Ionic View app, and later the Ionic Dev app, as well as the Expo app. The developer can build an easily testable version of target servable over a network, without using or even installing Android or iOS SDKs. Then, using Ionic View/Ionic Dev or Expo apps running on either an emulator, or a mobile on the same (WiFi) network as the developer's machine, testing the app is possible. 
+
+> Ionic View, Ionic Dev and Expo apps make testing and prototyping of cross-plarform mobile apps a breeze
+
+This mechanism supports most app requirements, but does have certain limitations. However this ease in development and testing made it a popular part in cross-platform mobile app development workflows.
+
+## Outline of this series
