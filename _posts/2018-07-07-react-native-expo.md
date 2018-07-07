@@ -2,7 +2,7 @@
 layout: post
 title: "Introduction to Mobile Development Over Multiple Platforms With React Native And Expo"
 excerpt: "Introduction to cross-platform mobile app development with React Native (series)"
-categories: series
+categories: article
 tags: [javascript, mobile, react-native, code, tutorial, tech]
 author: nir
 comments: true
