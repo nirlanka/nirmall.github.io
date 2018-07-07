@@ -44,8 +44,8 @@ class Jekyll::Thumbnail < Liquid::Tag
 
   def render(context)
 
-    # puts @source
     @source = Liquid::Template.parse(@source).render context # 
+    # puts "Processing: #{@source}"
     # @source = look_up(context, @source)
     # puts @source
     # puts context["post"]["image"]
@@ -73,15 +73,15 @@ class Jekyll::Thumbnail < Liquid::Tag
       if !File.exists?(dest_path) || File.mtime(dest_path) <= File.mtime(source_path)
         # puts ENV.inspect
 
-        # don't generate images in preview mode whenever possible
-        if ENV['OCTOPRESS_ENV'] == 'preview' && /(?<width>\d+)?x(?<height>\d+)?/ =~ dimensions
-          html = "<img src='#{source}' style='"
-          # puts "#{width}x#{height} << #{dimensions}"
-          html << "max-width: #{width}px; " unless width.nil? || width.empty?
-          html << "max-height: #{height}px;" unless height.nil? || height.empty?
-          html << "' />"
-          return html
-        end
+        ## don't generate images in preview mode whenever possible
+        # if ENV['OCTOPRESS_ENV'] == 'preview' && /(?<width>\d+)?x(?<height>\d+)?/ =~ dimensions
+        #   html = "<img src='#{source}' style='"
+        #   # puts "#{width}x#{height} << #{dimensions}"
+        #   html << "max-width: #{width}px; " unless width.nil? || width.empty?
+        #   html << "max-height: #{height}px;" unless height.nil? || height.empty?
+        #   html << "' />"
+        #   return html
+        # end
 
         puts "Thumbnailing #{source} to #{dest} (#{dimensions})"
 

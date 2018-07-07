@@ -1,0 +1,11 @@
+{% if post.image_ext == ".gif" %}
+	xxxx
+{% elsif post.image_ext == ".GIF" %}
+	xxx
+{% else %}
+	{% if post.image contains "://" %}
+	yyy
+	{% else %}
+		{% thumbnail {{post.image}} thumb< %}
+	{% endif %}
+{% endif %}

@@ -14,6 +14,8 @@ gem 'github-pages', group: :jekyll_plugins
 
 ## Image Magick for thumbnailing
 
+**Not working right now** (Do this mannually)
+
 Plugin taken from `https://github.com/mrdanadams/jekyll-thumbnailer`
 
 ```brew install imagemagick```

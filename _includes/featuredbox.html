@@ -7,7 +7,7 @@
                 <div class="h-100">
                     <div class="wrapthumbnail">
                         <a href="{{ post.url | absolute_url }}">
-                            {% thumbnail {{post.image}} thumb< %}
+                            <!-- % include createthumb.html % -->
                             <span class="thumbnail d-block" style="background-image:url({% include thumburl.html %});">
                             </span>
                         </a>
@@ -42,4 +42,4 @@
         </div>
     </div>
 </div>
-<!-- end post -->
+<!-- end post
