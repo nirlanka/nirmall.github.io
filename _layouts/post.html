@@ -88,18 +88,33 @@ post_class: post-template
 				</ul>
 			</div>
 			<!-- End Categories -->
-            
+
             <!-- Prev/Next -->
-            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
-            {% if page.previous.url %}
-            <a class="prev d-block col-md-6" href="{{page.previous.url | absolute_url}}"> &laquo; {{page.previous.title}}</a>
-            {% endif %}
-            {% if page.next.url %}
-            <a class="next d-block col-md-6 text-lg-right" href="{{page.next.url | absolute_url}}">{{page.next.title}} &raquo; </a>
-            {% endif %}
-            <div class="clearfix"></div>
+            <div class="row PageNavigation d-flex justify-content-between">
+
+                <div class="col-lg-6 col-md-6 mb-30px card-group --simple">
+                    {% if page.previous.url %}
+                        {% assign post = page.previous %}
+                        {% include postbox-inner-simple.html %}
+                        <!-- <a class="prev d-block col-md-6" href="{{page.previous.url | absolute_url}}"> &laquo; {{page.previous.title}}</a> -->
+                    {% endif %}
+                </div>
+
+                <div class="col-lg-6 col-md-6 mb-30px card-group --simple">
+                    {% if page.next.url %}
+                        {% assign post = page.next %}
+                        {% include postbox-inner-simple.html %}
+                        <!-- <a class="next d-block col-md-6 text-lg-right" href="{{page.next.url | absolute_url}}">{{page.next.title}} &raquo; </a> -->
+                    {% elsif page.previous.previous %}
+                        {% assign post = page.previous.previous %}
+                        {% include postbox-inner-simple.html %}
+                    {% endif %}
+                </div>
+
+                <div class="clearfix"></div>
+
             </div>
-            <!-- End Categories -->
+            <!-- End Prev/Next -->
 
 		</div>
 		<!-- End Post -->

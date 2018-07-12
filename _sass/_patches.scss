@@ -19,7 +19,36 @@
 .card-group {
     padding-right: 0;
     padding-left: 0;
+    
+    &.--simple {
+    	.card.h-100 {
+			.card-body {
+				margin-top: 10px; margin-bottom: 0;
+				padding-top: 0; padding-bottom: 0;
+			    
+			    .card-title {
+			    	font-size: 18px;
+		    	    line-height: 22px;
+			    }
+			}
+			.card-footer {
+				margin-top: 0; margin-bottom: 0;
+				padding-top: 0; padding-bottom: 0;
+			}
 
+			.maxthumb {
+				.img-fluid {
+					border: none;
+			        border-bottom: 1px solid #a2a2a2;
+				}
+
+				.--img-fluid {
+					height: 100px;
+				}
+			}
+    	}
+	}
+    
 	.card.h-100 {
 		border: none;
 		
@@ -27,7 +56,7 @@
 		    padding: 0 1.25rem;
 			
 			.img-fluid {
-			    border: 1px solid rgba(0,0,0,.125);
+		        border: 1px solid #c5c5c5;
 			}
 
 			.--img-fluid {
@@ -48,8 +77,9 @@
 			}
 			
 			.card-text {
-				font-size: 18px;
+				font-size: 17px;
 				@include sans-serif;
+			    color: rgba(0,0,0,.44);
 			}
 		}
 		
@@ -117,11 +147,18 @@
 		line-height: 18px;
 	}
 
+	a {
+	    color: #212529;
+    	text-decoration: underline;
+	}
+
 	a.--anchor-icon {
 		font-size: 16px;
 	    padding-left: 10px;
 	    display: inline-block;
 	    vertical-align: middle;
+        color: rgba(33, 37, 41, .54);
+        text-decoration: none;
 	}
 }
 
