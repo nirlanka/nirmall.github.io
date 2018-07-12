@@ -1,17 +1,15 @@
 @mixin sans-serif {
 	font-family: Lato,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
 }
-
 @mixin serif {
 	font-family: Lora,Adamina,Georgia,Cambria,"Times New Roman",Times,serif;
 }
 
-// @mixin serif-i {
-// 	font-family: Adamina,Georgia,Cambria,"Times New Roman",Times,serif;
-// }
-
 @mixin gray-text {
     color: rgba(0,0,0,.54);
+}
+@mixin darkgray-text {
+	color: rgba(0,0,0,.68);
 }
 
 .container {
@@ -95,14 +93,62 @@
 
 	ul, li, ol, table, p {
 		strong {
-			// @include serif-i;
 			font-weight: 700;
 		}
+	}
 
-		// em {
-		// 	strong {
-		// 		@include serif;
-		// 	}
-		// }
+	blockquote {
+		font-size: 26px;
+		@include sans-serif;
+		font-weight: 400;
+	    line-height: 40px;
+	    color: rgba(0, 0, 0, 0.47);
+	    margin: 30px;
+	    border: none;
+	}
+
+	.photo-description {
+		@include darkgray-text;
+		@include sans-serif;
+	}
+}
+
+.after-post-tags {
+    .tags {
+    	li {
+    		a {
+    			padding: 7px 10px;
+    			@include darkgray-text;
+    		}
+    	}
+    }
+}
+
+.post-top-meta {
+	.--author-thumb--container {
+		margin-right: -13px;
+	}
+
+	.--author-details {
+		padding: 0;
+		font-size: 16px;
+		
+		.btn.follow {
+		    border-radius: 5px;
+	    	padding: 0px 9px;
+		}
+
+		.author-description {
+			font-size: 16px;
+			margin-top: 0;
+		}
+	}
+}
+
+.--share-box {
+	@include darkgray-text;
+	
+	a {
+		@include darkgray-text;
 	}
 }

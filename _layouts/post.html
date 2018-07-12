@@ -29,12 +29,22 @@ post_class: post-template
 						<!-- <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}"> -->
                         <div class="--author-thumb" style="background-image: url(https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x);">&nbsp;</div>
 					</div>
-					<div class="col-md-10 col-xs-12">
+					<div class="col-md-10 col-xs-12 --author-details">
 						<a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
 						<span class="author-description">{{ author.description }}</span>						
 					</div>
 				</div>				
                 {% endif %}
+
+                <!-- Post Date -->
+                <p>
+                <small>
+                    <span class="post-date"><time class="post-date" datetime="{{ page.created }}">{{ page.created }}</time></span>           
+                    {% if page.modified %}
+                    (Updated: <time datetime="{{ page.modified }}" itemprop="dateModified">{{ page.modified }}</time>)
+                    {% endif %}
+                    </small>
+                </p>
                 
                 <!-- Post Title -->
 				<h1 class="posttitle">{{ page.title }}</h1> 
