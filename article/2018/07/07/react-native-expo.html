@@ -18,8 +18,10 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    
-<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i%7CLora:400,400i,700,700i" rel="stylesheet">  
+<!-- |Adamina:400,400i,700,700i   -->
+<!-- Righteous -->
     
 <link href="/assets/css/screen.css" rel="stylesheet">
     
@@ -41,7 +43,7 @@
     
     <!-- Begin Logo -->
     <a class="navbar-brand" href="/">
-    <img src="/assets/images/logo.png" alt="Evil Dino">
+        <img src="/assets/images/logo.png" alt="Evil Dino">
     </a>
     <!-- End Logo -->
   
@@ -106,7 +108,9 @@
 ================================================== -->
 <div class="mainheading row">
     <div class="col-xs-12 col-md-6">
-        <h1 class="sitetitle">Evil Dino</h1>
+        <a class="navbar-brand" href="/">
+            <h1 class="sitetitle">Evil Dino</h1>
+        </a>
         <p class="lead">
              Hacking, politics and art
         </p>
@@ -127,7 +131,7 @@
 
 		<!-- Post Share -->
 		<div class="col-md-2 pl-0">            
-           <div class="share">
+           <div class="share --share-box">
     <p>
         Share
     </p>
@@ -172,18 +176,30 @@
                 				
 				<div class="row post-top-meta">
 					<div class="col-md-2 col-xs-12 --author-thumb--container">
-						<!-- <img class="author-thumb" src="https://www.gravatar.com/avatar/0abad243be4a7a44b062c57643c89e19?s=250&d=mm&r=x" alt="Lanka"> -->
+						<!-- <img class="author-thumb" src="https://www.gravatar.com/avatar/0abad243be4a7a44b062c57643c89e19?s=250&d=mm&r=x" alt="Nirmal Lanka"> -->
                         <div class="--author-thumb" style="background-image: url(https://www.gravatar.com/avatar/0abad243be4a7a44b062c57643c89e19?s=250&amp;d=mm&amp;r=x);"> </div>
 					</div>
-					<div class="col-md-10 col-xs-12">
-						<a target="_blank" class="link-dark" href="https://evildino.com">Lanka</a><a target="_blank" href="https://twitter.com/srdyel" class="btn follow">Follow</a>
+					<div class="col-md-10 col-xs-12 --author-details">
+						<a target="_blank" class="link-dark" href="https://evildino.com">Nirmal Lanka</a><a target="_blank" href="https://twitter.com/srdyel" class="btn follow">Follow</a>
 						<span class="author-description">Hacker, engineer, artist, writer, musician. Hates Bit-coin. Conservative/republican.</span>						
 					</div>
 				</div>				
                 
+
+                <!-- Post Date -->
+                <p>
+                <small>
+                    <span class="post-date"><time class="post-date" datetime="7 July 2018">7 July 2018</time></span>           
+                    
+                    </small>
+                </p>
                 
                 <!-- Post Title -->
 				<h1 class="posttitle">Introduction to Mobile Development Over Multiple Platforms With React Native And Expo</h1> 
+
+                
+                    <div class="--post-subtitle">This is the start of a series of tutorials on cross-platform mobile development with React Native and Expo.</div>
+                
                 
 			</div>
 
@@ -195,11 +211,11 @@
 
 			<!-- Post Content -->
 			<div class="article-post">
-				<p>This is the start of a series of tutorials on cross-platform mobile development with React Native and Expo. <a href="#outline">See the series outline</a> at the end of the post.</p>
+				<p>You can <a href="#outline">skip to the series outline</a> at the end of the post.</p>
 
 <hr>
 
-<h2 id="introduction-to-cross-platform-mobile-development-pushpin">Introduction to cross-platform mobile development <a href="#intro" id="intro"><img class="emoji" title=":pushpin:" alt=":pushpin:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4cc.png" height="20" width="20"></a>
+<h2 id="introduction-to-cross-platform-mobile-development-">Introduction to cross-platform mobile development <a class="--anchor-icon" href="#intro" id="intro"><!-- :pushpin: --><small><i class="fas fa-link"></i></small></a>
 </h2>
 
 <p>For developing mobile applications for both Android and iOS, the languages recommended by the OS vendors are Kotlyn/Java and Swift. If these technologies were used, developers will need to maintain two separate code-bases for each platform. They’d also have to implement the same functionality on both code-bases separately, twice. This is contrasted with web development, where a single thread of development is usually sufficient for any platform.</p>
@@ -245,8 +261,8 @@
 
 <p><em><strong>Flutter</strong> is another cross-platform development technology recently introduced (by Google), which is not considered in this article. We’ll discuss it at a later time.</em></p>
 
-<h2 id="write-once-run-everywhere-with-react-native-pushpin">
-<em>Write-once-<strong>run</strong>-everywhere</em> with React Native <a href="#expo" id="expo"><img class="emoji" title=":pushpin:" alt=":pushpin:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4cc.png" height="20" width="20"></a>
+<h2 id="write-once-run-everywhere-with-react-native-">
+<em>Write-once-<strong>run</strong>-everywhere</em> with React Native <a class="--anchor-icon" href="#expo" id="expo"><!-- :pushpin: --><small><i class="fas fa-link"></i></small></a>
 </h2>
 
 <p>Both Cordova/Ionic and React Native are different to the <em>write-once-run-everywhere</em> concept in Oracle Java. In Java, the same <em>bytecode</em> files created in a single build can run on any platform. This is made possible by the Java Virtual Machine that acts as a middle layer between platform and app. With Cordova/Ionic or React Native, usually, the developer has to build twice for both Android and iOS, separately.</p>
@@ -263,35 +279,19 @@
 
 <hr>
 
-<h2 id="outline-of-this-series-pushpin">Outline of this series <a href="#outline" id="outline"><img class="emoji" title=":pushpin:" alt=":pushpin:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4cc.png" height="20" width="20"></a>
+<h2 id="outline-of-this-series-">Outline of this series <a class="--anchor-icon" href="#outline" id="outline"><!-- :pushpin: --><small><i class="fas fa-link"></i></small></a>
 </h2>
 
 <ol>
   <li>
-<strong>Create and run simple Expo app</strong>
-    <ul>
-      <li>On emulators and physical phones</li>
-    </ul>
-  </li>
+<strong>Create and run simple Expo app</strong> <br>On emulators and physical phones</li>
   <li><strong>Creating and using standard UI components</strong></li>
   <li>
-<strong>Navigation and screens</strong>
-    <ul>
-      <li>Tab navigation, communicating state, creating screens</li>
-    </ul>
-  </li>
+<strong>Navigation and screens</strong> <br>Tab navigation, communicating state, creating screens</li>
   <li>
-<strong>Handling camera</strong>
-    <ul>
-      <li>For face-recognition with Microsoft Cognitive Services</li>
-    </ul>
-  </li>
+<strong>Handling camera</strong> <br>For face-recognition with Microsoft Cognitive Services</li>
   <li>
-<strong>Using Google Maps</strong>
-    <ul>
-      <li>With multiple routes, labels, markers, shapes, etc.</li>
-    </ul>
-  </li>
+<strong>Using Google Maps</strong> <br>With multiple routes, labels, markers, shapes, etc.</li>
   <li><strong>Structuring complex Expo apps</strong></li>
   <li><strong>Building for Android</strong></li>
   <li><strong>Building for iOS</strong></li>
@@ -306,7 +306,7 @@
             <!-- Post Date -->
             <p>
             <small>
-                <span class="post-date"><time class="post-date" datetime="2018-07-07">2018-07-07</time></span>           
+                <span class="post-date"><time class="post-date" datetime="7 July 2018">7 July 2018</time></span>           
                 
                 </small>
             </p>
@@ -343,16 +343,95 @@
 				</ul>
 			</div>
 			<!-- End Categories -->
-            
+
             <!-- Prev/Next -->
-            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+            <div class="row PageNavigation d-flex justify-content-between">
+
+                <div class="col-lg-6 col-md-6 mb-30px card-group --simple">
+                    
+                        
+                        <div class="card h-100">
+    <div class="maxthumb">
+        <a href="https://evildino.com/article/2018/03/20/messenger-bot.html">
+                <!-- % thumbnail /assets/images/blog/2018-03-31/bruce-almighty.gif thumb< % -->
+                <!-- <img class="img-fluid" src="
+	/assets/images/blog/2018-03-31/bruce-almighty.gif
+	
+" alt="Create your own evil robot overlord on Messenger with 6 simple steps">  -->
+                <div class="img-fluid --img-fluid" style="background-image: url(
+	/assets/images/blog/2018-03-31/bruce-almighty.gif
+	
+);"> </div>
+        </a>
+    </div>
+    <div class="card-body">
+        <h2 class="card-title"><a class="text-dark" href="https://evildino.com/article/2018/03/20/messenger-bot.html">Create your own evil robot overlord on Messenger with 6 simple steps</a></h2>
+        <!-- <h4 class="card-text">Build Messenger chatbots easily, with my little 'framework'.</h4>             -->
+    </div>
+    <div class="card-footer bg-white">
+        <div class="wrapfooter">
             
-            <a class="prev d-block col-md-6" href="https://evildino.com/article/2018/03/20/messenger-bot.html"> « Create your own evil robot overlord on Messenger with 6 simple steps</a>
+            <span class="meta-footer-thumb">
+            <img class="author-thumb" src="https://www.gravatar.com/avatar/0abad243be4a7a44b062c57643c89e19?s=250&amp;d=mm&amp;r=x" alt="Nirmal Lanka">
+            </span>                
+            <span class="author-meta">
+            <span class="post-name"><a target="_blank" href="https://evildino.com">Nirmal Lanka</a></span><br>
             
-            
+            <span class="post-date">20 Mar 2018</span>
+            </span>
+            <span class="post-read-more"><a href="https://evildino.com/article/2018/03/20/messenger-bot.html" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
             <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+                        <!-- <a class="prev d-block col-md-6" href="https://evildino.com/article/2018/03/20/messenger-bot.html"> &laquo; Create your own evil robot overlord on Messenger with 6 simple steps</a> -->
+                    
+                </div>
+
+                <div class="col-lg-6 col-md-6 mb-30px card-group --simple">
+                    
+                        
+                        <div class="card h-100">
+    <div class="maxthumb">
+        <a href="https://evildino.com/article/2018/03/04/browser-botnets.html">
+                <!-- % thumbnail /assets/images/blog/2018-03-31/dark-side-vs-light.jpeg thumb< % -->
+                <!-- <img class="img-fluid" src="
+	/assets/images/blog/2018-03-31/dark-side-vs-light.jpeg--thumb.jpeg
+	
+" alt="Browser-based supercomputers: the evil and the good">  -->
+                <div class="img-fluid --img-fluid" style="background-image: url(
+	/assets/images/blog/2018-03-31/dark-side-vs-light.jpeg--thumb.jpeg
+	
+);"> </div>
+        </a>
+    </div>
+    <div class="card-body">
+        <h2 class="card-title"><a class="text-dark" href="https://evildino.com/article/2018/03/04/browser-botnets.html">Browser-based supercomputers: the evil and the good</a></h2>
+        <!-- <h4 class="card-text">Hackers are focusing on more than just your personal details: they want your power!</h4>             -->
+    </div>
+    <div class="card-footer bg-white">
+        <div class="wrapfooter">
+            
+            <span class="meta-footer-thumb">
+            <img class="author-thumb" src="https://www.gravatar.com/avatar/0abad243be4a7a44b062c57643c89e19?s=250&amp;d=mm&amp;r=x" alt="Nirmal Lanka">
+            </span>                
+            <span class="author-meta">
+            <span class="post-name"><a target="_blank" href="https://evildino.com">Nirmal Lanka</a></span><br>
+            
+            <span class="post-date">04 Mar 2018</span>
+            </span>
+            <span class="post-read-more"><a href="https://evildino.com/article/2018/03/04/browser-botnets.html" title="Read Story"><svg class="svgIcon-use" width="25" height="25" viewbox="0 0 25 25"><path d="M19 6c0-1.1-.9-2-2-2H8c-1.1 0-2 .9-2 2v14.66h.012c.01.103.045.204.12.285a.5.5 0 0 0 .706.03L12.5 16.85l5.662 4.126a.508.508 0 0 0 .708-.03.5.5 0 0 0 .118-.285H19V6zm-6.838 9.97L7 19.636V6c0-.55.45-1 1-1h9c.55 0 1 .45 1 1v13.637l-5.162-3.668a.49.49 0 0 0-.676 0z" fill-rule="evenodd"></path></svg></a></span>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+                    
+                </div>
+
+                <div class="clearfix"></div>
+
             </div>
-            <!-- End Categories -->
+            <!-- End Prev/Next -->
 
 		</div>
 		<!-- End Post -->
@@ -407,7 +486,7 @@
 </div>     -->
     
 </div>
-<!-- /.container>
+<!-- /.container> -->
     
 <!-- Categories Jumbotron
 ================================================== -->

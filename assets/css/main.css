@@ -215,3 +215,130 @@
     padding: 1px 6px;
     margin: 0px -6px 0px 2px;
     font-weight: 700; }
+
+.container {
+  max-width: 1000px; }
+
+.card-group {
+  padding-right: 0;
+  padding-left: 0; }
+  .card-group.--simple .card.h-100 .card-body {
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0; }
+    .card-group.--simple .card.h-100 .card-body .card-title {
+      font-size: 18px;
+      line-height: 22px; }
+  .card-group.--simple .card.h-100 .card-footer {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0; }
+  .card-group.--simple .card.h-100 .maxthumb .img-fluid {
+    border: none;
+    border-bottom: 1px solid #a2a2a2; }
+  .card-group.--simple .card.h-100 .maxthumb .--img-fluid {
+    height: 100px; }
+  .card-group .card.h-100 {
+    border: none; }
+    .card-group .card.h-100 .maxthumb {
+      padding: 0 1.25rem; }
+      .card-group .card.h-100 .maxthumb .img-fluid {
+        border: 1px solid #c5c5c5; }
+      .card-group .card.h-100 .maxthumb .--img-fluid {
+        height: 172px;
+        background-size: cover;
+        background-position: center; }
+    .card-group .card.h-100 .card-body {
+      flex: none; }
+      .card-group .card.h-100 .card-body .card-title {
+        font-size: 22px;
+        font-family: Lato,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+        font-weight: 700;
+        line-height: 28px; }
+      .card-group .card.h-100 .card-body .card-text {
+        font-size: 17px;
+        font-family: Lato,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+        color: rgba(0, 0, 0, 0.44); }
+    .card-group .card.h-100 .card-footer {
+      padding-top: 8px; }
+
+.mainheading h1.sitetitle {
+  font-family: Lato,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+  font-weight: 900; }
+.mainheading h1.posttitle {
+  font-size: 38px;
+  font-family: Lato,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+  font-weight: 700; }
+.mainheading .--post-subtitle {
+  font-size: 24px;
+  font-family: Lato,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+  font-weight: 400;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.54); }
+.mainheading a.navbar-brand {
+  color: #212529; }
+
+.article-post {
+  font-size: 19px;
+  font-family: Lora,Adamina,Georgia,Cambria,"Times New Roman",Times,serif;
+  line-height: 33px; }
+  .article-post h2 {
+    font-size: 26px;
+    font-family: Lato,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+    font-weight: 700; }
+  .article-post ul strong, .article-post li strong, .article-post ol strong, .article-post table strong, .article-post p strong {
+    font-weight: 700; }
+  .article-post blockquote {
+    font-size: 26px;
+    font-family: Lato,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 40px;
+    color: rgba(0, 0, 0, 0.47);
+    margin: 30px;
+    border: none; }
+  .article-post .photo-description {
+    color: rgba(0, 0, 0, 0.68);
+    font-family: Lato,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+    line-height: 18px; }
+  .article-post a {
+    color: #212529;
+    text-decoration: underline; }
+  .article-post a.--anchor-icon {
+    font-size: 16px;
+    padding-left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    color: rgba(33, 37, 41, 0.54);
+    text-decoration: none; }
+
+.after-post-tags .tags li a {
+  padding: 7px 10px;
+  color: rgba(0, 0, 0, 0.68); }
+
+.post-top-meta .--author-thumb--container {
+  margin-right: -13px; }
+.post-top-meta .--author-details {
+  padding: 0;
+  font-size: 16px; }
+  .post-top-meta .--author-details .btn.follow {
+    border-radius: 5px;
+    padding: 0px 9px; }
+  .post-top-meta .--author-details .author-description {
+    font-size: 16px;
+    margin-top: 0; }
+
+.--share-box {
+  color: rgba(0, 0, 0, 0.68); }
+  .--share-box a {
+    color: rgba(0, 0, 0, 0.68); }
+
+.section-title h2 {
+  font-weight: 500;
+  color: #7d7d7d;
+  font-size: 20px; }
+
+.featured-posts .section-title {
+  margin-left: -12px;
+  margin-right: -12px; }
