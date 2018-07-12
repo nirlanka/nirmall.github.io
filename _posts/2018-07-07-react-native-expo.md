@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Introduction to Mobile Development Over Multiple Platforms With React Native And Expo"
+subtitle: "This is the start of a series of tutorials on cross-platform mobile development with React Native and Expo."
 excerpt: "Introduction to cross-platform mobile app development with React Native (series)"
 categories: article
 tags: [javascript, mobile, react-native, code, tutorial, tech]
@@ -14,7 +15,7 @@ featured: true
 hidden: true
 ---
 
-This is the start of a series of tutorials on cross-platform mobile development with React Native and Expo. [See the series outline](#outline) at the end of the post.
+You can [skip to the series outline](#outline) at the end of the post.
 
 ---
 
@@ -67,15 +68,11 @@ This mechanism supports most app requirements, but does have certain limitations
 
 ## Outline of this series {% include anchor.html id="outline" %}
 
-1. 	**Create and run simple Expo app**
-	* On emulators and physical phones
+1. 	**Create and run simple Expo app** <br>On emulators and physical phones
 1. 	**Creating and using standard UI components**
-1. 	**Navigation and screens**
-	* Tab navigation, communicating state, creating screens
-1. 	**Handling camera**
-	* For face-recognition with Microsoft Cognitive Services
-1. 	**Using Google Maps**
-	* With multiple routes, labels, markers, shapes, etc.
+1. 	**Navigation and screens** <br>Tab navigation, communicating state, creating screens
+1. 	**Handling camera** <br>For face-recognition with Microsoft Cognitive Services
+1. 	**Using Google Maps** <br>With multiple routes, labels, markers, shapes, etc.
 1. 	**Structuring complex Expo apps**
 1. 	**Building for Android**
 1. 	**Building for iOS**
