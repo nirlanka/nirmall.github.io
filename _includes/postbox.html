@@ -6,7 +6,8 @@
         <div class="maxthumb">
             <a href="{{ post.url | absolute_url }}">
                     <!-- % thumbnail {{post.image}} thumb< % -->
-                    <img class="img-fluid" src="{% include thumburl.html %}" alt="{{ post.title }}"> 
+                    <!-- <img class="img-fluid" src="{% include thumburl.html %}" alt="{{ post.title }}">  -->
+                    <div class="img-fluid --img-fluid" style="background-image: url({% include thumburl.html %});">&nbsp;</div>
             </a>
         </div>
         <div class="card-body">

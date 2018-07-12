@@ -1,0 +1,72 @@
+@mixin sans-serif {
+	font-family: Lato,"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Arial,sans-serif;
+}
+
+@mixin serif {
+	font-family: Lora,Adamina,Georgia,Cambria,"Times New Roman",Times,serif;
+}
+
+.container {
+	max-width: 1000px;
+}
+
+.card-group {
+    padding-right: 0;
+    padding-left: 0;
+
+	.card.h-100 {
+		border: none;
+		
+		.maxthumb {
+		    padding: 0 1.25rem;
+			
+			.img-fluid {
+			    border: 1px solid rgba(0,0,0,.125);
+			}
+
+			.--img-fluid {
+				height: 172px;
+				background-size: cover;
+				background-position: center;
+			}
+		}
+
+		.card-body {
+			flex: none;
+			
+			.card-title {
+			    font-size: 22px;
+			    @include sans-serif;
+			    font-weight: 700;
+		        line-height: 28px;
+			}
+			
+			.card-text {
+				font-size: 18px;
+				@include sans-serif;
+			}
+		}
+		
+		.card-footer {
+			padding-top: 8px;
+		}
+	}
+}
+
+.mainheading {
+	h1.sitetitle {
+		@include sans-serif;
+	    font-weight: 900;
+	}
+
+	h1.posttitle {
+		font-size: 38px;
+		@include sans-serif;
+    	font-weight: 800;
+	}
+}
+
+.article-post {
+    font-size: 18px;
+	@include serif;
+}
