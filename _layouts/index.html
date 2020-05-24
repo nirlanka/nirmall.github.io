@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<ul class="posts-list">
+    {% for post in site.posts %}
+        {% include post-list-item.html %}
+    {% endfor %}
+</ul>

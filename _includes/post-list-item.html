@@ -1,0 +1,23 @@
+<li class="posts-list__post">
+  {% if post.redirect_to %}
+    <h2 class="posts-list__post-title--link">
+      <a href="{{ post.redirect_to }}">
+        {{ post.title }}
+      </a>
+    </h2>
+  {% else %}
+    <h2>
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h2>
+  {% endif %}
+  
+  {% if post.desc %}
+      <p>{{ post.desc }}</p>
+  {% else %}
+      {{ post.excerpt }}
+  {% endif %}
+
+  <div>{% include posttags.html %}</div>
+</li>

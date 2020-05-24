@@ -1,0 +1,35 @@
+.posts-list {
+    list-style: none;
+}
+
+.posts-list__post-title--link {
+    ::after {
+        content: '[off-site]';
+        font-size: 1.03rem;
+        font-weight: 500;
+    }
+}
+
+// Layout
+
+.nav__icon {
+    display: inline-block;
+    width: 30px;
+    background-image: var(--dino-icon);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.nav__right-group {
+    text-align: right;
+    float: right;
+}
+
+.post__time {
+    display: block;
+    margin: 10px 0 0 0;
+}
+
+.posts-list__post p {
+    margin-bottom: 10px;
+}

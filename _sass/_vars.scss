@@ -1,0 +1,8 @@
+:root {
+    --dino-icon: url(/assets/img/dino-1.svg);
+}
+@media (prefers-color-scheme:dark) {
+    :root {
+        --dino-icon: url(/assets/img/dino-2.svg);
+    }
+}

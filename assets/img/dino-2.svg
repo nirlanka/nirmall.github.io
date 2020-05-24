@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54" height="57" viewBox="0 0 54 57">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-custom_2);
+      }
+
+      .cls-2 {
+        fill: #7928CA;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-custom_2">
+      <rect width="54" height="57"/>
+    </clipPath>
+  </defs>
+  <g id="custom_2" data-name="custom – 2" class="cls-1">
+    <path id="Path_1" data-name="Path 1" class="cls-2" d="M32,57V51H25v6H18V43H15V28H11v3H8V25h7V21H25v2h4v2h7v3h4v5h4V29h7V23h3V36H51V35H50v4H47v4H43v4H39V57ZM11,21H4V17h7V15H25v6ZM0,15V0H25V15Z"/>
+    <path id="Path_2" data-name="Path 2" class="cls-3" d="M0,0H3V3H0Z" transform="translate(14 5)"/>
+  </g>
+</svg>

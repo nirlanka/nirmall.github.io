@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ site.title }} {{ site.title_jap }} - {{ page.title }}</title>
+    <link rel="icon" href="{{ "/assets/img/dino-2@2x.png" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+
+    {% if site.tags != "" %}
+      {% include collecttags.html %}
+    {% endif %}
+  </head>
+  <body>
+    <div class="nav">
+      <div class="nav__icon">&nbsp;</div>
+      {% if page.id != 'index' %}
+        <a href="{{ site.baseurl }}/">← Home</a>
+      {% endif %}
+      {% if page.id != 'about' %}
+        <a href="{{ site.baseurl }}/about.html">About</a>
+      {% endif %}
+      <div class="nav__right-group">
+        <a class="nav__theme-btn" href="javascript:void(0)" id="btn-theme">Dark↔light</a>
+      </div>
+    </div>
+
+    <div class="content">
+      {% if page.hide_title == true %}
+      {% elsif page.layout == 'post' %}
+      {% elsif page.layout == 'tag' %}
+      {% else %}
+        <h1>{{ page.title }}</h1>
+      {% endif %}
+
+      {{ content}}
+    </div>
+    
+    <script src="{{ "/assets/js/main.js" | relative_url }}"></script>
+  </body>
+</html>
