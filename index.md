@@ -6,6 +6,6 @@ hide_title: true
 published: true
 ---
 
-# Evil Dino's tech blog
+# Evil Dino's blog
 
 はじめました。Welcome to my blog!
