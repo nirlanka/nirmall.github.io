@@ -8,4 +8,4 @@ published: true
 
 # Evil Dino's tech blog
 
-はじめました。Welcome to my blog on tech stuff!
+はじめました。Welcome to my blog!
