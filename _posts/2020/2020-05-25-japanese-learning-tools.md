@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: Tools I use for learning Japanese
 layout: post
 tags: japanese
