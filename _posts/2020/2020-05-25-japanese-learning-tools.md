@@ -33,6 +33,10 @@ And I joined [their website](https://www.japanesepod101.com/){:target="_blank"} 
 - [Google Translate Chrome extension](https://chrome.google.com/webstore/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb){:target="_blank"} - I enabled "Immediately display popup", so that as soon as I select a word, it shows its pronounciation audio sample with meaning.
 - [Rikaikun Chrome extension](https://chrome.google.com/webstore/detail/jipdnfibhldikgcjhfnomkfpcebammhp){:target="_blank"} - With this, you can hover on any Japanese word and it shows you its meanings and pronounciations in basic Hiragana. It's very thorough and helpful. (20 something MBs)
 
+## Writing Japanese
+
+In Mac OS X, you can add Japanese as an input language, and it'll let you switch between Hiragana, Katakana and Kanji (Romanji) easily. Then I type in the English sounds and it gets input as Japanese. It's pretty convenient.
+
 ## What I'm doing now
 
 I'm practicing reading Japanese by going through Japanese-only websites. There's a lot of Kanji (Chinese characters) to remember, but it's a bit easier after the Kanji intro in the link above.
